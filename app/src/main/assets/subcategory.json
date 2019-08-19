@@ -1,0 +1,43 @@
+[
+  {
+    "idSubcategory":1,
+    "idCategory": 1,
+    "idName": "subcategory.factoring_and_product_formulas"
+  },
+  {
+    "idSubcategory":2,
+    "idCategory": 1,
+    "idName": "subcategory.roots_formulas"
+  },
+  {
+    "idSubcategory":3,
+    "idCategory": 1,
+    "idName": "subcategory.powers_formulas"
+  },
+  {
+    "idSubcategory":4,
+    "idCategory": 1,
+    "idName": "subcategory.logarithm_formulas"
+  },
+  {
+    "idSubcategory":5,
+    "idCategory": 1,
+    "idName": "subcategory.useful_equations"
+  },
+  {
+    "idSubcategory":6,
+    "idCategory": 1,
+    "idName": "subcategory.complex_numbers"
+  },
+  {
+    "idSubcategory":7,
+    "idCategory": 1,
+    "idName": "subcategory.binomial_theorem"
+  },
+
+  {
+    "idSubcategory":8,
+    "idCategory": 2,
+    "idName": "subcategory.cone"
+  }
+]

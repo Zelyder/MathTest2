@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorBackgroundDay">#EEEEEE</color>
+    <color name="colorCardBackgroundDay">#FFFFFF</color>
+    <color name="colorTextDay">#000000</color>
+    <color name="colorTintDay">#858585</color>
+    <color name="colorButtonDay">#FFFFFF</color>
+
+
+
+    <color name="colorPrimaryNight">#212121</color>
+    <color name="colorPrimaryDarkNight">#000000</color>
+    <color name="colorBackgroundNight">#424242</color> <!-- #3C3F41-->
+    <color name="colorCardBackgroundNight">#2B2B2B</color>
+    <color name="colorTextNight">#FFFFFF</color>
+    <color name="colorTintNight">#858585</color>
+    <color name="colorButtonNight">#303030</color> <!-- #2B2B2B -->
+</resources>

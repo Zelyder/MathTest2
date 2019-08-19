@@ -1,0 +1,90 @@
+[
+  {
+    "idName": "category.algebra",
+    "engName": "Algebra",
+    "rusName": "Алгебра"
+  },
+  {
+    "idName": "category.geometry",
+    "engName": "Geometry",
+    "rusName": "Геометрия"
+  },
+  {
+    "idName": "category.trigonometry",
+    "engName": "Trigonometry",
+    "rusName": "Тригонометрия"
+  },
+  {
+    "idName": "category.analytic_geometry",
+    "engName": "Analytic geometry",
+    "rusName": "Аналитическая геометрия"
+  },
+  {
+    "idName": "category.derivative",
+    "engName": "Derivative",
+    "rusName": "Производные"
+  },
+  {
+    "idName": "category.integration",
+    "engName": "Integration",
+    "rusName": "Интегралы"
+  },
+
+  {
+    "idName": "subcategory.factoring_and_product_formulas",
+    "engName": "Factoring and product formulas",
+    "rusName": "Формулы сокращённого умножения"
+  },
+  {
+    "idName": "subcategory.roots_formulas",
+    "engName": "Roots formulas",
+    "rusName": "Формулы корней"
+  },
+  {
+    "idName": "subcategory.powers_formulas",
+    "engName": "Powers formulas",
+    "rusName": "Формулы степеней"
+  },
+  {
+    "idName": "subcategory.logarithm_formulas",
+    "engName": "Logarithm formulas",
+    "rusName": "Формулы логарифмов"
+  },
+  {
+    "idName": "subcategory.useful_equations",
+    "engName": "Useful equations",
+    "rusName": "Полезные уравнения"
+  },
+  {
+    "idName": "subcategory.complex_numbers",
+    "engName": "Complex numbers",
+    "rusName": "Комплексные числа"
+  },
+  {
+    "idName": "subcategory.binomial_theorem",
+    "engName": "Binomial theorem",
+    "rusName": "Бином Ньютона"
+  },
+  {
+    "idName": "subcategory.cone",
+    "engName": "Cone",
+    "rusName": "Конус"
+  },
+
+  {
+    "idName": "formula.square_difference",
+    "engName": "Difference of two squares",
+    "rusName": "Разность квадратов"
+  },
+  {
+    "idName": "formula.differences_of_Cubes",
+    "engName": "Differences of Cubes",
+    "rusName": "Разность кубов"
+  },
+
+  {
+    "idName": "formula.triangle_area_height",
+    "engName": "triangle area through height",
+    "rusName": "Площадь треугольника через высоту"
+  }
+]

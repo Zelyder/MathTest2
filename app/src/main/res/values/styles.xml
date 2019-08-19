@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/colorBackgroundDay</item>
+        <item name="cardBackground">@color/colorCardBackgroundDay</item>
+        <item name="android:popupMenuStyle">@style/AppTheme.PopupOverlay</item>
+        <item name="textColor">@color/colorTextDay</item>
+        <item name="tintColor">@color/colorTintDay</item>
+        <item name="buttonColor">@color/colorButtonDay</item>
+    </style>
+
+    <style name="darkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/colorBackgroundNight</item>
+        <item name="android:alertDialogTheme">@style/CustomAlertDialog</item>
+        <item name="android:popupMenuStyle">@style/darkTheme.popupOverlay</item>
+        <item name="cardBackground">@color/colorCardBackgroundNight</item>
+        <item name="textColor">@color/colorTextNight</item>
+        <item name="android:textColor">@color/colorTextNight</item>
+        <item name="tintColor">@color/colorTintNight</item>
+        <item name="buttonColor">@color/colorButtonNight</item>
+
+    </style>
+
+    <style name="CustomAlertDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:colorBackground">@color/colorBackgroundNight</item>
+        <item name="android:minWidth">240dp</item>
+    </style>
+
+    <style name="darkTheme.popupOverlay" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/colorBackgroundNight</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

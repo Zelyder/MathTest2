@@ -1,0 +1,32 @@
+[
+  {
+    "idCategory":1,
+    "idName": "category.algebra",
+    "img":2131165292
+  },
+  {
+    "idCategory":2,
+    "idName": "category.geometry",
+    "img":2131165295
+  },
+  {
+    "idCategory":3,
+    "idName": "category.trigonometry",
+    "img":2131165300
+  },
+  {
+    "idCategory":4,
+    "idName": "category.analytic_geometry",
+    "img":2131165293
+  },
+  {
+    "idCategory":5,
+    "idName": "category.derivative",
+    "img":2131165294
+  },
+  {
+    "idCategory":6,
+    "idName": "category.integration",
+    "img":2131165296
+  }
+]

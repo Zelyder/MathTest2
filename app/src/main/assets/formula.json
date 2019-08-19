@@ -1,0 +1,37 @@
+[
+  {
+    "idFormula":1,
+    "idSubcategory": 1,
+    "idName": "formula.square_difference",
+    "formula": "`a^2 - b^2 = (a + b)(a - b)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":2,
+    "idSubcategory": 1,
+    "idName": "formula.differences_of_Cubes",
+    "formula": "`a^3 - b^3 = (a - b)(a^2 + ab + b^2)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":3,
+    "idSubcategory": 2,
+    "idName": "formula.triangle_area_height",
+    "formula": "`S = 1/2 ah`",
+    "idImg": 2131165302
+  },
+  {
+    "idFormula":4,
+    "idSubcategory": 1,
+    "idName": "formula.square_difference",
+    "formula": "`?^? ? ?^? = (? ? ?)(? ? ?)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":5,
+    "idSubcategory": 1,
+    "idName": "formula.square_difference",
+    "formula": "`?? ? ?? = (? ? ?)(? ? ?)`",
+    "idImg": 0
+  }
+]
