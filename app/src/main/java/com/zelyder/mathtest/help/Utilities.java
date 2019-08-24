@@ -12,6 +12,7 @@ public class Utilities {
     private SparseArray<String> arrayOfDelFunc = new SparseArray<>();
 
     public String toUnknown(String formula) {
+        formula = clearString(formula);
         for (int i = 0; i < formula.length(); i++) {
             if (isNormal(formula.charAt(i))) {
                 if (formula.charAt(i) == '+') {
@@ -30,11 +31,17 @@ public class Utilities {
         return formula;
     }
 
+    public String toUnknownRight(String formula) {
+        String[] separateFormula = formula.split("[=]");
+        return  separateFormula[0] + toUnknown(separateFormula[1]);
+    }
+
     public String clearString(String formula) {
         return formula.replace("`", "");
     }
 
     public String addCharQ(String formula, String ch) {
+        formula = clearString(formula);
         boolean isFind = false;
         for (int i = 0; !isFind; i++) {
             if (i >= formula.length()) {
@@ -49,6 +56,7 @@ public class Utilities {
     }
 
     public String delCharQ(String formula) {
+        formula = clearString(formula);
         boolean isFind = false;
         while (!getUndelFunc(formula).equals("")) {
             formula = hideUndelFunc(formula);
@@ -97,7 +105,7 @@ public class Utilities {
     private boolean isNormal(char ch) {
         return ch != '=' && ch != '/' && ch != ' ' && ch != '?' && ch != '^' && ch != '_'
                 && ch != '`' && ch != '(' && ch != ')' && ch != '{' && ch != '}' && ch != '#'
-                && ch != '<' && ch != '>' && ch != '!';
+                && ch != '<' && ch != '>' && ch != '!' && ch != '∓';
     }
 
 
@@ -122,6 +130,8 @@ public class Utilities {
             return "abs";
         } else if (formula.contains("->")) {
             return "->";
+        } else if (formula.contains("+-")) {
+            return "+-";
         }
         return "";
     }

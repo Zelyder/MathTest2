@@ -19,6 +19,6 @@ class FormulasListViewModel(app: Application): AndroidViewModel(app) {
         formulaRepository = FormulaRepository(formulaDao)
     }
 
-    fun getFormulas(formulaId: Int): LiveData<List<FormulaModel>> = formulaRepository.getFormulasEng(formulaId)
+    fun getFormulas(SubcategoryId: Int): LiveData<List<FormulaModel>> = formulaRepository.getFormulasEng(SubcategoryId)
 
 }

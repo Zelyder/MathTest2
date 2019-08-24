@@ -81,6 +81,81 @@
     "engName": "Differences of Cubes",
     "rusName": "Разность кубов"
   },
+  {
+    "idName": "formula.square_of_difference",
+    "engName": "Square of difference",
+    "rusName": "Квадрат разницы"
+  },
+  {
+    "idName": "formula.square_of_sum",
+    "engName": "Square of sum",
+    "rusName": "Квадрат суммы"
+  },
+  {
+    "idName": "formula.cube_of_difference",
+    "engName": "Cube of difference",
+    "rusName": "Куб разницы"
+  },
+  {
+    "idName": "formula.cube_of_sum",
+    "engName": "Cube of sum",
+    "rusName": "Куб разницы"
+  },
+  {
+    "idName": "formula.root_1",
+    "engName": "Root 1",
+    "rusName": "Корень 1"
+  },
+  {
+    "idName": "formula.root_2",
+    "engName": "Root 2",
+    "rusName": "Корень 2"
+  },
+  {
+    "idName": "formula.root_3",
+    "engName": "Root 3",
+    "rusName": "Корень 3"
+  },
+  {
+    "idName": "formula.root_4",
+    "engName": "Root 4",
+    "rusName": "Корень 4"
+  },
+  {
+    "idName": "formula.root_5",
+    "engName": "Root 5",
+    "rusName": "Корень 5"
+  },
+  {
+    "idName": "formula.root_6",
+    "engName": "Root 6",
+    "rusName": "Корень 6"
+  },
+  {
+    "idName": "formula.root_7",
+    "engName": "Root 7",
+    "rusName": "Корень 7"
+  },
+  {
+    "idName": "formula.root_8",
+    "engName": "Root 8",
+    "rusName": "Корень 8"
+  },
+  {
+    "idName": "formula.root_9",
+    "engName": "Root 9",
+    "rusName": "Корень 9"
+  },
+  {
+    "idName": "formula.root_10",
+    "engName": "Root 10",
+    "rusName": "Корень 10"
+  },
+  {
+    "idName": "formula.root_11",
+    "engName": "Root 11",
+    "rusName": "Корень 11"
+  },
 
   {
     "idName": "formula.triangle_area_height",

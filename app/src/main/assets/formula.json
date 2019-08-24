@@ -10,28 +10,112 @@
     "idFormula":2,
     "idSubcategory": 1,
     "idName": "formula.differences_of_Cubes",
-    "formula": "`a^3 - b^3 = (a - b)(a^2 + ab + b^2)`",
+    "formula": "`a^3 - b^3 = (a - b)(a^2 + a b + b^2)`",
     "idImg": 0
   },
   {
     "idFormula":3,
-    "idSubcategory": 2,
-    "idName": "formula.triangle_area_height",
-    "formula": "`S = 1/2 ah`",
-    "idImg": 2131165302
+    "idSubcategory": 1,
+    "idName": "formula.square_of_difference",
+    "formula": "`(a - b)^2 = a^2 - 2 a b + b^2`",
+    "idImg": 0
   },
   {
     "idFormula":4,
     "idSubcategory": 1,
-    "idName": "formula.square_difference",
-    "formula": "`?^? ? ?^? = (? ? ?)(? ? ?)`",
+    "idName": "formula.square_of_sum",
+    "formula": "`(a + b)^2 = a^2 + 2 a b + b^2`",
     "idImg": 0
   },
   {
     "idFormula":5,
     "idSubcategory": 1,
-    "idName": "formula.square_difference",
-    "formula": "`?? ? ?? = (? ? ?)(? ? ?)`",
+    "idName": "formula.cube_of_difference",
+    "formula": "`(a - b)^3 = a^3 - 3 a^2 b + 3 a b^2 - b^3`",
+    "idImg": 0
+  },
+  {
+    "idFormula":6,
+    "idSubcategory": 1,
+    "idName": "formula.cube_of_sum",
+    "formula": "`(a + b)^3 = a^3 + 3 a^2 b + 3 a b^2 + b^3`",
+    "idImg": 0
+  },
+  {
+    "idFormula":7,
+    "idSubcategory": 2,
+    "idName": "formula.root_1",
+    "formula": "`root(n)(a) * root(m)(b) = root(n*m)(a^m * b^n)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":8,
+    "idSubcategory": 2,
+    "idName": "formula.root_2",
+    "formula": "`root(n)(a*b) = root(n)(a) * root(n)(b)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":9,
+    "idSubcategory": 2,
+    "idName": "formula.root_3",
+    "formula": "`root(n)(a/b) = root(n)(a) / root(n)(b)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":10,
+    "idSubcategory": 2,
+    "idName": "formula.root_4",
+    "formula": "`root(n) a / root(m) b = root(n*m)(a^m/b^n)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":11,
+    "idSubcategory": 2,
+    "idName": "formula.root_5",
+    "formula": "`(root(n) a)^n = a`",
+    "idImg": 0
+  },
+  {
+    "idFormula":12,
+    "idSubcategory": 2,
+    "idName": "formula.root_6",
+    "formula": "`root(n)(a^m) = a^(m/n)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":13,
+    "idSubcategory": 2,
+    "idName": "formula.root_7",
+    "formula": "`(root(n) a)^m = root(n)(a^m)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":14,
+    "idSubcategory": 2,
+    "idName": "formula.root_8",
+    "formula": "`root(m)(root(n)(a)) = root(m*n)(a)`",
+    "idImg": 0
+  },
+  {
+    "idFormula":15,
+    "idSubcategory": 2,
+    "idName": "formula.root_9",
+    "formula": "`1/root(n)(a) = (root(n)(a^(n-1)))/a`",
+    "idImg": 0
+  },
+  {
+    "idFormula":16,
+    "idSubcategory": 2,
+    "idName": "formula.root_10",
+    "formula": "$$\\sqrt{a+\\sqrt{b}} = \\sqrt{\\frac{a+\\sqrt{a^{2}-b}}{2}} + \\sqrt{\\frac{a-\\sqrt{a^{2}-b}}{2}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":17,
+    "idSubcategory": 2,
+    "idName": "formula.root_11",
+    "formula": "`1/(sqrt a +- sqrt b) = (sqrt a ∓ sqrt b)/(a-b)`",
     "idImg": 0
   }
 ]

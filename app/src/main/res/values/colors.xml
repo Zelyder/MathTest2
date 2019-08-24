@@ -4,6 +4,10 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="colorCorrect">#4CAF50</color>
+    <color name="colorWrong">#F44336</color>
+    <color name="colorPieText">#FF000000</color>
+
     <color name="colorBackgroundDay">#EEEEEE</color>
     <color name="colorCardBackgroundDay">#FFFFFF</color>
     <color name="colorTextDay">#000000</color>

@@ -49,6 +49,7 @@ dependencies {
 
     //UI Part
     implementation 'com.github.Nishant-Pathak:MathView:v1.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 
     //Dagger 2
     implementation 'com.google.dagger:dagger-android:2.20'

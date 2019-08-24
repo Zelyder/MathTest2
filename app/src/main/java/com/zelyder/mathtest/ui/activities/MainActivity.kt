@@ -42,8 +42,6 @@ class MainActivity : AppCompatActivity() {
 
         setupActionBarWithNavController(navController)
 
-        Log.d("LOL", "img ${R.drawable.ic_triangleheight}")
-
 
     }
 
