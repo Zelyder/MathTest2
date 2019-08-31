@@ -3,105 +3,105 @@
     "idFormula":1,
     "idSubcategory": 1,
     "idName": "formula.square_difference",
-    "formula": "`a^2 - b^2 = (a + b)(a - b)`",
+    "formula": "$$a^2 - b^2 = (a + b)(a - b)$$",
     "idImg": 0
   },
   {
     "idFormula":2,
     "idSubcategory": 1,
     "idName": "formula.differences_of_Cubes",
-    "formula": "`a^3 - b^3 = (a - b)(a^2 + a b + b^2)`",
+    "formula": "$$a^3 - b^3 = (a - b)(a^2 + a b + b^2)$$",
     "idImg": 0
   },
   {
     "idFormula":3,
     "idSubcategory": 1,
     "idName": "formula.square_of_difference",
-    "formula": "`(a - b)^2 = a^2 - 2 a b + b^2`",
+    "formula": "$$(a - b)^2 = a^2 - 2 a b + b^2$$",
     "idImg": 0
   },
   {
     "idFormula":4,
     "idSubcategory": 1,
     "idName": "formula.square_of_sum",
-    "formula": "`(a + b)^2 = a^2 + 2 a b + b^2`",
+    "formula": "$$(a + b)^2 = a^2 + 2 a b + b^2$$",
     "idImg": 0
   },
   {
     "idFormula":5,
     "idSubcategory": 1,
     "idName": "formula.cube_of_difference",
-    "formula": "`(a - b)^3 = a^3 - 3 a^2 b + 3 a b^2 - b^3`",
+    "formula": "$$(a - b)^3 = a^3 - 3 a^2 b + 3 a b^2 - b^3$$",
     "idImg": 0
   },
   {
     "idFormula":6,
     "idSubcategory": 1,
     "idName": "formula.cube_of_sum",
-    "formula": "`(a + b)^3 = a^3 + 3 a^2 b + 3 a b^2 + b^3`",
+    "formula": "$$(a + b)^3 = a^3 + 3 a^2 b + 3 a b^2 + b^3$$",
     "idImg": 0
   },
   {
     "idFormula":7,
     "idSubcategory": 2,
     "idName": "formula.root_1",
-    "formula": "`root(n)(a) * root(m)(b) = root(n*m)(a^m * b^n)`",
+    "formula": "$$\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = \\sqrt[n \\cdot m]{a^m \\cdot b^n}$$",
     "idImg": 0
   },
   {
     "idFormula":8,
     "idSubcategory": 2,
     "idName": "formula.root_2",
-    "formula": "`root(n)(a*b) = root(n)(a) * root(n)(b)`",
+    "formula": "$$\\sqrt[n]{a \\cdot b} = \\sqrt[n]{a} \\cdot \\sqrt[n]{b}$$",
     "idImg": 0
   },
   {
     "idFormula":9,
     "idSubcategory": 2,
     "idName": "formula.root_3",
-    "formula": "`root(n)(a/b) = root(n)(a) / root(n)(b)`",
+    "formula": "$$\\sqrt[n]{\\frac{a}{b}} = \\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}}$$",
     "idImg": 0
   },
   {
     "idFormula":10,
     "idSubcategory": 2,
     "idName": "formula.root_4",
-    "formula": "`root(n) a / root(m) b = root(n*m)(a^m/b^n)`",
+    "formula": "$$\\frac{\\sqrt[n]{a}}{\\sqrt[m]{b}} = \\sqrt[n \\cdot m]{\\frac{a^m}{b^n}}$$",
     "idImg": 0
   },
   {
     "idFormula":11,
     "idSubcategory": 2,
     "idName": "formula.root_5",
-    "formula": "`(root(n) a)^n = a`",
+    "formula": "$$(\\sqrt[n]{a})^n = a$$",
     "idImg": 0
   },
   {
     "idFormula":12,
     "idSubcategory": 2,
     "idName": "formula.root_6",
-    "formula": "`root(n)(a^m) = a^(m/n)`",
+    "formula": "$$\\sqrt[n]{a^m} = a^{\\frac{m}{n}}$$",
     "idImg": 0
   },
   {
     "idFormula":13,
     "idSubcategory": 2,
     "idName": "formula.root_7",
-    "formula": "`(root(n) a)^m = root(n)(a^m)`",
+    "formula": "$$(\\sqrt[n]{a})^m = \\sqrt[n]{a^m}$$",
     "idImg": 0
   },
   {
     "idFormula":14,
     "idSubcategory": 2,
     "idName": "formula.root_8",
-    "formula": "`root(m)(root(n)(a)) = root(m*n)(a)`",
+    "formula": "$$\\sqrt[m]{\\sqrt[n]{a}} = \\sqrt[m \\cdot n]{a}$$",
     "idImg": 0
   },
   {
     "idFormula":15,
     "idSubcategory": 2,
     "idName": "formula.root_9",
-    "formula": "`1/root(n)(a) = (root(n)(a^(n-1)))/a`",
+    "formula": "$$\\frac{1}{\\sqrt[n]{a}} = \\frac{\\sqrt[n]{n-1}}{a}$$",
     "idImg": 0
   },
   {
@@ -115,7 +115,71 @@
     "idFormula":17,
     "idSubcategory": 2,
     "idName": "formula.root_11",
-    "formula": "`1/(sqrt a +- sqrt b) = (sqrt a ∓ sqrt b)/(a-b)`",
+    "formula": "$$\\frac{1}{\\sqrt{a} \\pm \\sqrt{b}} = \\frac{\\sqrt{a} \\mp \\sqrt{b}}{a-b}$$",
+    "idImg": 0
+  },
+
+  {
+    "idFormula":18,
+    "idSubcategory": 3,
+    "idName": "formula.power_1",
+    "formula": "$$a^m \\cdot b^m = (ab)^m$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":19,
+    "idSubcategory": 3,
+    "idName": "formula.power_2",
+    "formula": "$$a^m \\cdot a^n = a^{m+n}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":20,
+    "idSubcategory": 3,
+    "idName": "formula.power_3",
+    "formula": "$$(\\frac{a}{b})^m = \\frac{a^m}{b^m}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":21,
+    "idSubcategory": 3,
+    "idName": "formula.power_4",
+    "formula": "$$\\frac{a^m}{a^n} = a^{m-n}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":22,
+    "idSubcategory": 3,
+    "idName": "formula.power_5",
+    "formula": "$$(a^m)^n = a^{m \\cdot n}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":23,
+    "idSubcategory": 3,
+    "idName": "formula.power_6",
+    "formula": "$$a^{-m} = \\frac{1}{a^m}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":24,
+    "idSubcategory": 3,
+    "idName": "formula.power_7",
+    "formula": "$$a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":25,
+    "idSubcategory": 3,
+    "idName": "formula.power_8",
+    "formula": "$$a^0 = 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":25,
+    "idSubcategory": 3,
+    "idName": "formula.power_9",
+    "formula": "$$a^1 = a$$",
     "idImg": 0
   }
 ]

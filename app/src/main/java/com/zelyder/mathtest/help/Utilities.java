@@ -1,5 +1,6 @@
 package com.zelyder.mathtest.help;
 
+import android.util.Log;
 import android.util.SparseArray;
 
 import java.util.regex.Pattern;
@@ -8,6 +9,7 @@ public class Utilities {
 
     private final String re = Pattern.quote("?");
     private final String rePlus = Pattern.quote("+");
+    private final String reBackslash = Pattern.quote("\\");
     private SparseArray<String> arrayOfUndelFunc = new SparseArray<>();
     private SparseArray<String> arrayOfDelFunc = new SparseArray<>();
 
@@ -31,13 +33,28 @@ public class Utilities {
         return formula;
     }
 
+    public String checkBackslash(String formula){
+        formula = clearString(formula);
+          if (!getUndelFunc(formula).equals("")) {
+            formula = hideUndelFunc(formula);
+        }
+
+          formula = hideUndelFunc(formula);
+
+          return formula;
+
+    }
+
     public String toUnknownRight(String formula) {
+
         String[] separateFormula = formula.split("[=]");
-        return  separateFormula[0] + toUnknown(separateFormula[1]);
+        return  separateFormula[0] + "=" + toUnknown(separateFormula[1]);
     }
 
     public String clearString(String formula) {
-        return formula.replace("`", "");
+        formula = formula.replace("$$", "");
+//        formula = formula.replace("\\", "");
+        return formula;
     }
 
     public String addCharQ(String formula, String ch) {
@@ -78,6 +95,11 @@ public class Utilities {
         }
         return showAllFunc(reverse(formula));
     }
+    public String delCharQRight(String formula) {
+        formula = clearString(formula);
+        String[] separateFormula = formula.split("[=]");
+        return  separateFormula[0] + "=" + delCharQ(separateFormula[1]);
+    }
 
     public String delChar(String formula) {
         formula = clearString(formula);
@@ -102,57 +124,52 @@ public class Utilities {
         return showAllFunc(reverse(formula));
     }
 
-    private boolean isNormal(char ch) {
+    public boolean isNormal(char ch) {
         return ch != '=' && ch != '/' && ch != ' ' && ch != '?' && ch != '^' && ch != '_'
                 && ch != '`' && ch != '(' && ch != ')' && ch != '{' && ch != '}' && ch != '#'
-                && ch != '<' && ch != '>' && ch != '!' && ch != '∓';
+                && ch != '<' && ch != '>' && ch != '!' && ch != '∓' && ch != '|'&& ch != '['
+                && ch != ']' && ch != '$' && ch != '♪';
     }
 
 
-    private String getUndelFunc(String formula) {
-        if (formula.contains("sum")) {
-            return "sum";
-        } else if (formula.contains("sqrt")) {
-            return "sqrt";
-        } else if (formula.contains("root")) {
-            return "root";
-        } else if (formula.contains("int")) {
-            return "int";
-        } else if (formula.contains("/_")) {
-            return "/_";
-        } else if (formula.contains("/_\\")) {
-            return "/_\\";
-        } else if (formula.contains("in")) {
-            return "in";
-        } else if (formula.contains("~~")) {
-            return "~~";
-        } else if (formula.contains("abs")) {
-            return "abs";
-        } else if (formula.contains("->")) {
-            return "->";
-        } else if (formula.contains("+-")) {
-            return "+-";
+    public String getUndelFunc(String formula) {
+        if (formula.contains("\\sum")) {
+            return "\\sum";
+        } else if (formula.contains("\\sqrt")) {
+            return "\\sqrt";
+        } else if (formula.contains("\\root")) {
+            return "\\root";
+        } else if (formula.contains("\\int")) {
+            return "\\int";
+        } else if (formula.contains("\\in")) {
+            return "\\in";
+        } else if (formula.contains("\\cdot")) {
+            return "\\cdot";
+        } else if (formula.contains("\\pm")) {
+            return "\\pm";
+        } else if (formula.contains("\\mp")) {
+            return "\\mp";
+        } else if (formula.contains("\\frac")) {
+            return "\\frac";
         }
         return "";
     }
 
-    private String getDelFunc(String formula) {
-        if (formula.contains("sin")) {
-            return "sin";
-        } else if (formula.contains("cos")) {
-            return "cos";
-        } else if (formula.contains("+-")) {
-            return "+-";
-        } else if (formula.contains("alpha")) {
-            return "alpha";
-        } else if (formula.contains("beta")) {
-            return "beta";
-        } else if (formula.contains("gamma")) {
-            return "gamma";
-        } else if (formula.contains("pi")) {
-            return "pi";
-        }else if (formula.contains("log")) {
-            return "log";
+    public String getDelFunc(String formula) {
+        if (formula.contains("\\sin")) {
+            return "\\sin";
+        } else if (formula.contains("\\cos")) {
+            return "\\cos";
+        } else if (formula.contains("\\alpha")) {
+            return "\\alpha";
+        } else if (formula.contains("\\beta")) {
+            return "\\beta";
+        } else if (formula.contains("\\gamma")) {
+            return "\\gamma";
+        } else if (formula.contains("\\pi")) {
+            return "\\pi";
+        }else if (formula.contains("\\log")) {
+            return "\\log";
         }
         return "";
     }
@@ -165,18 +182,18 @@ public class Utilities {
         return string;
     }
 
-    private String showUndelFunc(String formula) {
+    public String showUndelFunc(String formula) {
         for (int i = 0; i < arrayOfUndelFunc.size(); i++) {
-            formula = formula.replaceFirst("#", arrayOfUndelFunc.get(arrayOfUndelFunc.keyAt(i)));
+            formula = formula.replaceFirst("#", "\\" + arrayOfUndelFunc.get(arrayOfUndelFunc.keyAt(i)));
             arrayOfUndelFunc.delete(i);
         }
         return formula;
     }
 
-    private String hideUndelFunc(String formula) {
+    public String  hideUndelFunc(String formula) {
         String undelFunc = getUndelFunc(formula);
+        formula = formula.replaceFirst(Pattern.quote(undelFunc), "#");
         arrayOfUndelFunc.append(formula.indexOf(undelFunc), undelFunc);
-        formula = formula.replaceFirst(undelFunc, "#");
         return formula;
     }
 
@@ -191,7 +208,7 @@ public class Utilities {
 
     private String showDelFunc(String formula) {
         for (int i = 0; i < arrayOfDelFunc.size(); i++) {
-            formula = formula.replaceFirst("◇", arrayOfDelFunc.get(arrayOfDelFunc.keyAt(i)));
+            formula = formula.replaceFirst("◇", "\\" + arrayOfDelFunc.get(arrayOfDelFunc.keyAt(i)));
             arrayOfDelFunc.delete(i);
         }
         return formula;

@@ -156,6 +156,51 @@
     "engName": "Root 11",
     "rusName": "Корень 11"
   },
+  {
+    "idName": "formula.power_1",
+    "engName": "Power 1",
+    "rusName": "Степень 1"
+  },
+  {
+    "idName": "formula.power_2",
+    "engName": "Power 2",
+    "rusName": "Степень 2"
+  },
+  {
+    "idName": "formula.power_3",
+    "engName": "Power 3",
+    "rusName": "Степень 3"
+  },
+  {
+    "idName": "formula.power_4",
+    "engName": "Power 4",
+    "rusName": "Степень 4"
+  },
+  {
+    "idName": "formula.power_5",
+    "engName": "Power 5",
+    "rusName": "Степень 5"
+  },
+  {
+    "idName": "formula.power_6",
+    "engName": "Power 6",
+    "rusName": "Степень 6"
+  },
+  {
+    "idName": "formula.power_7",
+    "engName": "Power 7",
+    "rusName": "Степень 7"
+  },
+  {
+    "idName": "formula.power_8",
+    "engName": "Power 8",
+    "rusName": "Степень 8"
+  },
+  {
+    "idName": "formula.power_9",
+    "engName": "Power 9",
+    "rusName": "Степень 9"
+  },
 
   {
     "idName": "formula.triangle_area_height",

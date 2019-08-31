@@ -2,6 +2,7 @@ package com.zelyder.mathtest
 
 import android.app.Application
 
+
 class App : Application(){
 
     companion object {
@@ -13,6 +14,7 @@ class App : Application(){
         super.onCreate()
         graph = DaggerAppComponent.builder().build()
         graph.inject(this)
+
     }
 
 

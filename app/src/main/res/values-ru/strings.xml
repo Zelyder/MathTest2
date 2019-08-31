@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MathTest</string>
+    <string name="action_settings">Настройки</string>
+    <string name="correct_formula_dialog_ok_btn">ОК</string>
+    <string name="correct_formula_dialog_title">Правильная формула</string>
+    <string name="final_dialog_correct">Правильно</string>
+    <string name="final_dialog_exit">Выход</string>
+    <string name="final_dialog_success">Вы завершили тест</string>
+    <string name="final_dialog_wrong">Неправильно</string>
+    <string name="tab_text_1">Тест</string>
+    <string name="tab_text_2">Формулы</string>
+
+    <string name="list_lang_title">Языки</string>
+    <string name="list_lang_summary">Язык интерфейса</string>
+    <string-array name="settings_lang">
+        <item>Английский</item>
+        <item>Русский</item>
+    </string-array>
+    <string name="dest_settings_title">Настройки</string>
+    <string name="dest_home_title">MathTest</string>
+    <string name="dest_formulas_list_title">Формулы</string>
+    <string name="dest_subcategories_title">Подкатегории</string>
+    <string name="dest_test_title">Тест</string>
+</resources>

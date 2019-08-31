@@ -1,5 +1,6 @@
 package com.zelyder.mathtest
 
+import com.zelyder.mathtest.help.Utilities
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -11,7 +12,11 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun replace_isCorrect() {
+        val util = Utilities()
+        val result: String = util.checkBackslash("\$\$a^{-m} = \\frac{1}{a^m}\$\$")
+        val expected = "\$\$a^{-m} = #{1}{a^m}\$\$"
+        assertEquals(expected, result)
+
     }
 }

@@ -7,7 +7,7 @@
 
     <fragment
             android:name="com.zelyder.mathtest.ui.fragments.TabsFragment"
-            android:label="Home"
+            android:label="@string/dest_home_title"
             android:id="@+id/tabs_dest">
 
         <action
@@ -20,11 +20,11 @@
 
     <fragment android:id="@+id/test_dest"
               android:name="com.zelyder.mathtest.ui.fragments.TestFragment"
-              android:label="Test"
+              android:label="@string/dest_test_title"
               tools:layout="@layout/fragment_test"/>
     <fragment android:id="@+id/subcategories_dest"
               android:name="com.zelyder.mathtest.ui.fragments.SubcategoriesFragment"
-              android:label="Subcategories"
+              android:label="@string/dest_subcategories_title"
               tools:layout="@layout/fragment_subcategories">
 
         <action
@@ -45,7 +45,15 @@
     </fragment>
     <fragment android:id="@+id/formulasListFragment"
               android:name="com.zelyder.mathtest.ui.fragments.FormulasListFragment"
-              android:label="fragment_formulas_list" tools:layout="@layout/fragment_formulas_list"/>
+              android:label="@string/dest_formulas_list_title" tools:layout="@layout/fragment_formulas_list"/>
+    <fragment
+            android:id="@+id/settingsFragment"
+            android:name="com.zelyder.mathtest.ui.fragments.SettingsFragment"
+            android:label="@string/dest_settings_title" />
+    <action android:id="@+id/to_settings_action" app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
 
 
 </navigation>

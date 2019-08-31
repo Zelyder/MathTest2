@@ -9,4 +9,22 @@
     <string name="final_dialog_wrong">Wrong</string>
     <string name="final_dialog_success">You have completed the test</string>
     <string name="final_dialog_exit">Exit</string>
+
+    <string name="list_lang_title">Languages</string>
+    <string name="list_lang_summary">Interface language</string>
+    <string name="dest_home_title">MathTest</string>
+    <string name="dest_subcategories_title">Subcategories</string>
+    <string name="dest_test_title">Test</string>
+    <string name="dest_formulas_list_title">Formulas</string>
+    <string name="dest_settings_title">Settings</string>
+
+    <string-array name="settings_lang">
+        <item>English</item>
+        <item>Russian</item>
+    </string-array>
+    <string-array name="settings_lang_values">
+        <item>en</item>
+        <item>ru</item>
+    </string-array>
+
 </resources>

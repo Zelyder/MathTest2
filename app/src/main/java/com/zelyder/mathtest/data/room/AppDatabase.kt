@@ -1,6 +1,7 @@
 package com.zelyder.mathtest.data.room
 
 import android.content.Context
+import android.util.Log
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
@@ -8,6 +9,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
+import com.zelyder.mathtest.R
 import com.zelyder.mathtest.data.room.dao.CategoryDao
 import com.zelyder.mathtest.data.room.dao.FormulaDao
 import com.zelyder.mathtest.data.room.dao.LanguageDao
@@ -74,6 +76,12 @@ abstract class AppDatabase: RoomDatabase() {
                 JsonReader(inputStream.reader()).use { jsonReader ->
                     val categoryType = object : TypeToken<List<Category>>() {}.type
                     val categoryList: List<Category> = Gson().fromJson(jsonReader, categoryType)
+                    categoryList[0].img = R.drawable.ic_nav_algebra
+                    categoryList[1].img = R.drawable.ic_nav_geometry
+                    categoryList[2].img = R.drawable.ic_nav_trigonometry
+                    categoryList[3].img = R.drawable.ic_nav_analytic_geometry
+                    categoryList[4].img = R.drawable.ic_nav_derivative
+                    categoryList[5].img = R.drawable.ic_nav_integration
                     INSTANCE?.categoryDao()?.insertAll(categoryList)
                 }
             }

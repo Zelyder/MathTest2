@@ -3,6 +3,8 @@ package com.zelyder.mathtest.data.viewmodels
 import android.app.AlertDialog
 import android.app.Application
 import android.content.Context
+import android.content.SharedPreferences
+import android.preference.PreferenceManager
 import android.util.Log
 import android.view.LayoutInflater
 import android.widget.Toast
@@ -11,6 +13,7 @@ import androidx.lifecycle.Observer
 import com.zelyder.mathtest.data.room.AppDatabase
 import com.zelyder.mathtest.domain.models.FormulaModel
 import com.zelyder.mathtest.domain.repository.FormulaRepository
+import com.zelyder.mathtest.help.FormulaUtilities
 import com.zelyder.mathtest.help.Utilities
 import com.zelyder.mathtest.interfaces.DialogControl
 import com.zelyder.mathtest.interfaces.KeyboardOutput
@@ -25,6 +28,7 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
     private val _formulasList = MutableLiveData<ArrayList<FormulaModel>>()
 
     private val formulaRepository: FormulaRepository
+    private val pref: SharedPreferences
 
 
     val formulaText: LiveData<String> = _formulaText
@@ -44,17 +48,18 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
             AppDatabase.getDatabase(app.applicationContext, viewModelScope).formulaDao()
 
         formulaRepository = FormulaRepository(formulaDao)
+        pref = PreferenceManager.getDefaultSharedPreferences(app.applicationContext)
 
-        _formulaText.value = "``"
-        _keys.value = arrayOf("sin", "a", "+", "-", "b", "2", "3", "c", "L", "G")
+        _formulaText.value = ""
+        _keys.value = arrayOf()
     }
 
     override fun deleteChar() {
-        _formulaText.value = "`${Utilities().delCharQ(_formulaText.value)}`"
+        _formulaText.value = "$$${Utilities().delCharQRight(_formulaText.value)}$$"
     }
 
     override fun insertChar(char: String) {
-        _formulaText.value = "`${Utilities().addCharQ(_formulaText.value, char)}`"
+        _formulaText.value = "$$${Utilities().addCharQ(_formulaText.value, char)}$$"
     }
 
     override fun checkFormula() {
@@ -92,11 +97,16 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
 
     private fun setFormula(name: String, text: String) {
         _name.value = name
-        _formulaText.value = "`${Utilities().toUnknownRight(text)}`"
+        _formulaText.value = FormulaUtilities().toUnknownRight(text)
     }
 
     fun setFormulas(SubcategoryId: Int, lifecycleOwner: LifecycleOwner) {
-        formulaRepository.getFormulasEng(SubcategoryId).observe(lifecycleOwner, Observer {
+        val formulasDataList: LiveData<List<FormulaModel>> = when(pref.getString("pref_lang","en")!!){
+            "en" -> formulaRepository.getFormulasEng(SubcategoryId)
+            "ru" -> formulaRepository.getFormulasRus(SubcategoryId)
+            else -> formulaRepository.getFormulasEng(SubcategoryId)
+        }
+        formulasDataList.observe(lifecycleOwner, Observer {
             it?.let {
                 _formulasList.value = ArrayList(it)
                 countFormulas = it.size
@@ -122,7 +132,6 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
         if(!_formulasList.value.isNullOrEmpty()) {
             _formulasList.value?.removeAt(formulaId)
         }
-        Log.d("LOL", "len ${_formulasList.value.isNullOrEmpty()}")
         if(_formulasList.value.isNullOrEmpty()){
             dialogControl.createFinalDialog(correctAnswers, countFormulas - correctAnswers)
         }else {

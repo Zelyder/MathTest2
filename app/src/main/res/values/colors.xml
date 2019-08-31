@@ -8,6 +8,8 @@
     <color name="colorWrong">#F44336</color>
     <color name="colorPieText">#FF000000</color>
 
+    <color name="colorTabsText">#FFFFFF</color>
+
     <color name="colorBackgroundDay">#EEEEEE</color>
     <color name="colorCardBackgroundDay">#FFFFFF</color>
     <color name="colorTextDay">#000000</color>
