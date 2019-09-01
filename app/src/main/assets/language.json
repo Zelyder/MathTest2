@@ -201,6 +201,56 @@
     "engName": "Power 9",
     "rusName": "Степень 9"
   },
+  {
+    "idName": "formula.logarithm_1",
+    "engName": "Logarithm 1",
+    "rusName": "Логарифм 1"
+  },
+  {
+    "idName": "formula.logarithm_2",
+    "engName": "Logarithm 2",
+    "rusName": "Логарифм 2"
+  },
+  {
+    "idName": "formula.logarithm_3",
+    "engName": "Logarithm 3",
+    "rusName": "Логарифм 3"
+  },
+  {
+    "idName": "formula.logarithm_4",
+    "engName": "Logarithm 4",
+    "rusName": "Логарифм 4"
+  },
+  {
+    "idName": "formula.logarithm_5",
+    "engName": "Logarithm 5",
+    "rusName": "Логарифм 5"
+  },
+  {
+    "idName": "formula.logarithm_6",
+    "engName": "Logarithm 6",
+    "rusName": "Логарифм 6"
+  },
+  {
+    "idName": "formula.logarithm_7",
+    "engName": "Logarithm 7",
+    "rusName": "Логарифм 7"
+  },
+  {
+    "idName": "formula.logarithm_8",
+    "engName": "Logarithm 8",
+    "rusName": "Логарифм 8"
+  },
+  {
+    "idName": "formula.logarithm_9",
+    "engName": "Logarithm 9",
+    "rusName": "Логарифм 9"
+  },
+  {
+    "idName": "formula.logarithm_10",
+    "engName": "Logarithm 10",
+    "rusName": "Логарифм 10"
+  },
 
   {
     "idName": "formula.triangle_area_height",

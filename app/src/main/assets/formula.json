@@ -181,5 +181,96 @@
     "idName": "formula.power_9",
     "formula": "$$a^1 = a$$",
     "idImg": 0
+  },
+  {
+    "idFormula":26,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_1",
+    "formula": "$$\\log_a 1 = 0$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":27,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_2",
+    "formula": "$$\\log_a a = 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":28,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_3",
+    "formula": "$$\\log_a \\frac{x}{y} =  \\log_a x + \\log_a y$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":29,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_4",
+    "formula": "$$\\log_a (x^n) = n \\log_a x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":30,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_5",
+    "formula": "$$\\log_a \\sqrt[n]{x} = \\frac{1}{n} \\log_a x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":31,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_7",
+    "formula": "$$\\log_a c = \\frac{1}{\\log_c a}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":32,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_8",
+    "formula": "$$\\log_a x = \\frac{\\log_c x}{\\log_c a}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":33,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_9",
+    "formula": "$$a^{\\log_a x} = x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":34,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_10",
+    "formula": "$$\\log_e x = \\ln x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":35,
+    "idSubcategory": 5,
+    "idName": "formula.useful_quadratic_equation",
+    "formula": "$$x_{1,2} = \\frac{-b \\pm \\sqrt{b^2 - 4 a c}}{2 a}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":36,
+    "idSubcategory": 5,
+    "idName": "formula.useful_discriminent",
+    "formula": "$$D = b^2 - 4 a c$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":37,
+    "idSubcategory": 5,
+    "idName": "formula.useful_",
+    "formula": "$$D = b^2 - 4 a c$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":38,
+    "idSubcategory": 6,
+    "idName": "formula.useful_",
+    "formula": "$$D = b^2 - 4 a c$$",
+    "idImg": 0
   }
 ]

@@ -7,9 +7,14 @@ import android.content.SharedPreferences
 import android.preference.PreferenceManager
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.lifecycle.*
 import androidx.lifecycle.Observer
+import com.zelyder.mathtest.R
 import com.zelyder.mathtest.data.room.AppDatabase
 import com.zelyder.mathtest.domain.models.FormulaModel
 import com.zelyder.mathtest.domain.repository.FormulaRepository
@@ -37,11 +42,17 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
     val keyboardOutput: KeyboardOutput = this
     lateinit var dialogControl: DialogControl
 
-    var formulaId: Int = 0
-    var startCountTry: Int = 3
-    var countTry: Int = startCountTry
-    var correctAnswers: Int = 0
-    var countFormulas: Int = 0
+    private var formulaId: Int = 0
+    private var startCountTry: Int = 3
+    private var countTry: Int = startCountTry
+    private var correctAnswers: Int = 0
+    private var countFormulas: Int = 0
+
+    private val animImgIn: Animation
+    private  val animImgOut: Animation
+    private  var isImgBig = false
+
+
 
     init {
         val formulaDao =
@@ -52,14 +63,31 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
 
         _formulaText.value = ""
         _keys.value = arrayOf()
+
+        animImgIn = AnimationUtils.loadAnimation(app.applicationContext, R.anim.scale_in_img)
+        animImgOut = AnimationUtils.loadAnimation(app.applicationContext, R.anim.scale_out_img)
     }
 
     override fun deleteChar() {
-        _formulaText.value = "$$${Utilities().delCharQRight(_formulaText.value)}$$"
+        _formulaText.value = "$$${FormulaUtilities().delCharQRight(_formulaText.value!!)}$$"
     }
 
     override fun insertChar(char: String) {
-        _formulaText.value = "$$${Utilities().addCharQ(_formulaText.value, char)}$$"
+        _formulaText.value = "$$${FormulaUtilities().addCharQ(_formulaText.value!!, char)}$$"
+    }
+
+    fun changeImgState(view: View){
+        isImgBig = if(!isImgBig){
+            view.startAnimation(animImgIn)
+//            view.scaleX = 2.0f
+//            view.scaleY = 2.0f
+            true
+        }else{
+            view.startAnimation(animImgOut)
+//            view.scaleX = 1.0f
+//            view.scaleY = 1.0f
+            false
+        }
     }
 
     override fun checkFormula() {

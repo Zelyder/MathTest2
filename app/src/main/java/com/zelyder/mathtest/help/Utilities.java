@@ -53,7 +53,6 @@ public class Utilities {
 
     public String clearString(String formula) {
         formula = formula.replace("$$", "");
-//        formula = formula.replace("\\", "");
         return formula;
     }
 
