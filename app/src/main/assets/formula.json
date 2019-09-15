@@ -186,63 +186,63 @@
     "idFormula":26,
     "idSubcategory": 4,
     "idName": "formula.logarithm_1",
-    "formula": "$$\\log_a 1 = 0$$",
+    "formula": "$$\\log_{a} 1 = 0$$",
     "idImg": 0
   },
   {
     "idFormula":27,
     "idSubcategory": 4,
     "idName": "formula.logarithm_2",
-    "formula": "$$\\log_a a = 1$$",
+    "formula": "$$\\log_{a} a = 1$$",
     "idImg": 0
   },
   {
     "idFormula":28,
     "idSubcategory": 4,
     "idName": "formula.logarithm_3",
-    "formula": "$$\\log_a \\frac{x}{y} =  \\log_a x + \\log_a y$$",
+    "formula": "$$\\log_{a} \\frac{x}{y} =  \\log_{a} x + \\log_{a} y$$",
     "idImg": 0
   },
   {
     "idFormula":29,
     "idSubcategory": 4,
     "idName": "formula.logarithm_4",
-    "formula": "$$\\log_a (x^n) = n \\log_a x$$",
+    "formula": "$$\\log_{a} (x^n) = n \\log_{a} x$$",
     "idImg": 0
   },
   {
     "idFormula":30,
     "idSubcategory": 4,
     "idName": "formula.logarithm_5",
-    "formula": "$$\\log_a \\sqrt[n]{x} = \\frac{1}{n} \\log_a x$$",
+    "formula": "$$\\log_{a} \\sqrt[n]{x} = \\frac{1}{n} \\log_{a} x$$",
     "idImg": 0
   },
   {
     "idFormula":31,
     "idSubcategory": 4,
     "idName": "formula.logarithm_7",
-    "formula": "$$\\log_a c = \\frac{1}{\\log_c a}$$",
+    "formula": "$$\\log_{a} c = \\frac{1}{\\log_{c} a}$$",
     "idImg": 0
   },
   {
     "idFormula":32,
     "idSubcategory": 4,
     "idName": "formula.logarithm_8",
-    "formula": "$$\\log_a x = \\frac{\\log_c x}{\\log_c a}$$",
+    "formula": "$$\\log_{a+g} (x + d) = \\frac{\\log_{c} x}{\\log_{c} a}$$",
     "idImg": 0
   },
   {
     "idFormula":33,
     "idSubcategory": 4,
     "idName": "formula.logarithm_9",
-    "formula": "$$a^{\\log_a x} = x$$",
+    "formula": "$$a^{\\log_{a} x} = x$$",
     "idImg": 0
   },
   {
     "idFormula":34,
     "idSubcategory": 4,
     "idName": "formula.logarithm_10",
-    "formula": "$$\\log_e x = \\ln x$$",
+    "formula": "$$\\log_{e} x = \\ln x$$",
     "idImg": 0
   },
   {
@@ -261,16 +261,16 @@
   },
   {
     "idFormula":37,
-    "idSubcategory": 5,
-    "idName": "formula.useful_",
-    "formula": "$$D = b^2 - 4 a c$$",
-    "idImg": 0
+    "idSubcategory": 8,
+    "idName": "formula.triangle_area_height",
+    "formula": "$$S = \\frac{b h}{2}$$",
+    "idImg": 2131230852
   },
   {
     "idFormula":38,
-    "idSubcategory": 6,
-    "idName": "formula.useful_",
-    "formula": "$$D = b^2 - 4 a c$$",
-    "idImg": 0
+    "idSubcategory": 8,
+    "idName": "formula.triangle_area_angle",
+    "formula": "$$S = \\frac{1}{2} a c \\sin \\alpha$$",
+    "idImg": 2131230851
   }
 ]

@@ -72,16 +72,20 @@ abstract class AppDatabase: RoomDatabase() {
                 }
             }
 
+            Log.d("LOL", "img tri h ${R.drawable.ic_triangle_height}")
+            Log.d("LOL", "img tri angel ${R.drawable.ic_triangle_angle}")
+
             context.assets.open(CATETGORY_DATA_FILENAME).use { inputStream ->
                 JsonReader(inputStream.reader()).use { jsonReader ->
                     val categoryType = object : TypeToken<List<Category>>() {}.type
                     val categoryList: List<Category> = Gson().fromJson(jsonReader, categoryType)
                     categoryList[0].img = R.drawable.ic_nav_algebra
                     categoryList[1].img = R.drawable.ic_nav_geometry
-                    categoryList[2].img = R.drawable.ic_nav_trigonometry
-                    categoryList[3].img = R.drawable.ic_nav_analytic_geometry
-                    categoryList[4].img = R.drawable.ic_nav_derivative
-                    categoryList[5].img = R.drawable.ic_nav_integration
+                    categoryList[2].img = R.drawable.ic_pyramid
+                    categoryList[3].img = R.drawable.ic_nav_trigonometry
+                    categoryList[4].img = R.drawable.ic_nav_analytic_geometry
+                    categoryList[5].img = R.drawable.ic_nav_derivative
+                    categoryList[6].img = R.drawable.ic_nav_integration
                     INSTANCE?.categoryDao()?.insertAll(categoryList)
                 }
             }

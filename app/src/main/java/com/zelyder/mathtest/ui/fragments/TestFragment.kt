@@ -3,10 +3,13 @@ package com.zelyder.mathtest.ui.fragments
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import androidx.constraintlayout.widget.ConstraintSet
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
@@ -27,6 +30,7 @@ import com.zelyder.mathtest.interfaces.DialogControl
 import kotlinx.android.synthetic.main.dialog_correct_formula.view.*
 import kotlinx.android.synthetic.main.dialog_final.view.*
 import kotlinx.android.synthetic.main.fragment_test.*
+import kotlinx.android.synthetic.main.fragment_test.view.*
 
 
 class TestFragment : Fragment(), DialogControl {
@@ -36,6 +40,9 @@ class TestFragment : Fragment(), DialogControl {
     }
 
     private var scale = 0f
+    private  var isImgBig = false
+    private val state1 = ConstraintSet()
+    private val state2 = ConstraintSet()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,6 +59,9 @@ class TestFragment : Fragment(), DialogControl {
 
         scale = resources.configuration.fontScale
 
+        state1.clone(context, R.layout.fragment_test)
+        state2.clone(context, R.layout.fragment_test_big_img)
+
         return binding.root
     }
 
@@ -59,6 +69,15 @@ class TestFragment : Fragment(), DialogControl {
         super.onViewCreated(view, savedInstanceState)
 
         activity?.findViewById<Button>(R.id.button)?.visibility = View.GONE
+
+
+
+        activity?.findViewById<ImageView>(R.id.imgTest)?.setOnClickListener {
+            TransitionManager.beginDelayedTransition(consLayoutTest)
+            val constraint = if (isImgBig) state1 else state2
+            constraint.applyTo(consLayoutTest)
+            isImgBig = !isImgBig
+        }
 
         testViewModel.setKeys(
             FormulaUtilities().getKeys(

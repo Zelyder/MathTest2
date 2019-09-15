@@ -6,26 +6,31 @@
   },
   {
     "idCategory":2,
-    "idName": "category.geometry",
+    "idName": "category.planimetry",
     "img":2131165295
   },
   {
     "idCategory":3,
-    "idName": "category.trigonometry",
+    "idName": "category.stereometry",
     "img":2131165300
   },
   {
     "idCategory":4,
+    "idName": "category.trigonometry",
+    "img":2131165300
+  },
+  {
+    "idCategory":5,
     "idName": "category.analytic_geometry",
     "img":2131165293
   },
   {
-    "idCategory":5,
+    "idCategory":6,
     "idName": "category.derivative",
     "img":2131165294
   },
   {
-    "idCategory":6,
+    "idCategory":7,
     "idName": "category.integration",
     "img":2131165296
   }

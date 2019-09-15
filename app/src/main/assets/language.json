@@ -5,9 +5,14 @@
     "rusName": "Алгебра"
   },
   {
-    "idName": "category.geometry",
-    "engName": "Geometry",
-    "rusName": "Геометрия"
+    "idName": "category.planimetry",
+    "engName": "Planimetry",
+    "rusName": "Планиметрия"
+  },
+  {
+    "idName": "category.stereometry",
+    "engName": "Stereometry",
+    "rusName": "Стериометрия"
   },
   {
     "idName": "category.trigonometry",
@@ -64,6 +69,11 @@
     "idName": "subcategory.binomial_theorem",
     "engName": "Binomial theorem",
     "rusName": "Бином Ньютона"
+  },
+  {
+    "idName": "subcategory.triangle",
+    "engName": "Triangle",
+    "rusName": "Треугольник"
   },
   {
     "idName": "subcategory.cone",
@@ -253,8 +263,24 @@
   },
 
   {
+    "idName": "formula.useful_quadratic_equation",
+    "engName": "quadratic equation",
+    "rusName": "Квадратное уравниеие"
+  },
+  {
+    "idName": "formula.useful_discriminent",
+    "engName": "Discriminent",
+    "rusName": "Дискриминант"
+  },
+
+  {
     "idName": "formula.triangle_area_height",
     "engName": "triangle area through height",
     "rusName": "Площадь треугольника через высоту"
+  },
+  {
+    "idName": "formula.triangle_area_angle",
+    "engName": "triangle area through angle",
+    "rusName": "Площадь треугольника через угол"
   }
 ]

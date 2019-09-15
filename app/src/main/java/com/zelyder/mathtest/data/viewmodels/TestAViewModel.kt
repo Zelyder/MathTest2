@@ -5,6 +5,7 @@ import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
+import android.transition.TransitionManager
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,8 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintSet
 import androidx.lifecycle.*
 import androidx.lifecycle.Observer
 import com.zelyder.mathtest.R
@@ -22,6 +25,7 @@ import com.zelyder.mathtest.help.FormulaUtilities
 import com.zelyder.mathtest.help.Utilities
 import com.zelyder.mathtest.interfaces.DialogControl
 import com.zelyder.mathtest.interfaces.KeyboardOutput
+import kotlinx.android.synthetic.main.fragment_test.view.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -31,6 +35,8 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
     private val _keys = MutableLiveData<Array<String>>()
     private val _name = MutableLiveData<String>()
     private val _formulasList = MutableLiveData<ArrayList<FormulaModel>>()
+    private val _imgVisibility = MutableLiveData<Int>()
+    private val _img = MutableLiveData<Int>()
 
     private val formulaRepository: FormulaRepository
     private val pref: SharedPreferences
@@ -40,6 +46,8 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
     val keys: LiveData<Array<String>> = _keys
     val name: LiveData<String> = _name
     val keyboardOutput: KeyboardOutput = this
+    val imgVisibility: LiveData<Int> = _imgVisibility
+    val img: LiveData<Int> = _img
     lateinit var dialogControl: DialogControl
 
     private var formulaId: Int = 0
@@ -47,10 +55,6 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
     private var countTry: Int = startCountTry
     private var correctAnswers: Int = 0
     private var countFormulas: Int = 0
-
-    private val animImgIn: Animation
-    private  val animImgOut: Animation
-    private  var isImgBig = false
 
 
 
@@ -64,8 +68,10 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
         _formulaText.value = ""
         _keys.value = arrayOf()
 
-        animImgIn = AnimationUtils.loadAnimation(app.applicationContext, R.anim.scale_in_img)
-        animImgOut = AnimationUtils.loadAnimation(app.applicationContext, R.anim.scale_out_img)
+        _imgVisibility.value = View.GONE
+
+
+
     }
 
     override fun deleteChar() {
@@ -76,23 +82,12 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
         _formulaText.value = "$$${FormulaUtilities().addCharQ(_formulaText.value!!, char)}$$"
     }
 
-    fun changeImgState(view: View){
-        isImgBig = if(!isImgBig){
-            view.startAnimation(animImgIn)
-//            view.scaleX = 2.0f
-//            view.scaleY = 2.0f
-            true
-        }else{
-            view.startAnimation(animImgOut)
-//            view.scaleX = 1.0f
-//            view.scaleY = 1.0f
-            false
-        }
-    }
 
     override fun checkFormula() {
         if(_formulaText.value?.isNotEmpty()!!) {
-            if (formulaText.value?.equals(_formulasList.value?.get(formulaId)?.formula)!!) {
+            if (FormulaUtilities().equals(formulaText.value.toString(),
+                    _formulasList.value?.get(formulaId)?.formula.toString()
+                )) {
                 Toast.makeText(getApplication(), "Правильно", Toast.LENGTH_SHORT).show()
                 if (countTry > 0) {
                     correctAnswers++
@@ -151,6 +146,11 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
                 formulaId = Random().nextInt(it.size)
                 val formula = it[formulaId]
                 setFormula(formula.name, formula.formula)
+                Log.d("LOL", "${it[formulaId].img}")
+                if(formula.img != 0){
+                    _imgVisibility.value = View.VISIBLE
+                    _img.value = formula.img
+                }
             }
         }
         countTry = startCountTry

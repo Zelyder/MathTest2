@@ -1,5 +1,6 @@
 package com.zelyder.mathtest
 
+import com.zelyder.mathtest.help.FormulaUtilities
 import com.zelyder.mathtest.help.Utilities
 import org.junit.Test
 
@@ -12,11 +13,25 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun replace_isCorrect() {
-        val util = Utilities()
-        val result: String = util.checkBackslash("\$\$a^{-m} = \\frac{1}{a^m}\$\$")
-        val expected = "\$\$a^{-m} = #{1}{a^m}\$\$"
+    fun parseFunc_isCorrect() {
+        val util = FormulaUtilities()
+        val result: String = util.parseFunc("\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = \\sqrt[n \\cdot m]{a^m b^n}")
+        val expected = "[n]/{a} * [m]/{b} = [n * m]/{a^m b^n}"
         assertEquals(expected, result)
-
+    }
+    @Test
+    fun replaceBraces_isCorrect(){
+        val util = FormulaUtilities()
+        val result: String = util.replaceBraces("[n]/{a} * [m]/{b} = [n * m]/{a^m b^n}")
+        val expected = "(n)/(a) * (m)/(b) = (n * m)/(a^m b^n)"
+        assertEquals(expected, result)
+    }
+    @Test
+    fun equals_isCorrect(){
+        val util = FormulaUtilities()
+        val result = util.equals("\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = \\sqrt[n \\cdot m]{b^n a^m}",
+            "\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = \\sqrt[n \\cdot m]{a^m b^n}")
+        val expected = true
+        assertEquals(expected, result)
     }
 }
