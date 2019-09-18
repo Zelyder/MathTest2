@@ -90,7 +90,6 @@ class TestFragment : Fragment(), DialogControl {
 
         testViewModel.setFormulas(arguments?.getInt(ARG_SUBCATEGORY_ID) ?: 1, this)
 
-
     }
 
     override fun createCorrectDialog(text: String) {

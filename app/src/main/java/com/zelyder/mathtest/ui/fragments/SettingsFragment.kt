@@ -27,14 +27,19 @@ class SettingsFragment : PreferenceFragmentCompat() {
         activity?.findViewById<Button>(R.id.button)?.visibility = View.GONE
 
         val listLang: Preference? =  findPreference("pref_lang")
+        val cbStyle: Preference? =  findPreference("cb_pref_dark_style")
 
         listLang?.setOnPreferenceChangeListener {_,_ ->
             restartApp()
             true
         }
+        cbStyle?.setOnPreferenceChangeListener {_,_ ->
+            restartApp()
+            true
+        }
     }
 
-    internal fun restartApp() {
+    private fun restartApp() {
         val intent = Intent(activity, MainActivity::class.java)
         startActivity(intent)
         activity?.finish()

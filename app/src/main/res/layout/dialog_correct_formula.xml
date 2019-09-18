@@ -15,13 +15,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
-            <io.github.kexanie.library.MathView
+            <com.zelyder.mathtest.help.MyMathView
                     android:id="@+id/mvDialog"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:engine="KaTeX">
 
-            </io.github.kexanie.library.MathView>
+            </com.zelyder.mathtest.help.MyMathView>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

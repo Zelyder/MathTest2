@@ -3,7 +3,6 @@ package com.zelyder.mathtest.help
 import android.util.Log
 import android.util.SparseArray
 import androidx.core.util.forEach
-import io.github.kexanie.library.MathView
 import java.util.HashMap
 import java.util.regex.Pattern
 
@@ -84,6 +83,7 @@ class FormulaUtilities {
                 "#",
                 value
             )
+            tempFormula = tempFormula.replace("♪", "")
         }
         arrayOfUndelFunc.clear()
         return tempFormula
@@ -414,7 +414,7 @@ class FormulaUtilities {
         outStr = outStr.replace("}",")")
         outStr = outStr.replace(" ","")
         return outStr
-        //what?
+
     }
 
 
@@ -486,14 +486,9 @@ private fun calculate(map: Map<String, Int>, string: String): Float {
 }
 
 */
-fun MathView.setupMathView() {
-    /*this.settings.defaultFontSize = (22 * resources.configuration.fontScale).toInt()
-    this.isLongClickable = true
-    this.setOnLongClickListener { true }
-    this.isLongClickable = false
-    this.isClickable = true
-    this.setOnClickListener { true }
-    this.isClickable = false
-     */
+
+fun MyMathView.setupMathView() {
+    this.settings.defaultFontSize = (26 * resources.configuration.fontScale).toInt()
+
 }
 

@@ -17,6 +17,8 @@
     <string name="dest_test_title">Test</string>
     <string name="dest_formulas_list_title">Formulas</string>
     <string name="dest_settings_title">Settings</string>
+    <string name="pref_cb_dark_style">Dark theme</string>
+    <string name="pref_cb_dark_style_summary">The application is in dark colors</string>
 
     <string-array name="settings_lang">
         <item>English</item>

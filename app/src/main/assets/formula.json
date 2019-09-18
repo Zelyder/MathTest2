@@ -270,7 +270,7 @@
     "idFormula":38,
     "idSubcategory": 8,
     "idName": "formula.triangle_area_angle",
-    "formula": "$$S = \\frac{1}{2} a c \\sin \\alpha$$",
+    "formula": "$$S = \\frac{1}{2} a b \\sin \\alpha$$",
     "idImg": 2131230851
   }
 ]

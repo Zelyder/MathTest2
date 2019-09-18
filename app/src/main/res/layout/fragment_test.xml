@@ -10,6 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".ui.activities.TestActivity"
+            android:background="?attr/backgroundColor"
             android:id="@+id/consLayoutTest">
 
         <ImageView
@@ -30,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView"
                 android:textSize="18sp"
-                android:textColor="@color/colorTextDay"
+                android:textColor="?attr/textColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
@@ -52,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                <io.github.kexanie.library.MathView
+                <com.zelyder.mathtest.help.MyMathView
                         android:id="@+id/math_view_item"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

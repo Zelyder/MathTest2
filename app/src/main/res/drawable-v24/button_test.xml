@@ -4,7 +4,7 @@
 
     <item android:state_pressed="false" >
         <shape>
-            <solid android:color="#FFFFFF"/>
+            <solid android:color="?attr/buttonColor"/>
 
             <padding
                 android:top="10dp"

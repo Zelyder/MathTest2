@@ -36,7 +36,7 @@ class FormulasHolder(itemView: View): RecyclerView.ViewHolder(itemView){
     fun bind(formula: FormulaModel) = with(itemView) {
         tvFormulaItem.text = formula.name
         mvFormulaItem.text = formula.formula
-        mvFormulaItem.setupMathView()
+       // mvFormulaItem.setupMathView()
         if(formula.img != 0){
             imgFormulaItem.setImageResource(formula.img)
             imgFormulaItem.visibility = View.VISIBLE

@@ -7,4 +7,10 @@
             android:summary="@string/list_lang_summary"
             android:title="@string/list_lang_title">
     </ListPreference>
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="cb_pref_dark_style"
+            android:summary="@string/pref_cb_dark_style_summary"
+            android:textColor="?attr/textColor"
+            android:title="@string/pref_cb_dark_style" />
 </PreferenceScreen>

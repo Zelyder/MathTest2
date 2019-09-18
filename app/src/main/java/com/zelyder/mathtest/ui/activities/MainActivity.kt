@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
         val preferences = PreferenceManager.getDefaultSharedPreferences(this.applicationContext)
 
         setAppLocale(preferences.getString("pref_lang", "en") ?: "en")
+        if (preferences.getBoolean("cb_pref_dark_style", false)) {
+            setTheme(R.style.darkTheme_NoActionBar)
+        } else {
+            setTheme(R.style.AppTheme_NoActionBar)
+        }
 
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 

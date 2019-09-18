@@ -5,6 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        app:cardBackgroundColor="?attr/cardBackground"
         app:contentPadding="16dp">
     <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -32,7 +33,7 @@
                 android:visibility="gone" />
 
 
-        <io.github.kexanie.library.MathView
+        <com.zelyder.mathtest.help.MyMathView
                         android:id="@+id/mvFormulaItem"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

@@ -4,9 +4,12 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="colorCorrect">#4CAF50</color>
-    <color name="colorWrong">#F44336</color>
+    <color name="colorCorrect">#61d800</color>
+    <color name="colorWrong">#B00020</color>
     <color name="colorPieText">#FF000000</color>
+
+
+    <color name="colorImgLine">#FF000000</color>
 
     <color name="colorTabsText">#FFFFFF</color>
 

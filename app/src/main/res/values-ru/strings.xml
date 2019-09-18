@@ -22,4 +22,6 @@
     <string name="dest_formulas_list_title">Формулы</string>
     <string name="dest_subcategories_title">Подкатегории</string>
     <string name="dest_test_title">Тест</string>
+    <string name="pref_cb_dark_style_summary">Приложение в тёмных тонах</string>
+    <string name="pref_cb_dark_style">Тёмная тема</string>
 </resources>

@@ -72,8 +72,8 @@ abstract class AppDatabase: RoomDatabase() {
                 }
             }
 
-            Log.d("LOL", "img tri h ${R.drawable.ic_triangle_height}")
-            Log.d("LOL", "img tri angel ${R.drawable.ic_triangle_angle}")
+//            Log.d("LOL", "img tri h ${R.drawable.ic_triangle_height}")
+//                Log.d("LOL", "img tri angel ${R.drawable.ic_triangle_angle}")
 
             context.assets.open(CATETGORY_DATA_FILENAME).use { inputStream ->
                 JsonReader(inputStream.reader()).use { jsonReader ->
