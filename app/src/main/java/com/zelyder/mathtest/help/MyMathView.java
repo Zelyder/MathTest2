@@ -21,6 +21,7 @@ public class MyMathView extends WebView {
     private String mText;
     private String mConfig;
     private int mEngine;
+    private boolean mDarkTextColor;
 
     public MyMathView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -37,7 +38,7 @@ public class MyMathView extends WebView {
         );
 
         try { // the order of execution of setEngine() and setText() matters
-            //setDarkTextColor(typeArray.getBoolean(R.styleable.MathView_darkTextColor, true));
+//            setDarkTextColor(mTypeArray.getBoolean(R.styleable.MathView_, true));
             setEngine(mTypeArray.getInteger(R.styleable.MathView_engine, 0));
             setText(mTypeArray.getString(R.styleable.MathView_text));
         } finally {
@@ -55,7 +56,7 @@ public class MyMathView extends WebView {
     }
 
     private Chunk getChunk() {
-        //String TEMPLATE_KATEX = (mDarkTextColor ? "" : "light") + "katex";
+//        String TEMPLATE_KATEX = (mDarkTextColor ? "" : "light") + "katex";
         String TEMPLATE_KATEX = "katex";
         String TEMPLATE_MATHJAX = "mathjax";
         String template = TEMPLATE_KATEX;
@@ -69,7 +70,7 @@ public class MyMathView extends WebView {
     }
 
     public void setDarkTextColor(boolean darkTextColor) {
-       // this.mDarkTextColor = darkTextColor;
+        this.mDarkTextColor = darkTextColor;
     }
 
     public void setText(String text) {

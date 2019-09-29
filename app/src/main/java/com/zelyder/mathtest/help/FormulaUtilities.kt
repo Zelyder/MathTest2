@@ -489,6 +489,14 @@ private fun calculate(map: Map<String, Int>, string: String): Float {
 
 fun MyMathView.setupMathView() {
     this.settings.defaultFontSize = (26 * resources.configuration.fontScale).toInt()
+    val text = ("<html><head>"
+            + "<style type=\"text/css\">body{color: #fff; background-color: #000;}"
+            + "</style></head>"
+            + "<body>"
+            + "Test"
+            + "</body></html>")
+
+    this.loadData(text, "text/html", "utf-8")
 
 }
 
