@@ -29,15 +29,86 @@
     "idCategory": 1,
     "idName": "subcategory.complex_numbers"
   },
-  {
-    "idSubcategory":7,
-    "idCategory": 1,
-    "idName": "subcategory.binomial_theorem"
-  },
+
 
   {
     "idSubcategory":8,
     "idCategory": 2,
     "idName": "subcategory.triangle"
+  },
+  {
+    "idSubcategory":9,
+    "idCategory": 2,
+    "idName": "subcategory.right_triangle"
+  },
+  {
+    "idSubcategory":10,
+    "idCategory": 2,
+    "idName": "subcategory.equilateral_triangle"
+  },
+  {
+    "idSubcategory":11,
+    "idCategory": 2,
+    "idName": "subcategory.parallelogram"
+  },
+  {
+    "idSubcategory":12,
+    "idCategory": 2,
+    "idName": "subcategory.rectangle"
+  },
+  {
+    "idSubcategory":13,
+    "idCategory": 2,
+    "idName": "subcategory.square"
+  },
+  {
+    "idSubcategory":14,
+    "idCategory": 2,
+    "idName": "subcategory.rhombus"
+  },
+  {
+    "idSubcategory":15,
+    "idCategory": 2,
+    "idName": "subcategory.trapezoid"
+  },
+  {
+    "idSubcategory":16,
+    "idCategory": 2,
+    "idName": "subcategory.quadrilateral"
+  },
+  {
+    "idSubcategory":17,
+    "idCategory": 2,
+    "idName": "subcategory.circle"
+  },
+  {
+    "idSubcategory":18,
+    "idCategory": 3,
+    "idName": "subcategory.cube"
+  },
+  {
+    "idSubcategory":18,
+    "idCategory": 3,
+    "idName": "subcategory.parallelepiped"
+  },
+  {
+    "idSubcategory":18,
+    "idCategory": 3,
+    "idName": "subcategory.cylinder"
+  },
+  {
+    "idSubcategory":18,
+    "idCategory": 3,
+    "idName": "subcategory.cone"
+  },
+  {
+    "idSubcategory":18,
+    "idCategory": 3,
+    "idName": "subcategory.pyramid"
+  },
+  {
+    "idSubcategory":18,
+    "idCategory": 3,
+    "idName": "subcategory.sphere"
   }
 ]

@@ -137,7 +137,6 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
                 getRandomFormula()
             }
         })
-
     }
 
     private fun getRandomFormula() {

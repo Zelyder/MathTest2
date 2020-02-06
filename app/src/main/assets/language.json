@@ -76,6 +76,51 @@
     "rusName": "Треугольник"
   },
   {
+    "idName": "subcategory.right_triangle",
+    "engName": "Right triangle",
+    "rusName": "Прямоугольный треугольник"
+  },
+  {
+    "idName": "subcategory.equilateral_triangle",
+    "engName": "Equilateral triangle",
+    "rusName": "Правильный треугольник"
+  },
+  {
+    "idName": "subcategory.parallelogram",
+    "engName": "Parallelogram",
+    "rusName": "Параллелограмм"
+  },
+  {
+    "idName": "subcategory.rectangle",
+    "engName": "Rectangle",
+    "rusName": "Прямоугольник"
+  },
+  {
+    "idName": "subcategory.square",
+    "engName": "Square",
+    "rusName": "Квадрат"
+  },
+  {
+    "idName": "subcategory.rhombus",
+    "engName": "Rhombus",
+    "rusName": "Ромб"
+  },
+  {
+    "idName": "subcategory.trapezoid",
+    "engName": "Trapezoid",
+    "rusName": "Трапеция"
+  },
+  {
+    "idName": "subcategory.quadrilateral",
+    "engName": "Quadrilateral",
+    "rusName": "Четырёхугольник"
+  },
+  {
+    "idName": "subcategory.circle",
+    "engName": "Circle",
+    "rusName": "Окружность"
+  },
+  {
     "idName": "subcategory.cone",
     "engName": "Cone",
     "rusName": "Конус"
@@ -272,6 +317,46 @@
     "engName": "Discriminent",
     "rusName": "Дискриминант"
   },
+  {
+    "idName": "formula.complex_imaginary_unit",
+    "engName": "Imaginary unit",
+    "rusName": "Мнимая единица"
+  },
+  {
+    "idName": "formula.complex_imaginary_unit_square",
+    "engName": "Imaginary unit square",
+    "rusName": "Квадрат мнимой единицы"
+  },
+  {
+    "idName": "formula.complex_complex_number",
+    "engName": "Complex number",
+    "rusName": "Комплексное число"
+  },
+  {
+    "idName": "formula.complex_sum_of_complex_numbers",
+    "engName": "Sum of complex numbers",
+    "rusName": "Сумма комплексных чисел"
+  },
+  {
+    "idName": "formula.complex_subtraction_of_complex_numbers",
+    "engName": "Subtraction of complex numbers",
+    "rusName": "Вычитание комплексных чисел"
+  },
+  {
+    "idName": "formula.complex_complex_number_product",
+    "engName": "Complex number product",
+    "rusName": "Произведение комплексных чисел"
+  },
+  {
+    "idName": "formula.complex_complex_number_product",
+    "engName": "Complex number product",
+    "rusName": "Произведение комплексных чисел"
+  },
+  {
+    "idName": "formula.complex_complex_number_module",
+    "engName": "Complex number module",
+    "rusName": "Модуль комплексного числа"
+  },
 
   {
     "idName": "formula.triangle_area_height",
@@ -280,7 +365,327 @@
   },
   {
     "idName": "formula.triangle_area_angle",
-    "engName": "triangle area through angle",
+    "engName": "area of a triangle through an angle",
     "rusName": "Площадь треугольника через угол"
+  },
+  {
+    "idName": "formula.triangle_area_geron",
+    "engName": "Heron's formula",
+    "rusName": "Формула Герона"
+  },
+  {
+    "idName": "formula.triangle_semiperimeter",
+    "engName": "Semiperimeter",
+    "rusName": "Полупериметр"
+  },
+  {
+    "idName": "formula.triangle_area_radius",
+    "engName": "The area of the triangle through the radius",
+    "rusName": "Площадь треугольника через радиус "
+  },
+  {
+    "idName": "formula.triangle_median_length",
+    "engName": "Median length",
+    "rusName": "Длина медианы "
+  },
+  {
+    "idName": "formula.triangle_bisector_length_1",
+    "engName": "Bisector length 1",
+    "rusName": "Длина биссектрисы 1"
+  },
+  {
+    "idName": "formula.triangle_bisector_length_2",
+    "engName": "Bisector length 2",
+    "rusName": "Длина биссектрисы 2"
+  },
+  {
+    "idName": "formula.triangle_height",
+    "engName": "Height",
+    "rusName": "Высота"
+  },
+  {
+    "idName": "formula.triangle_exterior_angle",
+    "engName": "Exterior angle",
+    "rusName": "Внешний угол"
+  },
+  {
+    "idName": "formula.triangle_middle_line",
+    "engName": "Middle line",
+    "rusName": "Средняя линия"
+  },
+  {
+    "idName": "formula.triangle_law_cosines",
+    "engName": "Law of cosines",
+    "rusName": "Теорема косинусов"
+  },
+  {
+    "idName": "formula.triangle_law_sines",
+    "engName": "Law of sines",
+    "rusName": "Теорема синусов"
+  },
+  {
+    "idName": "formula.right_triangle_pif",
+    "engName": "Pythagorean theorem",
+    "rusName": "Теорема Пифагора"
+  },
+  {
+    "idName": "formula.right_triangle_height1",
+    "engName": "Height 1",
+    "rusName": "Высота 1"
+  },
+  {
+    "idName": "formula.right_triangle_height2",
+    "engName": "Height 2",
+    "rusName": "Высота 2"
+  },
+  {
+    "idName": "formula.right_triangle_radius_in",
+    "engName": "Radius of the Incircle",
+    "rusName": "Радиус вписанной окружности"
+  },
+  {
+    "idName": "formula.right_triangle_radius_out",
+    "engName": "Radius of the circumscribed circle",
+    "rusName": "Радиус описанной окружности"
+  },
+  {
+    "idName": "formula.right_triangle_area_сathetus",
+    "engName": "Area of a right triangle through legs",
+    "rusName": "Площадь прямоугольного треугольника через катеты"
+  },
+  {
+    "idName": "formula.right_triangle_сathetus_angle",
+    "engName": "Area of a right triangle through leg and angle",
+    "rusName": "Площадь прямоугольного треугольника через катет и угол"
+  },
+  {
+    "idName": "formula.right_triangle_hypotenuse_angle",
+    "engName": "Area of a right triangle through hypotenuse and angle",
+    "rusName": "Площадь прямоугольного треугольника через гипотенузу и угол"
+  },
+  {
+    "idName": "formula.equilateral_triangle_area",
+    "engName": "Area of an equilateral triangle",
+    "rusName": "Площадь равностороннего треугольника"
+  },
+  {
+    "idName": "formula.equilateral_triangle_height",
+    "engName": "Height of an equilateral triangle",
+    "rusName": "Высота равностороннего треугольника"
+  },
+  {
+    "idName": "formula.equilateral_triangle_radius_in",
+    "engName": "Radius of an inscribed circle equilateral triangle",
+    "rusName": "Радиус вписанной окружности равностороннего треугольника"
+  },
+  {
+    "idName": "formula.equilateral_triangle_radius_out",
+    "engName": "Radius of the circumscribed circle of an equilateral triangle",
+    "rusName": "Радиус описанной окружности равностороннего треугольника"
+  },
+  {
+    "idName": "formula.parallelogram_area_height",
+    "engName": "Area through height",
+    "rusName": "Площадь через высоту"
+  },
+  {
+    "idName": "formula.parallelogram_area_angle",
+    "engName": "Area through the angle",
+    "rusName": "Площадь через угол"
+  },
+  {
+    "idName": "formula.parallelogram_area_dio",
+    "engName": "Area through the diagonals",
+    "rusName": "Площадь через диагонали"
+  },
+  {
+    "idName": "formula.parallelogram_sum_dio",
+    "engName": "Sum of squares of diagonals",
+    "rusName": "Сумма квадратов диагоналей"
+  },
+  {
+    "idName": "formula.rectangle_area",
+    "engName": "Area",
+    "rusName": "Площадь"
+  },
+  {
+    "idName": "formula.rectangle_area_dio",
+    "engName": "Area through the diagonals",
+    "rusName": "Площадь через диагонали"
+  },
+  {
+    "idName": "formula.rectangle_radius_out",
+    "engName": "Radius of the circumscribed circle",
+    "rusName": "Радиус описанной окружности"
+  },
+  {
+    "idName": "formula.square_area",
+    "engName": "Area",
+    "rusName": "Площадь"
+  },
+  {
+    "idName": "formula.square_area_dio",
+    "engName": "Area through the diagonals",
+    "rusName": "Площадь через диагонали"
+  },
+  {
+    "idName": "formula.square_radius_in",
+    "engName": "Radius of an inscribed circle",
+    "rusName": "Радиус вписанной окружности"
+  },
+  {
+    "idName": "formula.square_radius_out",
+    "engName": "Radius of the circumscribed circle",
+    "rusName": "Радиус описанной окружности"
+  },
+  {
+    "idName": "formula.rhombus_area_height",
+    "engName": "Area through height",
+    "rusName": "Площадь через высоту"
+  },
+  {
+    "idName": "formula.rhombus_area_radius_in",
+    "engName": "Area through radius",
+    "rusName": "Площадь через радиус"
+  },
+  {
+    "idName": "formula.rhombus_area_angle",
+    "engName": "Area through angle",
+    "rusName": "Площадь через угол"
+  },
+  {
+    "idName": "formula.rhombus_area_dio",
+    "engName": "Area through diagonals",
+    "rusName": "Площадь через диагонали"
+  },
+  {
+    "idName": "formula.rhombus_radius_in",
+    "engName": "Radius of an inscribed circle",
+    "rusName": "Радиус вписанной окружности"
+  },
+  {
+    "idName": "formula.rhombus_radius_side",
+    "engName": "Radius of an inscribed circle through side",
+    "rusName": "Радиус вписанной окружности через сторону"
+  },
+  {
+    "idName": "formula.rhombus_dio1",
+    "engName": "Diagonal 1",
+    "rusName": "Диагональ 1"
+  },
+  {
+    "idName": "formula.rhombus_dio2",
+    "engName": "Diagonal 2",
+    "rusName": "Диагональ 2"
+  },
+  {
+    "idName": "formula.trapezoid_area_height",
+    "engName": "Area through height",
+    "rusName": "Площадь через высоту"
+  },
+  {
+    "idName": "formula.trapezoid_area_diagonals",
+    "engName": "Area through diagonals",
+    "rusName": "Площадь через диагонали"
+  },
+  {
+    "idName": "formula.trapezoid_midline",
+    "engName": "Midline ",
+    "rusName": "Средняя линия"
+  },
+  {
+    "idName": "formula.trapezoid_sum_angles",
+    "engName": "Sum of angles adjacent to one side",
+    "rusName": "Сумма углов прилежащих к одной стороне"
+  },
+  {
+    "idName": "formula.trapezoid_property1",
+    "engName": "Property of Trapezoid 1",
+    "rusName": "Свойство трапеции 1"
+  },
+  {
+    "idName": "formula.trapezoid_property2",
+    "engName": "Property of Trapezoid 2",
+    "rusName": "Свойство трапеции 2"
+  },
+  {
+    "idName": "formula.trapezoid_property3",
+    "engName": "Property of Trapezoid 3",
+    "rusName": "Свойство трапеции 3"
+  },
+  {
+    "idName": "formula.quadrilateral_area1",
+    "engName": "Area",
+    "rusName": "Площадь"
+  },
+  {
+    "idName": "formula.quadrilateral_area2",
+    "engName": "Area 2",
+    "rusName": "Площадь 2"
+  },
+  {
+    "idName": "formula.quadrilateral_semiperimeter",
+    "engName": "Semiperimeter",
+    "rusName": "Полупериметр"
+  },
+  {
+    "idName": "formula.quadrilateral_sum_sides",
+    "engName": "Sum of opposite sides",
+    "rusName": "Сумма противоположных сторон"
+  },
+  {
+    "idName": "formula.quadrilateral_sum_angels",
+    "engName": "Sum of Opposite Angles",
+    "rusName": "Сумма противоположных углов"
+  },
+  {
+    "idName": "formula.quadrilateral_sum_ptol",
+    "engName": "Ptolemy's theorem",
+    "rusName": "Теорема Птолемея"
+  },
+  {
+    "idName": "formula.quadrilateral_area3",
+    "engName": "Area 2",
+    "rusName": "Площадь 2"
+  },
+  {
+    "idName": "formula.circle_inscribed_corners",
+    "engName": "Свойство вписанных углов 1",
+    "rusName": "Inscribed Angles Property 1"
+  },
+  {
+    "idName": "formula.circle_one_chord",
+    "engName": "Свойство вписанных углов 2",
+    "rusName": "Inscribed Angles Property 2"
+  },
+  {
+    "idName": "formula.circle_intersecting_chords",
+    "engName": "Angle between intersecting chords",
+    "rusName": "Угол между пересекающимися хордами"
+  },
+  {
+    "idName": "formula.circle_angle_bet_secants",
+    "engName": "The angle between secants intersecting outside a circle",
+    "rusName": "Угол между секущими, пересекающимися вне окружности"
+  },
+  {
+    "idName": "formula.circle_area",
+    "engName": "Circle area",
+    "rusName": "Площадь окружности"
+  },
+  {
+    "idName": "formula.circle_length",
+    "engName": "Length of circumference",
+    "rusName": "Длина окружности"
+  },
+  {
+    "idName": "formula.circle_arc_length",
+    "engName": "Arc length",
+    "rusName": "Длина дуги"
+  },
+  {
+    "idName": "formula.circle_arc_area",
+    "engName": "Sector area",
+    "rusName": "Площадь сектора"
   }
 ]

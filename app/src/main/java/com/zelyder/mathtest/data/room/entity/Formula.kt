@@ -10,5 +10,5 @@ data class Formula(
     @ColumnInfo(name = "id_subcategory") val idSubcategory: Int,
     @ColumnInfo(name = "id_name") val idName: String,
     @ColumnInfo(name = "formula") val formula: String,
-    @ColumnInfo(name = "id_img") val idImg: Int
+    @ColumnInfo(name = "id_img") var idImg: Int
 )

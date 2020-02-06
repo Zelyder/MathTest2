@@ -62,7 +62,8 @@ public class Keyboard extends LinearLayout {
 
         for(int i = 0;i < countColumn - 2;i++){
             final Button btn = new Button(getContext());
-            btn.setText(titleBtn[i]);
+            final String title = titleBtn[i];
+            btn.setText(subsSpecialSymbols(title));
             btn.setLayoutParams(buttonParams);
             btn.setTextSize(textSize);
             btn.setAllCaps(false);
@@ -70,7 +71,7 @@ public class Keyboard extends LinearLayout {
             btn.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                   keyboardOutput.insertChar(btn.getText().toString());
+                   keyboardOutput.insertChar(title);
                 }
             });
             firstRow.addView(btn);
@@ -99,7 +100,8 @@ public class Keyboard extends LinearLayout {
             row.setLayoutParams(viewParams);
             for (int j = 0; countColumn > j; j++) {
                 final Button btn = new Button(getContext());
-                btn.setText(titleBtn[(i*countColumn)+j+(countColumn - 2)]);
+                final String title = titleBtn[(i*countColumn)+j+(countColumn - 2)];
+                btn.setText(subsSpecialSymbols(title));
                 btn.setLayoutParams(buttonParams);
                 btn.setTextSize(textSize);
                 btn.setAllCaps(false);
@@ -107,7 +109,7 @@ public class Keyboard extends LinearLayout {
                 btn.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                       keyboardOutput.insertChar(btn.getText().toString());
+                       keyboardOutput.insertChar(title);
                     }
                 });
                 row.addView(btn);
@@ -122,13 +124,14 @@ public class Keyboard extends LinearLayout {
             lastRow.setLayoutParams(lastLinearParams);
             for(int i = 0; residual > i; i++){
                 final Button btn = new Button(getContext());
-                btn.setText(titleBtn[titleBtn.length - residual + i]);
+                final String title = titleBtn[titleBtn.length - residual + i];
+                btn.setText(subsSpecialSymbols(title));
                 btn.setLayoutParams(buttonLastLineParams);
                 btn.setBackground(this.getResources().getDrawable(R.drawable.button_test));
                 btn.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                       keyboardOutput.insertChar(btn.getText().toString());
+                       keyboardOutput.insertChar(title);
                     }
                 });
                 lastRow.addView(btn);
@@ -137,4 +140,51 @@ public class Keyboard extends LinearLayout {
         }
 
     }
+
+    private String subsSpecialSymbols(String title){
+        String output = title;
+        switch (title){
+            case "\\\\alpha":
+                output = "α";
+            break;
+            case "\\\\beta":
+                output = "β";
+                break;
+            case "\\\\gamma":
+                output = "γ";
+                break;
+            case "\\\\delta":
+                output = "δ";
+                break;
+            case "\\\\ell":
+                output = "ℓ";
+                break;
+            case "\\\\pi":
+                output = "π";
+                break;
+            case "\\\\sin":
+                output = "sin";
+                break;
+            case "\\\\cos":
+                output = "cos";
+                break;
+            case "\\\\tg":
+                output = "tg";
+                break;
+            case "\\\\ctg":
+                output = "ctg";
+                break;
+            case "\\\\pm":
+                output = "±";
+                break;
+            case "\\\\mp":
+                output = "∓";
+                break;
+            case "\\\\phi":
+                output = "φ";
+                break;
+        }
+        return output;
+    }
+
 }

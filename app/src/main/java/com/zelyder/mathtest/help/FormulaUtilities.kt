@@ -16,13 +16,23 @@ class FormulaUtilities {
     fun getKeys(categoryId: Int): Array<String> {
         return when (categoryId) {
             1 -> arrayOf("+", "-", "a", "b", "c", "n", "m", "1", "2", "3")
-            2 -> arrayOf("+", "-", "a", "b", "c", "n", "m", "1", "2", "3")
+            2 -> arrayOf("+", "-", "a", "b", "n", "m", "1", "2", "\\\\pm", "\\\\mp")
             3 -> arrayOf("+", "-", "a", "b", "m", "n", "1", "2", "3")
             4 -> arrayOf("+", "-", "a", "c", "e", "x", "y", "n", "0", "1")
-            5 -> arrayOf("+", "-", "a", "c", "e", "x", "y", "n", "0", "1")
-            6 -> arrayOf("+", "-", "a", "c", "e", "x", "y", "n", "0", "1")
+            5 -> arrayOf("+", "-", "a", "b", "c", "2", "3", "4", "\\\\pm")
+            6 -> arrayOf("+", "-", "a", "b", "c", "d", "i", "x", "y", "1", "2")
             7 -> arrayOf("+", "-", "a", "c", "e", "x", "y", "n", "0", "1")
-            8 -> arrayOf("+", "-", "a", "b", "c", "sin", "2", "n", "0", "1")
+            8 -> arrayOf("+", "-", "a", "b", "c", "h", "p", "r", "R", "m",
+                "\\\\sin","\\\\cos","\\\\alpha", "\\\\beta", "\\\\gamma" ,"A","C","1","2","4")
+            9 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
+            10 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
+            11 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
+            12 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
+            13 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
+            14 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
+            15 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
+            16 -> arrayOf("+", "-", "O", "X", "B", "C", "A", "D", "0", "1")
+            17 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
             else -> arrayOf()
         }
     }
@@ -59,11 +69,28 @@ class FormulaUtilities {
     }
 
     fun toUnknownRight(formula: String): String {
-        val separateFormula =
+        val separateFormula:Array<String> =
             formula.split("[=]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-        return separateFormula[0] + "=" + toUnknown(separateFormula[1])
+        return collectFormulaUnknown(separateFormula)
     }
 
+    private fun collectFormulaUnknown(separateFormula: Array<String>): String{
+        var collectedFormula: String = separateFormula[0]
+        for (i in 1 until separateFormula.size){
+            collectedFormula += "=" + toUnknown(separateFormula[i])
+        }
+        return collectedFormula
+    }
+
+    private fun collectFormulaDel(separateFormula: Array<String>): String{
+        var collectedFormula: String = separateFormula[0]
+        var addPart = ""
+        for (i in 1 until separateFormula.size){
+            addPart += "=" + separateFormula[i]
+        }
+        collectedFormula += delCharQ(addPart)
+        return collectedFormula
+    }
 
     private fun hideUndelFunc(formula: String): String {
         var tempFormula = formula
@@ -105,11 +132,10 @@ class FormulaUtilities {
             formula.contains("\\int") -> "\\int"
             formula.contains("\\in") -> "\\in"
             formula.contains("\\cdot") -> "\\cdot"
-            formula.contains("\\pm") -> "\\pm"
-            formula.contains("\\mp") -> "\\mp"
             formula.contains("\\frac") -> "\\frac"
             formula.contains("\\log") -> "\\log"
             formula.contains("\\ln") -> "\\ln"
+            formula.contains("=") -> "="
             else -> ""
         }
     }
@@ -118,10 +144,18 @@ class FormulaUtilities {
         return when {
             formula.contains("\\sin") -> "\\sin"
             formula.contains("\\cos") -> "\\cos"
+            formula.contains("\\tg") -> "\\tg"
+            formula.contains("\\ctg") -> "\\ctg"
+            formula.contains("\\cos") -> "\\cos"
             formula.contains("\\alpha") -> "\\alpha"
             formula.contains("\\beta") -> "\\beta"
             formula.contains("\\gamma") -> "\\gamma"
+            formula.contains("\\delta") -> "\\delta"
+            formula.contains("\\ell") -> "\\ell"
             formula.contains("\\pi") -> "\\pi"
+            formula.contains("\\pm") -> "\\pm"
+            formula.contains("\\mp") -> "\\mp"
+            formula.contains("\\phi") -> "\\phi"
             else -> ""
         }
     }
@@ -167,7 +201,7 @@ class FormulaUtilities {
         tempFormula = clearString(tempFormula)
         val separateFormula =
             tempFormula.split("[=]".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-        return separateFormula[0] + "=" + delCharQ(separateFormula[1])
+        return collectFormulaDel(separateFormula)
     }
 
     fun delCharQ(formula: String): String {
@@ -225,10 +259,11 @@ class FormulaUtilities {
 
     private fun hideDelFunc(formula: String): String {
         var tempFormula = formula
-        val delFunc = getDelFunc(tempFormula)
-        while (getDelFunc(tempFormula) != "") {
+        var delFunc = getDelFunc(tempFormula)
+        while (delFunc != "") {
             arrayOfDelFunc.append(tempFormula.indexOf(delFunc), delFunc)
-            tempFormula = tempFormula.replaceFirst(delFunc.toRegex(), "◇")
+            tempFormula = tempFormula.replaceFirst(delFunc, "◇")
+            delFunc = getDelFunc(tempFormula)
         }
         return tempFormula
     }
@@ -275,7 +310,7 @@ class FormulaUtilities {
                 val functionStr = StringBuilder()
                 indexBackslash = i
                 var j = i + 1
-                while (outStr[j] != ' ' && outStr[j] != '[' && outStr[j] != '{') {
+                while (j < outStr.length && outStr[j] != ' ' && outStr[j] != '[' && outStr[j] != '{') {
                     functionStr.append(outStr[j])
                     i = j + 1
                     j++
@@ -320,6 +355,26 @@ class FormulaUtilities {
                     }
                     "alpha" -> {
                         outStr = outStr.replace(indexBackslash, i, "α")
+                        i -= i-indexBackslash
+                    }
+                    "beta" -> {
+                        outStr = outStr.replace(indexBackslash, i, "β")
+                        i -= i-indexBackslash
+                    }
+                    "gamma" -> {
+                        outStr = outStr.replace(indexBackslash, i, "γ")
+                        i -= i-indexBackslash
+                    }
+                    "delta" -> {
+                        outStr = outStr.replace(indexBackslash, i, "δ")
+                        i -= i-indexBackslash
+                    }
+                    "ell" -> {
+                        outStr = outStr.replace(indexBackslash, i, "ℓ")
+                        i -= i-indexBackslash
+                    }
+                    "phi" -> {
+                        outStr = outStr.replace(indexBackslash, i, "φ")
                         i -= i-indexBackslash
                     }
                     else -> insetDelAfter = ' '

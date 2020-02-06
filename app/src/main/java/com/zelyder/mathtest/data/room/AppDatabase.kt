@@ -102,10 +102,76 @@ abstract class AppDatabase: RoomDatabase() {
                 JsonReader(inputStream.reader()).use { jsonReader ->
                     val formulaType = object : TypeToken<List<Formula>>() {}.type
                     val formulaList: List<Formula> = Gson().fromJson(jsonReader, formulaType)
+                    formulaList[44].idImg = R.drawable.ic_triangle_area_height
+                    formulaList[45].idImg = R.drawable.ic_triangle_area_angle
+                    formulaList[46].idImg = R.drawable.ic_triangle_geron
+                    formulaList[47].idImg = R.drawable.ic_triangle_geron
+                    formulaList[48].idImg = R.drawable.ic_triangle_in_circle
+                    formulaList[49].idImg = R.drawable.ic_triangle_out_circle
+                    formulaList[50].idImg = R.drawable.ic_triangle_median
+                    formulaList[51].idImg = R.drawable.ic_triangle_bisector
+                    formulaList[52].idImg = R.drawable.ic_triangle_bisector
+                    formulaList[53].idImg = R.drawable.ic_triangle_height
+                    formulaList[54].idImg = R.drawable.ic_triangle_exterior_angle
+                    formulaList[55].idImg = R.drawable.ic_triangle_middle_line
+                    formulaList[56].idImg = R.drawable.ic_triangle_cos
+                    formulaList[57].idImg = R.drawable.ic_triangle_sin
+                    formulaList[58].idImg = R.drawable.ic_right_triangle_pif
+                    formulaList[59].idImg = R.drawable.ic_right_triangle_height1
+                    formulaList[60].idImg = R.drawable.ic_right_triangle_height2
+                    formulaList[61].idImg = R.drawable.ic_right_triangle_circle_in
+                    formulaList[62].idImg = R.drawable.ic_right_triangle_circle_out
+                    formulaList[63].idImg = R.drawable.ic_right_triangle_trig
+                    formulaList[64].idImg = R.drawable.ic_right_triangle_trig
+                    formulaList[65].idImg = R.drawable.ic_right_triangle_trig
+                    formulaList[66].idImg = R.drawable.ic_equilateral_triangle_area
+                    formulaList[67].idImg = R.drawable.ic_equilateral_triangle_height
+                    formulaList[68].idImg = R.drawable.ic_equilateral_triangle_circle_in
+                    formulaList[69].idImg = R.drawable.ic_equilateral_triangle_circle_out
+                    formulaList[70].idImg = R.drawable.ic_parallelogram_area_height
+                    formulaList[71].idImg = R.drawable.ic_parallelogram_area_angle
+                    formulaList[72].idImg = R.drawable.ic_parallelogram_area_dio
+                    formulaList[73].idImg = R.drawable.ic_parallelogram_sum_dio
+                    formulaList[74].idImg = R.drawable.ic_rectangle_area
+                    formulaList[75].idImg = R.drawable.ic_rectangle_area
+                    formulaList[76].idImg = R.drawable.ic_rectangle_circle_out
+                    formulaList[77].idImg = R.drawable.ic_square_square
+                    formulaList[78].idImg = R.drawable.ic_square_square
+                    formulaList[79].idImg = R.drawable.ic_square_circle_in
+                    formulaList[80].idImg = R.drawable.ic_square_circle_out
+                    formulaList[81].idImg = R.drawable.ic_rhombus_area
+                    formulaList[82].idImg = R.drawable.ic_rhombus_area
+                    formulaList[83].idImg = R.drawable.ic_rhombus_area
+                    formulaList[84].idImg = R.drawable.ic_rhombus_area
+                    formulaList[85].idImg = R.drawable.ic_rhombus_height
+                    formulaList[86].idImg = R.drawable.ic_rhombus_touch_point
+                    formulaList[87].idImg = R.drawable.ic_rhombus_touch_point
+                    formulaList[88].idImg = R.drawable.ic_rhombus_touch_point
+                    formulaList[89].idImg = R.drawable.ic_trapezoid_area_height
+                    formulaList[90].idImg = R.drawable.ic_trapezoid_area_diagonals
+                    formulaList[91].idImg = R.drawable.ic_trapezoid_middle_line
+                    formulaList[92].idImg = R.drawable.ic_trapezoid_angles
+                    formulaList[93].idImg = R.drawable.ic_trapezoid_attitude
+                    formulaList[94].idImg = R.drawable.ic_trapezoid_pocket
+                    formulaList[95].idImg = R.drawable.ic_trapezoid_pocket
+                    formulaList[96].idImg = R.drawable.ic_arbitrary_quadrilateral_area1
+                    formulaList[97].idImg = R.drawable.ic_arbitrary_quadrilateral_circle_in
+                    formulaList[98].idImg = R.drawable.ic_arbitrary_quadrilateral_circle_in
+                    formulaList[99].idImg = R.drawable.ic_arbitrary_quadrilateral_circle_in
+                    formulaList[100].idImg = R.drawable.ic_arbitrary_quadrilateral_circle_out
+                    formulaList[101].idImg = R.drawable.ic_arbitrary_quadrilateral_ptol
+                    formulaList[102].idImg = R.drawable.ic_arbitrary_quadrilateral_area2
+                    formulaList[103].idImg = R.drawable.ic_circle_inscribed_corners
+                    formulaList[104].idImg = R.drawable.ic_circle_one_chord
+                    formulaList[105].idImg = R.drawable.ic_circle_intersecting_chords
+                    formulaList[106].idImg = R.drawable.ic_circle_angle_bet_secants
+                    formulaList[107].idImg = R.drawable.ic_circle_area
+                    formulaList[108].idImg = R.drawable.ic_circle_area
+                    formulaList[109].idImg = R.drawable.ic_circle_arc_length
+                    formulaList[110].idImg = R.drawable.ic_circle_arc_length
                     INSTANCE?.formulaDao()?.insertAll(formulaList)
                 }
             }
-
         }
     }
 }

@@ -33,10 +33,13 @@ class SettingsFragment : PreferenceFragmentCompat() {
             restartApp()
             true
         }
-        cbStyle?.setOnPreferenceChangeListener {_,_ ->
-            restartApp()
-            true
-        }
+        cbStyle?.isEnabled = false
+
+        // Todo: Исправить баг с сменой цвета формул и внедрить обратно темную тему
+//        cbStyle?.setOnPreferenceChangeListener {_,_ ->
+//            restartApp()
+//            true
+//        }
     }
 
     private fun restartApp() {

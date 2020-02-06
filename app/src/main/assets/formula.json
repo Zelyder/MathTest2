@@ -228,7 +228,7 @@
     "idFormula":32,
     "idSubcategory": 4,
     "idName": "formula.logarithm_8",
-    "formula": "$$\\log_{a+g} (x + d) = \\frac{\\log_{c} x}{\\log_{c} a}$$",
+    "formula": "$$\\log_{a} (x) = \\frac{\\log_{c} x}{\\log_{c} a}$$",
     "idImg": 0
   },
   {
@@ -261,16 +261,522 @@
   },
   {
     "idFormula":37,
+    "idSubcategory": 6,
+    "idName": "formula.complex_imaginary_unit",
+    "formula": "$$i = \\sqrt{-1}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":38,
+    "idSubcategory": 6,
+    "idName": "formula.complex_imaginary_unit_square",
+    "formula": "$$i^2 = \\sqrt{-1}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":39,
+    "idSubcategory": 6,
+    "idName": "formula.complex_complex_number",
+    "formula": "$$z = a + bi$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":40,
+    "idSubcategory": 6,
+    "idName": "formula.complex_sum_of_complex_numbers",
+    "formula": "$$(a + bi) + (c + di) = (a + c) + (b + d)i$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":41,
+    "idSubcategory": 6,
+    "idName": "formula.complex_subtraction_of_complex_numbers",
+    "formula": "$$(a + bi) - (c + di) = (a - c) + (b - d)i$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":42,
+    "idSubcategory": 6,
+    "idName": "formula.complex_complex_number_product",
+    "formula": "$$(a + bi) (c + di) = (ac - bd) + (bc + ad)i$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":43,
+    "idSubcategory": 6,
+    "idName": "formula.complex_complex_number_module",
+    "formula": "$$|z| = \\sqrt{x^2 + y^2}$$",
+    "idImg": 0
+  },
+
+  {
+    "idFormula":44,
     "idSubcategory": 8,
     "idName": "formula.triangle_area_height",
     "formula": "$$S = \\frac{b h}{2}$$",
     "idImg": 2131230852
   },
   {
-    "idFormula":38,
+    "idFormula":45,
     "idSubcategory": 8,
     "idName": "formula.triangle_area_angle",
     "formula": "$$S = \\frac{1}{2} a b \\sin \\alpha$$",
     "idImg": 2131230851
+  },
+  {
+    "idFormula":46,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_area_geron",
+    "formula": "$$S = \\sqrt{p (p - a) (p - b) (p - c)}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":47,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_semiperimeter",
+    "formula": "$$S = \\sqrt{p (p - a) (p - b) (p - c)}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":48,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_area_radius",
+    "formula": "$$S = p r$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":49,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_area_radius",
+    "formula": "$$S = \\frac{a b c}{4 R}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":50,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_median_length",
+    "formula": "$$m = \\frac{1}{2} \\sqrt{2 a^2 + 2 c^2 - b^2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":51,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_bisector_length_1",
+    "formula": "$$\\ell = \\frac{2 a c \\cos \\alpha}{a + c}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":52,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_bisector_length_2",
+    "formula": "$$\\ell^2 = a c - b_1 b_2$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":53,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_height",
+    "formula": "$$h = a \\sin \\alpha $$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":54,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_exterior_angle",
+    "formula": "$$\\delta = \\alpha + \\beta$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":55,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_middle_line",
+    "formula": "$$MN = \\frac{AC}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":56,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_law_cosines",
+    "formula": "$$a^2 = b^2 + c^2 - 2 b c \\cos \\alpha$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":57,
+    "idSubcategory": 8,
+    "idName": "formula.triangle_law_sines",
+    "formula": "$$\\frac{a}{\\sin{\\alpha}} = \\frac{b}{\\sin{\\beta}} = \\frac{c}{\\sin{\\gamma}} = 2 R$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":58,
+    "idSubcategory": 9,
+    "idName": "formula.right_triangle_pif",
+    "formula": "$$c^2 = a^2 + b^2$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":59,
+    "idSubcategory": 9,
+    "idName": "formula.right_triangle_height1",
+    "formula": "$$h = \\frac{a b}{c}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":60,
+    "idSubcategory": 9,
+    "idName": "formula.right_triangle_height2",
+    "formula": "$$h^2 = d e$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":61,
+    "idSubcategory": 9,
+    "idName": "formula.right_triangle_radius_in",
+    "formula": "$$r = \\frac{a b}{a + b + c}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":62,
+    "idSubcategory": 9,
+    "idName": "formula.right_triangle_radius_out",
+    "formula": "$$R = \\frac{c}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":63,
+    "idSubcategory": 9,
+    "idName": "formula.right_triangle_area_сathetus",
+    "formula": "$$S = \\frac{1}{2} a b$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":64,
+    "idSubcategory": 9,
+    "idName": "formula.right_triangle_area_сathetus_angle",
+      "formula": "$$S = \\frac{1}{2} b^2 \\tg \\alpha$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":65,
+    "idSubcategory": 9,
+    "idName": "formula.right_triangle_area_hypotenuse_angle",
+    "formula": "$$S = \\frac{1}{4} c^2 \\sin 2 \\alpha$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":66,
+    "idSubcategory": 10,
+    "idName": "formula.equilateral_triangle_area",
+    "formula": "$$S = \\frac{\\sqrt{3} a^2}{4}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":67,
+    "idSubcategory": 10,
+    "idName": "formula.equilateral_triangle_height",
+    "formula": "$$h = \\frac{\\sqrt{3} a}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":68,
+    "idSubcategory": 10,
+    "idName": "formula.equilateral_triangle_radius_in",
+    "formula": "$$h = \\frac{\\sqrt{3} a}{6}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":69,
+    "idSubcategory": 10,
+    "idName": "formula.equilateral_triangle_radius_out",
+    "formula": "$$h = \\frac{\\sqrt{3} a}{3}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":70,
+    "idSubcategory": 11,
+    "idName": "formula.parallelogram_area_height",
+    "formula": "$$S = a h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":71,
+    "idSubcategory": 11,
+    "idName": "formula.parallelogram_area_angle",
+    "formula": "$$S = a b \\sin \\alpha$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":72,
+    "idSubcategory": 11,
+    "idName": "formula.parallelogram_area_dio",
+    "formula": "$$S = \\frac{d_{1} d_{2} \\sin \\phi}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":73,
+    "idSubcategory": 11,
+    "idName": "formula.parallelogram_sum_dio",
+    "formula": "$$d_{1}^2 + d_{2}^2 = a^2 + b^2 + c^2 + d^2$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":74,
+    "idSubcategory": 12,
+    "idName": "formula.rectangle_area",
+    "formula": "$$S = a b$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":75,
+    "idSubcategory": 12,
+    "idName": "formula.rectangle_area_dio",
+    "formula": "$$S = \\frac{d^2 \\sin \\alpha}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":76,
+    "idSubcategory": 12,
+    "idName": "formula.rectangle_radius_out",
+    "formula": "$$R = \\frac{d}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":77,
+    "idSubcategory": 13,
+    "idName": "formula.square_area",
+    "formula": "$$S = a^2$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":78,
+    "idSubcategory": 13,
+    "idName": "formula.square_area_dio",
+    "formula": "$$S = \\frac{d^2}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":79,
+    "idSubcategory": 13,
+    "idName": "formula.square_radius_in",
+    "formula": "$$r = \\frac{a}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":80,
+    "idSubcategory": 13,
+    "idName": "formula.square_radius_out",
+    "formula": "$$R = \\frac{a}{\\sqrt{2}} = \\frac{d}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":81,
+    "idSubcategory": 14,
+    "idName": "formula.rhombus_area_height",
+    "formula": "$$S = a h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":82,
+    "idSubcategory": 14,
+    "idName": "formula.rhombus_area_radius_in",
+    "formula": "$$S = 2 a r$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":83,
+    "idSubcategory": 14,
+    "idName": "formula.rhombus_area_angle",
+    "formula": "$$S = a^2 \\sin \\alpha$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":84,
+    "idSubcategory": 14,
+    "idName": "formula.rhombus_area_dio",
+    "formula": "$$S = \\frac{d_{1} d_{2}}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":85,
+    "idSubcategory": 14,
+    "idName": "formula.rhombus_radius_in",
+    "formula": "$$r = \\frac{h}{2} = \\frac{d_{1} d_{2}}{4 a}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":86,
+    "idSubcategory": 14,
+    "idName": "formula.rhombus_radius_side",
+    "formula": "$$r = \\sqrt{A H \\cdot H B}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":87,
+    "idSubcategory": 14,
+    "idName": "formula.rhombus_dio1",
+    "formula": "$$d_{1} = 2 \\sqrt{A H \\cdot A B}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":88,
+    "idSubcategory": 14,
+    "idName": "formula.rhombus_dio2",
+    "formula": "$$d_{2} = 2 \\sqrt{B H \\cdot A B}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":89,
+    "idSubcategory": 15,
+    "idName": "formula.trapezoid_area_height",
+    "formula": "$$S = \\frac{a + b}{2} h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":90,
+    "idSubcategory": 15,
+    "idName": "formula.trapezoid_area_diagonals",
+    "formula": "$$S = \\frac{d_{1} d_{2} \\sin \\alpha}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":91,
+    "idSubcategory": 15,
+    "idName": "formula.trapezoid_midline",
+    "formula": "$$M N = \\frac{a + b}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":92,
+    "idSubcategory": 15,
+    "idName": "formula.trapezoid_sum_angles",
+    "formula": "$$\\alpha + \\beta = 180$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":93,
+    "idSubcategory": 15,
+    "idName": "formula.trapezoid_property1",
+    "formula": "$$\\frac{O X}{O Y}= \\frac{B C}{A D}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":94,
+    "idSubcategory": 15,
+    "idName": "formula.trapezoid_property2",
+    "formula": "$$A H = \\frac{A D - B C}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":95,
+    "idSubcategory": 15,
+    "idName": "formula.trapezoid_property3",
+    "formula": "$$H D = \\frac{A D + B C}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":96,
+    "idSubcategory": 16,
+    "idName": "formula.quadrilateral_area1",
+    "formula": "$$S = \\frac{d_{1} d_{2} \\sin \\alpha}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":97,
+    "idSubcategory": 16,
+    "idName": "formula.quadrilateral_area2",
+    "formula": "$$S = p r$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":98,
+    "idSubcategory": 16,
+      "idName": "formula.quadrilateral_semiperimeter",
+    "formula": "$$p = \\frac{a + b + c + d}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":99,
+    "idSubcategory": 16,
+    "idName": "formula.quadrilateral_sum_sides",
+    "formula": "$$a + c = b + d$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":100,
+    "idSubcategory": 16,
+    "idName": "formula.quadrilateral_sum_angels",
+    "formula": "$$\\alpha + \\gamma = \\beta + \\delta = 180$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":101,
+    "idSubcategory": 16,
+    "idName": "formula.quadrilateral_sum_ptol",
+    "formula": "$$a c + b d = d_{1} d_{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":102,
+    "idSubcategory": 16,
+    "idName": "formula.quadrilateral_area3",
+    "formula": "$$S = \\sqrt{(p - a)(p - b)(p - c)(p - d)}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":103,
+    "idSubcategory": 17,
+    "idName": "formula.circle_inscribed_corners",
+    "formula": "$$\\beta = \\frac{\\alpha}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":104,
+    "idSubcategory": 17,
+    "idName": "formula.circle_one_chord",
+    "formula": "$$\\alpha + \\beta = 180$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":105,
+    "idSubcategory": 17,
+    "idName": "formula.circle_intersecting_chords",
+    "formula": "$$\\gamma = \\frac{\\alpha + \\beta}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":106,
+    "idSubcategory": 17,
+    "idName": "formula.circle_angle_bet_secants",
+    "formula": "$$\\gamma = \\frac{\\beta - \\alpha}{2}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":107,
+    "idSubcategory": 17,
+    "idName": "formula.circle_area",
+    "formula": "$$S = \\pi r^2$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":108,
+    "idSubcategory": 17,
+    "idName": "formula.circle_length",
+    "formula": "$$C = 2 \\pi r$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":109,
+    "idSubcategory": 17,
+    "idName": "formula.circle_arc_length",
+    "formula": "$$\\ell = \\alpha r$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":110,
+    "idSubcategory": 17,
+    "idName": "formula.circle_arc_area",
+    "formula": "$$S = \\frac{1}{2} \\alpha r^2$$",
+    "idImg": 2131230851
   }
+
 ]
