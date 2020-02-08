@@ -32,7 +32,17 @@ class FormulaUtilities {
             14 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
             15 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
             16 -> arrayOf("+", "-", "O", "X", "B", "C", "A", "D", "0", "1")
-            17 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
+            17 -> arrayOf("+", "-")
+            18 -> arrayOf("+", "-")
+            19 -> arrayOf("+", "-")
+            20 -> arrayOf("+", "-")
+            21 -> arrayOf("+", "-")
+            22 -> arrayOf("+", "-")
+            23 -> arrayOf("+", "-")
+            24 -> arrayOf("+", "-")
+            25 -> arrayOf("+", "-")
+            26 -> arrayOf("+", "-")
+            27 -> arrayOf("+", "-")
             else -> arrayOf()
         }
     }
@@ -136,6 +146,8 @@ class FormulaUtilities {
             formula.contains("\\log") -> "\\log"
             formula.contains("\\ln") -> "\\ln"
             formula.contains("=") -> "="
+            formula.contains("base") -> "base"
+            formula.contains("side surface") -> "side surface"
             else -> ""
         }
     }
@@ -145,6 +157,7 @@ class FormulaUtilities {
             formula.contains("\\sin") -> "\\sin"
             formula.contains("\\cos") -> "\\cos"
             formula.contains("\\tg") -> "\\tg"
+            formula.contains("\\tan") -> "\\tan"
             formula.contains("\\ctg") -> "\\ctg"
             formula.contains("\\cos") -> "\\cos"
             formula.contains("\\alpha") -> "\\alpha"
@@ -156,6 +169,7 @@ class FormulaUtilities {
             formula.contains("\\pm") -> "\\pm"
             formula.contains("\\mp") -> "\\mp"
             formula.contains("\\phi") -> "\\phi"
+            formula.contains("\\infty") -> "\\infty"
             else -> ""
         }
     }

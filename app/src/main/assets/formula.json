@@ -777,6 +777,748 @@
     "idName": "formula.circle_arc_area",
     "formula": "$$S = \\frac{1}{2} \\alpha r^2$$",
     "idImg": 2131230851
+  },
+  {
+    "idFormula":111,
+    "idSubcategory": 18,
+    "idName": "formula.cube_volume",
+    "formula": "$$V = a^3$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":112,
+    "idSubcategory": 18,
+    "idName": "formula.cube_area",
+    "formula": "$$S = 6 a^2$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":113,
+    "idSubcategory": 18,
+    "idName": "formula.cube_dio",
+    "formula": "$$d = \\sqrt{3} a$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":114,
+    "idSubcategory": 19,
+    "idName": "formula.parallelepiped_volume",
+    "formula": "$$V = a b h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":115,
+    "idSubcategory": 19,
+    "idName": "formula.parallelepiped_area",
+    "formula": "$$S = 2 (a b + a h + b h)$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":116,
+    "idSubcategory": 19,
+    "idName": "formula.parallelepiped_dio",
+    "formula": "$$d^2 = a^2 + b^2 + h^2$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":117,
+    "idSubcategory": 20,
+    "idName": "formula.cylinder_volume",
+    "formula": "$$V = \\pi R^2 h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":118,
+    "idSubcategory": 20,
+    "idName": "formula.cylinder_area",
+    "formula": "$$S = 2 \\pi R^2 + 2 \\pi R h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":119,
+    "idSubcategory": 20,
+    "idName": "formula.cylinder_lateral_surface_area",
+    "formula": "$$S = 2 \\pi R h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":120,
+    "idSubcategory": 21,
+    "idName": "formula.cone_volume",
+    "formula": "$$V = \\frac{1}{3} \\pi R^2 h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":121,
+    "idSubcategory": 21,
+    "idName": "formula.cone_surface_area",
+    "formula": "$$S = \\pi R^2 + \\pi R \\ell$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":122,
+    "idSubcategory": 21,
+    "idName": "formula.cone_lateral_surface_area",
+    "formula": "$$S = \\pi R \\ell$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":123,
+    "idSubcategory": 22,
+    "idName": "formula.pyramid_volume",
+    "formula": "$$V = \\frac{1}{3} S_{base} h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":124,
+    "idSubcategory": 22,
+    "idName": "formula.pyramid_surface_area",
+    "formula": "$$S = S_{base} + S_{side surface}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":125,
+    "idSubcategory": 23,
+    "idName": "formula.sphere_volume",
+    "formula": "$$S = \\frac{4}{3} \\pi R^3$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":126,
+    "idSubcategory": 23,
+    "idName": "formula.sphere_surface_area",
+    "formula": "$$S = 4 \\pi R^2$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":127,
+    "idSubcategory": 24,
+    "idName": "formula.prism_volume",
+    "formula": "$$V = S_{base} h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":128,
+    "idSubcategory": 24,
+    "idName": "formula.prism_surface_area",
+    "formula": "$$S = 2 S_{base} + S_{side surface}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":129,
+    "idSubcategory": 24,
+    "idName": "formula.prism_side_surface_area",
+    "formula": "$$S = P_{base} h$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":130,
+    "idSubcategory": 25,
+    "idName": "formula.basics_sin",
+    "formula": "$$\\sin \\alpha = \\frac{a}{c}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":131,
+    "idSubcategory": 25,
+    "idName": "formula.basics_cos",
+    "formula": "$$\\cos \\alpha = \\frac{b}{c}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":132,
+    "idSubcategory": 25,
+    "idName": "formula.basics_tg",
+    "formula": "$$\\tan \\alpha = \\frac{a}{b}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":133,
+    "idSubcategory": 25,
+    "idName": "formula.basics_cot",
+    "formula": "$$\\cot \\alpha = \\frac{1}{\\tan \\alpha} = \\frac{b}{a}$$",
+    "idImg": 2131230851
+  },
+  {
+    "idFormula":134,
+    "idSubcategory": 26,
+    "idName": "formula.general_tan",
+    "formula": "$$\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":135,
+    "idSubcategory": 26,
+    "idName": "formula.general_cot",
+    "formula": "$$\\cot \\alpha = \\frac{\\cos \\alpha}{\\sin \\alpha}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":136,
+    "idSubcategory": 26,
+    "idName": "formula.general_tan_cot",
+    "formula": "$$\\tan \\alpha  \\cdot \\cot \\alpha = 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":137,
+    "idSubcategory": 26,
+    "idName": "formula.general_trigonometric_identity",
+    "formula": "$$1 = \\sin^2 \\alpha + \\cos^2 \\alpha$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":138,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_sin0",
+    "formula": "$$\\sin 0 = 0a$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":139,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_sin30",
+    "formula": "$$\\sin \\frac{\\pi}{6} = \\frac{1}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":140,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_sin45",
+    "formula": "$$\\sin \\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":141,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_sin60",
+    "formula": "$$\\sin \\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":142,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_sin90",
+    "formula": "$$\\sin \\frac{\\pi}{2} = 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":143,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cos0",
+    "formula": "$$\\cos 0 = 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":144,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cos30",
+    "formula": "$$\\cos \\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":145,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cos45",
+    "formula": "$$\\cos \\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":146,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cos60",
+    "formula": "$$\\cos \\frac{\\pi}{3} = \\frac{1}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":146,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cos90",
+    "formula": "$$\\cos \\frac{\\pi}{2} = 0$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":147,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_tan0",
+    "formula": "$$\\tan 0 = 0$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":148,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_tan30",
+    "formula": "$$\\tan \\frac{\\pi}{6} = \\frac{1}{\\sqrt{3}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":149,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_tan45",
+    "formula": "$$\\tan \\frac{\\pi}{4} = 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":150,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_tan60",
+    "formula": "$$\\tan \\frac{\\pi}{3} = \\sqrt{3}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":151,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_tan90",
+    "formula": "$$\\tan \\frac{\\pi}{2} = \\infty$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":152,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cot0",
+    "formula": "$$\\cot 0 = \\infty$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":153,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cot30",
+    "formula": "$$\\cot \\frac{\\pi}{6} = \\sqrt{3}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":154,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cot45",
+    "formula": "$$\\cot \\frac{\\pi}{4} = 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":155,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cot60",
+    "formula": "$$\\cot \\frac{\\pi}{3} = \\frac{1}{\\sqrt{3}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":156,
+    "idSubcategory": 27,
+    "idName": "formula.table_of_angle_cot90",
+    "formula": "$$\\cot \\frac{\\pi}{2} = 0$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":157,
+    "idSubcategory": 28,
+    "idName": "formula.angle_transformation_sin_p",
+    "formula": "$$\\sin(\\alpha + \\beta) = \\sin \\alpha \\cdot \\cos \\beta + \\sin \\beta \\cdot \\cos \\alpha$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":158,
+    "idSubcategory": 28,
+    "idName": "formula.angle_transformation_sin_m",
+    "formula": "$$\\sin(\\alpha - \\beta) = \\sin \\alpha \\cdot \\cos \\beta - \\sin \\beta \\cdot \\cos \\alpha$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":159,
+    "idSubcategory": 28,
+    "idName": "formula.angle_transformation_cos_p",
+    "formula": "$$\\cos(\\alpha + \\beta) = \\cos \\alpha \\cdot \\cos \\beta - \\sin \\alpha \\cdot \\sin \\beta$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":160,
+    "idSubcategory": 28,
+    "idName": "formula.angle_transformation_cos_m",
+    "formula": "$$\\cos(\\alpha - \\beta) = \\cos \\alpha \\cdot \\cos \\beta + \\sin \\alpha \\cdot \\sin \\beta$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":161,
+    "idSubcategory": 28,
+    "idName": "formula.angle_transformation_tan_p",
+    "formula": "$$\\tan(\\alpha + \\beta) = \\frac{\\tan \\alpha + \\tan \\beta}{1 - \\tan \\alpha \\cdot \\tan \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":162,
+    "idSubcategory": 28,
+    "idName": "formula.angle_transformation_tan_m",
+    "formula": "$$\\tan(\\alpha - \\beta) = \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\cdot \\tan \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":163,
+    "idSubcategory": 28,
+    "idName": "formula.angle_transformation_cot_p",
+    "formula": "$$\\cot(\\alpha + \\beta) = \\frac{1 - \\tan \\alpha \\cdot \\tan \\beta}{\\tan \\alpha + \\tan \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":164,
+    "idSubcategory": 28,
+    "idName": "formula.angle_transformation_cot_m",
+    "formula": "$$\\cot(\\alpha - \\beta) = \\frac{1 + \\tan \\alpha \\cdot \\tan \\beta}{\\tan \\alpha - \\tan \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":165,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_half_sin",
+    "formula": "$$\\sin \\frac{\\alpha}{2} = \\pm \\sqrt{\\frac{1 - \\cos \\alpha}{2}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":166,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_half_cos",
+    "formula": "$$\\cos \\frac{\\alpha}{2} = \\pm \\sqrt{\\frac{1 + \\cos \\alpha}{2}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":167,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_half_tan",
+    "formula": "$$\\tan \\frac{\\alpha}{2} = \\pm \\sqrt{\\frac{1 - \\cos \\alpha}{1 + \\cos \\alpha}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":168,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_half_cot",
+    "formula": "$$\\cot \\frac{\\alpha}{2} = \\pm \\sqrt{\\frac{1 + \\cos \\alpha}{1 - \\cos \\alpha}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":169,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_sin2",
+    "formula": "$$\\sin 2 \\alpha = 2 \\sin \\alpha \\cdot \\cos \\alpha$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":170,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_cos2",
+    "formula": "$$\\cos 2 \\alpha = \\cos^2 \\alpha - \\sin^2 \\alpha$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":171,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_cos2_sin",
+    "formula": "$$\\cos 2 \\alpha = 1 - 2 \\sin^2 \\alpha$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":172,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_cos2_cos",
+    "formula": "$$\\cos 2 \\alpha = 2 \\cos^2 \\alpha - 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":173,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_tan2",
+    "formula": "$$\\tan 2 \\alpha = \\frac{2 \\tan \\alpha}{1 - \\tan^2 \\alpha}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":174,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_cot2",
+    "formula": "$$\\cot 2 \\alpha = \\frac{\\cot^2 \\alpha - 1}{2 \\cot \\alpha}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":175,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_sin3",
+    "formula": "$$\\sin 3 \\alpha = 3 \\sin \\alpha - 4 \\sin^3 \\alpha$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":176,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_cos3",
+    "formula": "$$\\cos 3 \\alpha = 4 \\cos^3 \\alpha - 3 \\cos \\alpha$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":177,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_tan3",
+    "formula": "$$\\tan 3 \\alpha = \\frac{3 \\tan \\alpha - \\tan^3 \\alpha}{1 - 3 \\tan^2 \\alpha}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":178,
+    "idSubcategory": 29,
+    "idName": "formula.half_angle_cot3",
+    "formula": "$$\\cot 3 \\alpha = \\frac{\\cot^3 \\alpha - 3 \\cot \\alpha}{3 \\cot^2 \\alpha - 1}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":179,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_sin_p",
+    "formula": "$$\\sin \\alpha + \\sin \\beta = 2 \\sin \\frac{\\alpha + \\beta}{2} \\cos \\frac{\\alpha - \\beta}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":180,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_sin_m",
+    "formula": "$$\\sin \\alpha - \\sin \\beta = 2 \\cos \\frac{\\alpha + \\beta}{2} \\sin \\frac{\\alpha - \\beta}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":181,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_cos_p",
+    "formula": "$$\\cos \\alpha + \\cos \\beta = 2 \\cos \\frac{\\alpha + \\beta}{2} \\cos \\frac{\\alpha - \\beta}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":182,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_cos_m",
+    "formula": "$$\\cos \\alpha - \\cos \\beta = - 2 \\sin \\frac{\\alpha + \\beta}{2} \\sin \\frac{\\alpha - \\beta}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":183,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_tan_p",
+    "formula": "$$\\tan \\alpha + \\tan \\beta = \\frac{\\sin(\\alpha + \\beta)}{\\cos \\alpha \\cdot \\cos \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":184,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_tan_m",
+    "formula": "$$\\tan \\alpha - \\tan \\beta = \\frac{\\sin(\\alpha - \\beta)}{\\cos \\alpha \\cdot \\cos \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":185,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_cot_p",
+    "formula": "$$\\tan \\alpha + \\tan \\beta = \\frac{\\sin(\\beta + \\alpha)}{\\sin \\alpha \\cdot \\sin \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":186,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_cot_m",
+    "formula": "$$\\cot \\alpha - \\cot \\beta = \\frac{\\sin(\\beta - \\alpha)}{\\sin \\alpha \\cdot \\sin \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":187,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_cos_p_sin",
+    "formula": "$$\\cos \\alpha + \\sin \\alpha = \\sqrt{2} \\cos(\\frac{\\pi}{4} - \\alpha)$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":188,
+    "idSubcategory": 31,
+    "idName": "formula.product_of_functions_sin",
+    "formula": "$$\\sin \\alpha \\cdot \\sin \\beta = \\frac{\\cos(\\alpha - \\beta) - \\cos(\\alpha + \\beta)}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":189,
+    "idSubcategory": 31,
+    "idName": "formula.product_of_functions_cos",
+    "formula": "$$\\cos \\alpha \\cdot \\cos \\beta = \\frac{\\cos(\\alpha - \\beta) + \\cos(\\alpha + \\beta)}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":190,
+    "idSubcategory": 31,
+    "idName": "formula.product_of_functions_sin_cos",
+    "formula": "$$\\sin \\alpha \\cdot \\cos \\beta = \\frac{\\sin(\\alpha - \\beta) + \\sin(\\alpha + \\beta)}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":191,
+    "idSubcategory": 31,
+    "idName": "formula.product_of_functions_tan",
+    "formula": "$$\\tan \\alpha \\cdot \\tan \\beta = \\frac{\\tan \\alpha + \\tan \\beta}{\\cot \\alpha + \\cot \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":192,
+    "idSubcategory": 31,
+    "idName": "formula.product_of_functions_cot",
+    "formula": "$$\\cot \\alpha \\cdot \\cot \\beta = \\frac{\\cot \\alpha + \\cot \\beta}{\\tan \\alpha + \\tan \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":193,
+    "idSubcategory": 31,
+    "idName": "formula.product_of_functions_tan_cot",
+    "formula": "$$\\tan \\alpha \\cdot \\cot \\beta = \\frac{\\tan \\alpha + \\cot \\beta}{\\cot \\alpha + \\tan \\beta}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":194,
+    "idSubcategory": 32,
+    "idName": "formula.powers_of_functions_sin2",
+    "formula": "$$\\sin^2 \\alpha = \\frac{1 - \\cos 2 \\alpha}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":195,
+    "idSubcategory": 32,
+    "idName": "formula.powers_of_functions_sin3",
+    "formula": "$$\\sin^3 \\alpha = \\frac{3 \\sin \\alpha - \\sin 3 \\alpha}{4}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":196,
+    "idSubcategory": 32,
+    "idName": "formula.powers_of_functions_sin4",
+    "formula": "$$\\sin^4 \\alpha = \\frac{\\cos 4 \\alpha - 4 \\cos 2 \\alpha + 3}{8}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":197,
+    "idSubcategory": 32,
+    "idName": "formula.powers_of_functions_cos2",
+    "formula": "$$\\cos^2 \\alpha = \\frac{1 + \\cos 2 \\alpha}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":198,
+    "idSubcategory": 32,
+    "idName": "formula.powers_of_functions_cos3",
+    "formula": "$$\\cos^3 \\alpha = \\frac{3 \\cos \\alpha + \\cos 3 \\alpha}{4}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":199,
+    "idSubcategory": 32,
+    "idName": "formula.powers_of_functions_cos4",
+    "formula": "$$\\cos^4 \\alpha = \\frac{\\cos 4 \\alpha + 4 \\cos 2 \\alpha + 3}{8}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":200,
+    "idSubcategory": 26,
+    "idName": "formula.general_tan+1",
+    "formula": "$$1 + \\tan^2 \\alpha = \\frac{1}{\\cos^2 \\alpha}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":201,
+    "idSubcategory": 33,
+    "idName": "formula.points_distance",
+    "formula": "$$d = \\sqrt{(x_{2} - x_{1})^2 + (y_{2} - y_{1})^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":202,
+    "idSubcategory": 33,
+    "idName": "formula.points_midpoint_x",
+    "formula": "$$x_{0} = \\frac{x_{1} + x_{2}}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":203,
+    "idSubcategory": 33,
+    "idName": "formula.points_midpoint_y",
+    "formula": "$$y_{0} = \\frac{y_{1} + y_{2}}{2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":204,
+    "idSubcategory": 34,
+    "idName": "formula.circle_any_point",
+    "formula": "$$r^2 = (x - a)^2 + (y - b)^2$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":205,
+    "idSubcategory": 34,
+    "idName": "formula.circle_origin",
+    "formula": "$$r^2 = x^2 + y^2$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":206,
+    "idSubcategory": 35,
+    "idName": "formula.hyperbola_equation",
+    "formula": "$$1 = \\frac{x^2}{a^2} - \\frac{y^2}{b^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":207,
+    "idSubcategory": 35,
+    "idName": "formula.hyperbola_f_distance",
+    "formula": "$$c^2 = a^2 +b^2$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":208,
+    "idSubcategory": 35,
+    "idName": "formula.hyperbola_eccentricity",
+    "formula": "$$e = \\frac{c}{a}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":209,
+    "idSubcategory": 35,
+    "idName": "formula.hyperbola_directrices",
+    "formula": "$$x = \\pm \\frac{a}{e} = \\pm \\frac{a^2}{c}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":210,
+    "idSubcategory": 35,
+    "idName": "formula.hyperbola_asymptotes",
+    "formula": "$$y = \\pm \\frac{b}{a} x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":211,
+    "idSubcategory": 36,
+    "idName": "formula.ellipse_equation",
+    "formula": "$$1 = \\frac{x^2}{a^2} + \\frac{y^2}{b^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":212,
+    "idSubcategory": 36,
+    "idName": "formula.ellipse_eccentricity",
+    "formula": "$$e = \\frac{c}{a}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":213,
+    "idSubcategory": 36,
+    "idName": "formula.ellipse_area",
+    "formula": "$$S = \\pi a b$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":214,
+    "idSubcategory": 36,
+    "idName": "formula.ellipse_directrices",
+    "formula": "$$x = \\pm \\frac{a}{e} = \\pm \\frac{a^2}{c}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":215,
+    "idSubcategory": 37,
+    "idName": "formula.parabola_equation",
+    "formula": "$$y^2 = 2 p x$$",
+    "idImg": 0
   }
 
 ]

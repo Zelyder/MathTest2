@@ -125,6 +125,97 @@
     "engName": "Cone",
     "rusName": "Конус"
   },
+  {
+    "idName": "subcategory.cube",
+    "engName": "Cube",
+    "rusName": "Куб"
+  },
+  {
+    "idName": "subcategory.parallelepiped",
+    "engName": "Parallelepiped",
+    "rusName": "Параллелепипед"
+  },
+  {
+    "idName": "subcategory.cylinder",
+    "engName": "Cylinder",
+    "rusName": "Цилиндр"
+  },
+  {
+    "idName": "subcategory.pyramid",
+    "engName": "Pyramid",
+    "rusName": "Пирамида"
+  },
+  {
+    "idName": "subcategory.sphere",
+    "engName": "Sphere",
+    "rusName": "Сфера"
+  },
+  {
+    "idName": "subcategory.prism",
+    "engName": "Prism",
+    "rusName": "Призма"
+  },
+  {
+    "idName": "subcategory.basics",
+    "engName": "Basics",
+    "rusName": "Основы"
+  },
+  {
+    "idName": "subcategory.general",
+    "engName": "General",
+    "rusName": "Общая"
+  },
+  {
+    "idName": "subcategory.table_of_angle",
+    "engName": "Table of angle",
+    "rusName": "Таблица углов"
+  },
+  {
+    "idName": "subcategory.angle_transformation",
+    "engName": "Angle transformation",
+    "rusName": "Преобразование угла"
+  },
+  {
+    "idName": "subcategory.half_angle",
+    "engName": "Half/Double/Multiple angle",
+    "rusName": "Половинный/Двойной/Множественный угол"
+  },
+  {
+    "idName": "subcategory.half_angle",
+    "engName": "Sum of functions",
+    "rusName": "Сумма функций"
+  },
+  {
+    "idName": "subcategory.product_of_functions",
+    "engName": "Product of functions",
+    "rusName": "Произведение функций"
+  },
+  {
+    "idName": "subcategory.powers_of_functions",
+    "engName": "Powers of functions",
+    "rusName": "Степени функций"
+  },
+  {
+    "idName": "subcategory.points",
+    "engName": "Points",
+    "rusName": "Точки"
+  },
+  {
+    "idName": "subcategory.hyperbola",
+    "engName": "Hyperbola",
+    "rusName": "Гипербола"
+  },
+  {
+    "idName": "subcategory.ellipse",
+    "engName": "Ellipse",
+    "rusName": "Эллипс"
+  },
+  {
+    "idName": "subcategory.parabola",
+    "engName": "Parabola",
+    "rusName": "Парабола"
+  },
+
 
   {
     "idName": "formula.square_difference",
@@ -687,5 +778,536 @@
     "idName": "formula.circle_arc_area",
     "engName": "Sector area",
     "rusName": "Площадь сектора"
+  },
+  {
+    "idName": "formula.cube_volume",
+    "engName": "Volume",
+    "rusName": "Объём"
+  },
+  {
+    "idName": "formula.cube_area",
+    "engName": "Surface area",
+    "rusName": "Площадь поверхности"
+  },
+  {
+    "idName": "formula.cube_dio",
+    "engName": "Diagonal",
+    "rusName": "Диагональ"
+  },
+  {
+    "idName": "formula.parallelepiped_volume",
+    "engName": "Volume",
+    "rusName": "Объем"
+  },
+  {
+    "idName": "formula.parallelepiped_area",
+    "engName": "Surface area",
+    "rusName": "Площадь поверхности"
+  },
+  {
+    "idName": "formula.parallelepiped_dio",
+    "engName": "Diagonal",
+    "rusName": "Диагональ"
+  },
+  {
+    "idName": "formula.cylinder_volume",
+    "engName": "Volume",
+    "rusName": "Объем"
+  },
+  {
+    "idName": "formula.cylinder_area",
+    "engName": "Surface area",
+    "rusName": "Площадь поверхности"
+  },
+  {
+    "idName": "formula.cylinder_lateral_surface_area",
+    "engName": "Lateral surface area",
+    "rusName": "Площадь боковой поверхности"
+  },
+  {
+    "idName": "formula.cone_volume",
+    "engName": "Volume",
+    "rusName": "Объем"
+  },
+  {
+    "idName": "formula.cone_surface_area",
+    "engName": "Surface area",
+    "rusName": "Площадь поверхности"
+  },
+  {
+    "idName": "formula.cone_lateral_surface_area",
+    "engName": "Lateral surface area",
+    "rusName": "Площадь боковой поверхности"
+  },
+  {
+    "idName": "formula.pyramid_volume",
+    "engName": "Volume",
+    "rusName": "Объем"
+  },
+  {
+    "idName": "formula.pyramid_surface_area",
+    "engName": "Surface area",
+    "rusName": "Площадь поверхности"
+  },
+  {
+    "idName": "formula.sphere_volume",
+    "engName": "Volume",
+    "rusName": "Объем"
+  },
+  {
+    "idName": "formula.sphere_surface_area",
+    "engName": "Surface area",
+    "rusName": "Площадь поверхности"
+  },
+  {
+    "idName": "formula.prism_volume",
+    "engName": "Volume",
+    "rusName": "Объем"
+  },
+  {
+    "idName": "formula.prism_surface_area",
+    "engName": "Surface area",
+    "rusName": "Площадь поверхности"
+  },
+  {
+    "idName": "formula.prism_side_surface_area",
+    "engName": "Lateral surface area",
+    "rusName": "Площадь боковой поверхности"
+  },
+  {
+    "idName": "formula.basics_sin",
+    "engName": "Sine",
+    "rusName": "Синус"
+  },
+  {
+    "idName": "formula.basics_cos",
+    "engName": "Cosine",
+    "rusName": "Косинус"
+  },
+  {
+    "idName": "formula.basics_tg",
+    "engName": "Tangent",
+    "rusName": "Тангенс"
+  },
+  {
+    "idName": "formula.basics_cot",
+    "engName": "Cotangent",
+    "rusName": "Котангенс"
+  },
+  {
+    "idName": "formula.general_tan",
+    "engName": "Tangent",
+    "rusName": "Тангенс"
+  },
+  {
+    "idName": "formula.general_cot",
+    "engName": "Cotangent",
+    "rusName": "Котангенс"
+  },
+  {
+    "idName": "formula.general_tan_cot",
+    "engName": "Product of tangent and cosine",
+    "rusName": "Произведение тангенса и косинуса"
+  },
+  {
+    "idName": "formula.general_trigonometric_identity",
+    "engName": "Pythagorean trigonometric identity",
+    "rusName": "Основное тригонометрическое тождество"
+  },
+  {
+    "idName": "formula.table_of_angle_sin0",
+    "engName": "sin0°",
+    "rusName": "sin0°"
+  },
+  {
+    "idName": "formula.table_of_angle_sin30",
+    "engName": "sin30°",
+    "rusName": "sin30°"
+  },
+  {
+    "idName": "formula.table_of_angle_sin45",
+    "engName": "sin45°",
+    "rusName": "sin45°"
+  },
+  {
+    "idName": "formula.table_of_angle_sin60",
+    "engName": "sin60°",
+    "rusName": "sin60°"
+  },
+  {
+    "idName": "formula.table_of_angle_sin90",
+    "engName": "sin90°",
+    "rusName": "sin90°"
+  },
+  {
+    "idName": "formula.table_of_angle_cos0",
+    "engName": "cos0°",
+    "rusName": "cos0°"
+  },
+  {
+    "idName": "formula.table_of_angle_cos30",
+    "engName": "cos30°",
+    "rusName": "cos30°"
+  },
+  {
+    "idName": "formula.table_of_angle_cos45",
+    "engName": "cos45°",
+    "rusName": "cos45°"
+  },
+  {
+    "idName": "formula.table_of_angle_cos60",
+    "engName": "cos60°",
+    "rusName": "cos60°"
+  },
+  {
+    "idName": "formula.table_of_angle_cos90",
+    "engName": "cos90°",
+    "rusName": "cos90°"
+  },
+  {
+    "idName": "formula.table_of_angle_tan0",
+    "engName": "tan0°",
+    "rusName": "tan0°"
+  },
+  {
+    "idName": "formula.table_of_angle_tan30",
+    "engName": "tan30°",
+    "rusName": "tan30°"
+  },
+  {
+    "idName": "formula.table_of_angle_tan45",
+    "engName": "tan45°",
+    "rusName": "tan45°"
+  },
+  {
+    "idName": "formula.table_of_angle_tan60",
+    "engName": "tan60°",
+    "rusName": "tan60°"
+  },
+  {
+    "idName": "formula.table_of_angle_tan90",
+    "engName": "tan90°",
+    "rusName": "tan90°"
+  },
+  {
+    "idName": "formula.table_of_angle_cot0",
+    "engName": "cot0°",
+    "rusName": "cot0°"
+  },
+  {
+    "idName": "formula.table_of_angle_cot30",
+    "engName": "cot30°",
+    "rusName": "cot30°"
+  },
+  {
+    "idName": "formula.table_of_angle_cot45",
+    "engName": "cot45°",
+    "rusName": "cot45°"
+  },
+  {
+    "idName": "formula.table_of_angle_cot60",
+    "engName": "cot60°",
+    "rusName": "cot60°"
+  },
+  {
+    "idName": "formula.table_of_angle_cot90",
+    "engName": "cot90°",
+    "rusName": "cot90°"
+  },
+  {
+    "idName": "formula.angle_transformation_sin_p",
+    "engName": "Sine of sum",
+    "rusName": "Синус суммы"
+  },
+  {
+    "idName": "formula.angle_transformation_sin_m",
+    "engName": "Sine of difference",
+    "rusName": "Синус разности"
+  },
+  {
+    "idName": "formula.angle_transformation_cos_p",
+    "engName": "Cosine of sum",
+    "rusName": "Косинус суммы"
+  },
+  {
+    "idName": "formula.angle_transformation_cos_m",
+    "engName": "Cosine of difference",
+    "rusName": "Косинус разности"
+  },
+  {
+    "idName": "formula.angle_transformation_tan_p",
+    "engName": "Tangent of sum",
+    "rusName": "Тангенс суммы"
+  },
+  {
+    "idName": "formula.angle_transformation_tan_m",
+    "engName": "Tangent of difference",
+    "rusName": "Тангенс разности"
+  },
+  {
+    "idName": "formula.angle_transformation_cot_p",
+    "engName": "Cotangent of sum",
+    "rusName": "Котангенс суммы"
+  },
+  {
+    "idName": "formula.angle_transformation_cot_m",
+    "engName": "Cotangent of difference",
+    "rusName": "Котангенс разности"
+  },
+  {
+    "idName": "formula.half_angle_half_sin",
+    "engName": "Half-angle sine",
+    "rusName": "Синус половинного угла"
+  },
+  {
+    "idName": "formula.half_angle_half_cos",
+    "engName": "Half-angle cosine",
+    "rusName": "Косинус половинного угла"
+  },
+  {
+    "idName": "formula.half_angle_half_tan",
+    "engName": "Half-angle Tangent",
+    "rusName": "Тангенс половинного угла"
+  },
+  {
+    "idName": "formula.half_angle_half_cot",
+    "engName": "Half-angle cotangent",
+    "rusName": "Котангенс половинного угла"
+  },
+  {
+    "idName": "formula.half_angle_sin2",
+    "engName": "Double-angle sine",
+    "rusName": "Синус двойного угла"
+  },
+  {
+    "idName": "formula.half_angle_cos2",
+    "engName": "Double-angle cosine",
+    "rusName": "Косинус двойного угла"
+  },
+  {
+    "idName": "formula.half_angle_cos2_sin",
+    "engName": "Double-angle cosine through sine",
+    "rusName": "Косинус двойного угла через синус"
+  },
+  {
+    "idName": "formula.half_angle_cos2_cos",
+    "engName": "Double-angle cosine through cosine",
+    "rusName": "Косинус двойного угла через косинус"
+  },
+  {
+    "idName": "formula.half_angle_tan2",
+    "engName": "Double-angle tangent",
+    "rusName": "Тангенс двойного угла"
+  },
+  {
+    "idName": "formula.half_angle_cot2",
+    "engName": "Double-angle cotangent",
+    "rusName": "Котангенс двойного угла"
+  },
+  {
+    "idName": "formula.half_angle_sin3",
+    "engName": "Triple-angle sine",
+    "rusName": "Синус тройного угла"
+  },
+  {
+    "idName": "formula.half_angle_cos3",
+    "engName": "Triple-angle cosine",
+    "rusName": "Косинус тройного угла"
+  },
+  {
+    "idName": "formula.half_angle_tan3",
+    "engName": "Triple-angle tangent",
+    "rusName": "Тангенс тройного угла"
+  },
+  {
+    "idName": "formula.half_angle_cot3",
+    "engName": "Triple-angle cotangent",
+    "rusName": "Котангенс тройного угла"
+  },
+  {
+    "idName": "formula.sum_of_functions_sin_p",
+    "engName": "Sum of sines",
+    "rusName": "Сумма синусов"
+  },
+  {
+    "idName": "formula.sum_of_functions_sin_m",
+    "engName": "Difference of sine",
+    "rusName": "Разность синусов"
+  },
+  {
+    "idName": "formula.sum_of_functions_cos_p",
+    "engName": "Sum of cosine",
+    "rusName": "Сумма косинус"
+  },
+  {
+    "idName": "formula.sum_of_functions_cos_m",
+    "engName": "Difference of cosine",
+    "rusName": "Разность косинус"
+  },
+  {
+    "idName": "formula.sum_of_functions_tan_p",
+    "engName": "Sum of tangent",
+    "rusName": "Сумма тангенсов"
+  },
+  {
+    "idName": "formula.sum_of_functions_tan_m",
+    "engName": "Difference of tangent",
+    "rusName": "Разность тангенсов"
+  },
+  {
+    "idName": "formula.sum_of_functions_cot_p",
+    "engName": "Sum of cotangent",
+    "rusName": "Сумма котангенсов"
+  },
+  {
+    "idName": "formula.sum_of_functions_cot_m",
+    "engName": "Difference of cotangent",
+    "rusName": "Разность котангенсов"
+  },
+  {
+    "idName": "formula.sum_of_functions_cos_p_sin",
+    "engName": "Sum of cosine and tangent",
+    "rusName": "Сумма косинуса и тангенса"
+  },
+  {
+    "idName": "formula.product_of_functions_sin",
+    "engName": "Product of sines",
+    "rusName": "Произведение синусов "
+  },
+  {
+    "idName": "formula.product_of_functions_cos",
+    "engName": "Product of cosine",
+    "rusName": "Произведение косинусов"
+  },
+  {
+    "idName": "formula.product_of_functions_sin_cos",
+    "engName": "Product of sine and cosine",
+    "rusName": "Произведение синуса и косинуса"
+  },
+  {
+    "idName": "formula.product_of_functions_tan",
+    "engName": "Product of tangent",
+    "rusName": "Произведение тангенсов"
+  },
+  {
+    "idName": "formula.product_of_functions_cot",
+    "engName": "Product of cotangents",
+    "rusName": "Произведение котангенсов"
+  },
+  {
+    "idName": "formula.product_of_functions_tan_cot",
+    "engName": "Product of tangent and cotangent",
+    "rusName": "Произведение тангенса и котангенса"
+  },
+  {
+    "idName": "formula.powers_of_functions_sin2",
+    "engName": "Sine square",
+    "rusName": "Квадрат синуса"
+  },
+  {
+    "idName": "formula.powers_of_functions_sin3",
+    "engName": "Sine cube",
+    "rusName": "Куб синуса"
+  },
+  {
+    "idName": "formula.powers_of_functions_sin4",
+    "engName": "Fourth degree sine",
+    "rusName": "Синус в четвертой степени"
+  },
+  {
+    "idName": "formula.powers_of_functions_cos2",
+    "engName": "Cosine square",
+    "rusName": "Квадрат косинуса"
+  },
+  {
+    "idName": "formula.powers_of_functions_cos3",
+    "engName": "Cosine cube",
+    "rusName": "Куб косинуса"
+  },
+  {
+    "idName": "formula.powers_of_functions_cos4",
+    "engName": "Fourth degree cosine",
+    "rusName": "Косинус в четвертой степени"
+  },
+  {
+    "idName": "formula.general_tan+1",
+    "engName": "Useful formula",
+    "rusName": "Полезная формула"
+  },
+  {
+    "idName": "formula.points_distance",
+    "engName": "Distance between two points",
+    "rusName": "Расстояние между двумя точками"
+  },
+  {
+    "idName": "formula.points_midpoint_x",
+    "engName": "Midpoint of line segment x",
+    "rusName": "Середина отрезка x"
+  },
+  {
+    "idName": "formula.points_midpoint_y",
+    "engName": "Midpoint of line segment y",
+    "rusName": "Середина отрезка y"
+  },
+  {
+    "idName": "formula.circle_any_point",
+    "engName": "Circle centered at any point",
+    "rusName": "Окружность с центром в любой точке"
+  },
+  {
+    "idName": "formula.circle_origin",
+    "engName": "Circle centered at the origin",
+    "rusName": "Окружность с центром в начале координат"
+  },
+  {
+    "idName": "formula.hyperbola_equation",
+    "engName": "Equation of Hyperbola",
+    "rusName": "Уравнение гиперболы"
+  },
+  {
+    "idName": "formula.hyperbola_f_distance",
+    "engName": "Focus distance",
+    "rusName": "Расстояние до фокуса"
+  },
+  {
+    "idName": "formula.hyperbola_eccentricity",
+    "engName": "Eccentricity",
+    "rusName": "Эксцентриситет"
+  },
+  {
+    "idName": "formula.hyperbola_directrices",
+    "engName": "Equation of directrices",
+    "rusName": "Уравнение директрисы"
+  },
+  {
+    "idName": "formula.hyperbola_asymptotes",
+    "engName": "Asymptotes",
+    "rusName": "Асимптоты"
+  },
+  {
+    "idName": "formula.ellipse_equation",
+    "engName": "Equation of Ellipse",
+    "rusName": "Полезная формула"
+  },
+  {
+    "idName": "formula.ellipse_eccentricity",
+    "engName": "Eccentricity",
+    "rusName": "Эксцентриситет"
+  },
+  {
+    "idName": "formula.ellipse_area",
+    "engName": "Area of ellipse",
+    "rusName": "Площадь эллипса"
+  },
+  {
+    "idName": "formula.ellipse_directrices",
+    "engName": "Equation of directrices",
+    "rusName": "Уравнение директрисы"
+  },
+  {
+    "idName": "formula.parabola_equation",
+    "engName": "Equation of parabola",
+    "rusName": "Уравнение параболы"
   }
+
 ]

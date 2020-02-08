@@ -87,28 +87,103 @@
     "idName": "subcategory.cube"
   },
   {
-    "idSubcategory":18,
+    "idSubcategory":19,
     "idCategory": 3,
     "idName": "subcategory.parallelepiped"
   },
   {
-    "idSubcategory":18,
+    "idSubcategory":20,
     "idCategory": 3,
     "idName": "subcategory.cylinder"
   },
   {
-    "idSubcategory":18,
+    "idSubcategory":21,
     "idCategory": 3,
     "idName": "subcategory.cone"
   },
   {
-    "idSubcategory":18,
+    "idSubcategory":22,
     "idCategory": 3,
     "idName": "subcategory.pyramid"
   },
   {
-    "idSubcategory":18,
+    "idSubcategory":23,
     "idCategory": 3,
     "idName": "subcategory.sphere"
+  },
+  {
+    "idSubcategory":24,
+    "idCategory": 3,
+    "idName": "subcategory.prism"
+  },
+  {
+    "idSubcategory":25,
+    "idCategory": 4,
+    "idName": "subcategory.basics"
+  },
+  {
+    "idSubcategory":26,
+    "idCategory": 4,
+    "idName": "subcategory.general"
+  },
+  {
+    "idSubcategory":27,
+    "idCategory": 4,
+    "idName": "subcategory.table_of_angle"
+  },
+  {
+    "idSubcategory":28,
+    "idCategory": 4,
+    "idName": "subcategory.angle_transformation"
+  },
+  {
+    "idSubcategory":29,
+    "idCategory": 4,
+    "idName": "subcategory.half_angle"
+  },
+  {
+    "idSubcategory":30,
+    "idCategory": 4,
+    "idName": "subcategory.sum_of_functions"
+  },
+  {
+    "idSubcategory":31,
+    "idCategory": 4,
+    "idName": "subcategory.product_of_functions"
+  },
+  {
+    "idSubcategory":32,
+    "idCategory": 4,
+    "idName": "subcategory.powers_of_functions"
+  },
+  {
+    "idSubcategory":33,
+    "idCategory": 5,
+    "idName": "subcategory.points"
+  },
+  {
+    "idSubcategory":34,
+    "idCategory": 5,
+    "idName": "subcategory.circle"
+  },
+  {
+    "idSubcategory":35,
+    "idCategory": 5,
+    "idName": "subcategory.hyperbola"
+  },
+  {
+    "idSubcategory":36,
+    "idCategory": 5,
+    "idName": "subcategory.ellipse"
+  },
+  {
+    "idSubcategory":37,
+    "idCategory": 5,
+    "idName": "subcategory.parabola"
+  },
+  {
+    "idSubcategory":38,
+    "idCategory": 6,
+    "idName": "subcategory.parabola"
   }
 ]

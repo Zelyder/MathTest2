@@ -169,6 +169,29 @@ abstract class AppDatabase: RoomDatabase() {
                     formulaList[108].idImg = R.drawable.ic_circle_area
                     formulaList[109].idImg = R.drawable.ic_circle_arc_length
                     formulaList[110].idImg = R.drawable.ic_circle_arc_length
+                    formulaList[111].idImg = R.drawable.ic_cube
+                    formulaList[112].idImg = R.drawable.ic_cube
+                    formulaList[113].idImg = R.drawable.ic_cube
+                    formulaList[114].idImg = R.drawable.ic_parallelepiped
+                    formulaList[115].idImg = R.drawable.ic_parallelepiped
+                    formulaList[116].idImg = R.drawable.ic_parallelepiped
+                    formulaList[117].idImg = R.drawable.ic_cylinder
+                    formulaList[118].idImg = R.drawable.ic_cylinder
+                    formulaList[119].idImg = R.drawable.ic_cylinder
+                    formulaList[120].idImg = R.drawable.ic_cone
+                    formulaList[121].idImg = R.drawable.ic_cone
+                    formulaList[122].idImg = R.drawable.ic_cone
+                    formulaList[123].idImg = R.drawable.ic_pyramid_
+                    formulaList[124].idImg = R.drawable.ic_pyramid_
+                    formulaList[125].idImg = R.drawable.ic_sphere
+                    formulaList[126].idImg = R.drawable.ic_sphere
+                    formulaList[127].idImg = R.drawable.ic_prism
+                    formulaList[128].idImg = R.drawable.ic_prism
+                    formulaList[129].idImg = R.drawable.ic_prism
+                    formulaList[130].idImg = R.drawable.ic_right_triangle_trig
+                    formulaList[131].idImg = R.drawable.ic_right_triangle_trig
+                    formulaList[132].idImg = R.drawable.ic_right_triangle_trig
+                    formulaList[133].idImg = R.drawable.ic_right_triangle_trig
                     INSTANCE?.formulaDao()?.insertAll(formulaList)
                 }
             }

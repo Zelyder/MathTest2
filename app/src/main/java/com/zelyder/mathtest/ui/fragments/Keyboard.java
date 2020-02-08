@@ -171,6 +171,9 @@ public class Keyboard extends LinearLayout {
             case "\\\\tg":
                 output = "tg";
                 break;
+            case "\\\\tan":
+                output = "tan";
+                break;
             case "\\\\ctg":
                 output = "ctg";
                 break;
@@ -182,6 +185,9 @@ public class Keyboard extends LinearLayout {
                 break;
             case "\\\\phi":
                 output = "φ";
+                break;
+            case "\\\\infty":
+                output = "∞";
                 break;
         }
         return output;
