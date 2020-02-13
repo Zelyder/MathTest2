@@ -28,5 +28,6 @@
         <item>en</item>
         <item>ru</item>
     </string-array>
+    <string name="btn_text">Advertising</string>
 
 </resources>

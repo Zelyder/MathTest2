@@ -14,8 +14,8 @@ import com.zelyder.mathtest.R;
 import com.zelyder.mathtest.interfaces.KeyboardOutput;
 
 public class Keyboard extends LinearLayout {
-    final float scale = getResources().getDisplayMetrics().density;
-    final float textSize = 9*scale;
+    float scale = getResources().getDisplayMetrics().density;
+    float textSize = 9*scale;
 
     public Keyboard(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -23,6 +23,12 @@ public class Keyboard extends LinearLayout {
     }
 
     public void setUpKeyboard(final KeyboardOutput keyboardOutput, String[] titleBtn) {
+
+        if(titleBtn.length >= 19){
+            scale *= 0.7;
+            textSize *= 0.7;
+        }
+
         LayoutParams viewParams = new LayoutParams(LayoutParams.WRAP_CONTENT,
                 LayoutParams.WRAP_CONTENT);
         int widthBtn = (int) (88 * scale);
@@ -176,6 +182,21 @@ public class Keyboard extends LinearLayout {
                 break;
             case "\\\\ctg":
                 output = "ctg";
+                break;
+            case "\\\\cot":
+                output = "cot";
+                break;
+            case "\\\\sinh":
+                output = "sinh";
+                break;
+            case "\\\\cosh":
+                output = "cosh";
+                break;
+            case "\\\\tanh":
+                output = "tanh";
+                break;
+            case "\\\\coth":
+                output = "coth";
                 break;
             case "\\\\pm":
                 output = "±";

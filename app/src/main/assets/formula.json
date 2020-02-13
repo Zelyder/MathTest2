@@ -971,7 +971,7 @@
     "idFormula":138,
     "idSubcategory": 27,
     "idName": "formula.table_of_angle_sin0",
-    "formula": "$$\\sin 0 = 0a$$",
+    "formula": "$$\\sin 0 = 0$$",
     "idImg": 0
   },
   {
@@ -1519,6 +1519,726 @@
     "idName": "formula.parabola_equation",
     "formula": "$$y^2 = 2 p x$$",
     "idImg": 0
-  }
-
+  },
+  {
+    "idFormula":216,
+    "idSubcategory": 38,
+    "idName": "formula.general_derivative_const",
+    "formula": "$$(C)' = 0$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":217,
+    "idSubcategory": 38,
+    "idName": "formula.general_derivative_x",
+    "formula": "$$(x)' = 1$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":217,
+    "idSubcategory": 38,
+    "idName": "formula.general_derivative_x_n",
+    "formula": "$$(x^n)' = n x^{n-1}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":218,
+    "idSubcategory": 38,
+    "idName": "formula.general_derivative_sqrt_x",
+    "formula": "$$(\\sqrt{x})' = \\frac{1}{2 \\sqrt{x}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":219,
+    "idSubcategory": 38,
+    "idName": "formula.general_derivative_ln_x",
+    "formula": "$$(\\ln{x})' = \\frac{1}{x}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":220,
+    "idSubcategory": 38,
+    "idName": "formula.general_derivative_e_x",
+    "formula": "$$(e^x)' = e^x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":221,
+    "idSubcategory": 39,
+    "idName": "formula.properties_derivative_u_m_v",
+    "formula": "$$(u - v)' = u' - v'$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":222,
+    "idSubcategory": 39,
+    "idName": "formula.properties_derivative_u_p_v",
+    "formula": "$$(u + v)' = u' + v'$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":223,
+    "idSubcategory": 39,
+    "idName": "formula.properties_derivative_k_u",
+    "formula": "$$(k u)' = k u'$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":224,
+    "idSubcategory": 39,
+    "idName": "formula.properties_derivative_u_p_v",
+    "formula": "$$(u \\cdot v)' = u' \\cdot v + u \\cdot v'$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":225,
+    "idSubcategory": 39,
+    "idName": "formula.properties_derivative_u_d_v",
+    "formula": "$$(\\frac{u}{v})' = \\frac{u' \\cdot v - u \\cdot v'}{v^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":226,
+    "idSubcategory": 39,
+    "idName": "formula.properties_derivative_1_d_y",
+    "formula": "$$(\\frac{1}{y})' = \\frac{y'}{y^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":227,
+    "idSubcategory": 39,
+    "idName": "formula.properties_derivative_chain_rule",
+    "formula": "$$(f(g(x)))' = f'(g(x)) \\cdot g'(x)$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":228,
+    "idSubcategory": 40,
+    "idName": "formula.trigonometric_sin",
+    "formula": "$$(\\sin x)' = \\cos x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":229,
+    "idSubcategory": 40,
+    "idName": "formula.trigonometric_cos",
+    "formula": "$$(\\cos x)' = - \\sin x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":230,
+    "idSubcategory": 40,
+    "idName": "formula.trigonometric_tan",
+    "formula": "$$(\\tan x)' = \\frac{1}{\\cos^2 x}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":231,
+    "idSubcategory": 40,
+    "idName": "formula.trigonometric_cot",
+    "formula": "$$(\\cot x)' = - \\frac{1}{\\sin^2 x}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":232,
+    "idSubcategory": 41,
+    "idName": "formula.inverse_trigonometric_sin",
+    "formula": "$$(\\sin^{-1} x)' = \\frac{1}{\\sqrt{1 - x^2}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":233,
+    "idSubcategory": 41,
+    "idName": "formula.inverse_trigonometric_cos",
+    "formula": "$$(\\cos^{-1} x)' = - \\frac{1}{\\sqrt{1 - x^2}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":234,
+    "idSubcategory": 41,
+    "idName": "formula.inverse_trigonometric_tan",
+    "formula": "$$(\\tan^{-1} x)' = \\frac{1}{1 + x^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":235,
+    "idSubcategory": 41,
+    "idName": "formula.inverse_trigonometric_cot",
+    "formula": "$$(\\cot^{-1} x)' = - \\frac{1}{1 + x^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":236,
+    "idSubcategory": 42,
+    "idName": "formula.hyperbolic_cosh",
+    "formula": "$$(\\cosh x)' = \\sinh x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":237,
+    "idSubcategory": 42,
+    "idName": "formula.hyperbolic_tanh",
+    "formula": "$$(\\tanh x)' = 1 - \\tanh^2 x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":238,
+    "idSubcategory": 42,
+    "idName": "formula.hyperbolic_coth",
+    "formula": "$$(\\coth x)' = 1 - \\coth^2 x$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":239,
+    "idSubcategory": 43,
+    "idName": "formula.inverse_hyperbolic_sinh",
+    "formula": "$$(\\sinh^{-1} x)' = \\frac{1}{\\sqrt{1 + x^2}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":240,
+    "idSubcategory": 43,
+    "idName": "formula.inverse_hyperbolic_cosh",
+    "formula": "$$(\\cosh^{-1} x)' = \\frac{1}{\\sqrt{x^2 - 1}}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":241,
+    "idSubcategory": 43,
+    "idName": "formula.inverse_hyperbolic_tanh",
+    "formula": "$$(\\tanh^{-1} x)' = \\frac{1}{1 - x^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":242,
+    "idSubcategory": 43,
+    "idName": "formula.inverse_hyperbolic_coth",
+    "formula": "$$(\\coth^{-1} x)' = \\frac{1}{1 - x^2}$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":243,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int f(x)dx = F(x) + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":244,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int a f(x)dx = a \\int f(x) dx$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":245,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int [f(x)+g(x)]dx = \\int f(x) dx + \\int g(x) dx$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":246,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int [f(x)-g(x)]dx = \\int f(x) dx - \\int g(x) dx$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":247,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int u \\cdot v dx = u \\int v dx - \\int \\left [ \\left ( \\frac{du}{dx} \\right ) \\left ( \\int v dx \\right ) \\right ]dx$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":248,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int f(ax)dx = \\frac{1}{a} F(ax) dx$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":249,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int \\frac{f'(x)}{f(x)} dx = \\ln f(x) + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":250,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int f'(x)f(x) dx = \\frac{1}{2} f^2(x) + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":251,
+    "idSubcategory": 44,
+    "idName": "formula.properties_of_integration",
+    "formula": "$$\\int f(x)g'(x) dx = f(x) g(x) - \\int g(x) f'(x) dx$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":252,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int a dx = a x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":253,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int x^n dx = \\frac{x^{n + 1}}{n + 1} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":254,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{1}{x} dx = \\ln |x| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":255,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{ax + b} = \\frac{1}{a} \\ln |a x + b| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":256,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{ax + b}{cx + d} dx = \\frac{a}{c} x + \\frac{b c - a d}{c^2} \\log |c x + d| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":257,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{(x + a)(x + b)} = \\frac{1}{a - b} \\log \\left |\\frac{x + b}{x + a} \\right | + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":258,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{x dx}{a + bx} = \\frac{1}{b^2} (a + b x - a \\log |a + b x|) + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":259,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{x(a + bx)} = \\frac{1}{a} \\log |\\frac{a + b x}{x}| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":260,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{x^2(a + bx)} = - \\frac{1}{a x} + \\frac{b}{a^2} \\log |\\frac{a + b x}{x}| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":261,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{xdx}{(a + bx)^2} = \\frac{1}{b^2} \\left ( \\log |a + b x| + \\frac{a}{a + b x} \\right )  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":262,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{x^2 - a^2} = \\frac{1}{2 a} \\log \\left | \\frac{a - x}{a + x} \\right |  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":263,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{a^2 - x^2} = \\frac{1}{2 a} \\log \\left | \\frac{a + x}{a - x} \\right |  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":264,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{a^2 + x^2} = \\frac{1}{a} \\tan^{- 1} x  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":265,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{xdx}{x^2 + a^2} = \\frac{1}{2} \\log(x^2 + a^2)  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":266,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{a + bx^2} = \\frac{1}{\\sqrt{a b}} \\tanh \\left ( x \\sqrt{\\frac{b}{a}} \\right )  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":267,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{xdx}{a + bx^2} = \\frac{1}{2 b} \\log \\left | x^2 \\frac{a}{b} \\right |  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":268,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{x(a + bx^2)} = \\frac{1}{2 a} \\log \\left |\\frac{x^2}{a + b x^2} \\right |  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":269,
+    "idSubcategory": 45,
+    "idName": "formula.integration_of_rational",
+    "formula": "$$\\int \\frac{dx}{a^2 - bx^2} = \\frac{1}{2 a b} \\log \\left |\\frac{a + b x}{a - b x} \\right |  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":270,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin x  dx= - \\cos x  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":271,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cos x  dx= \\sin x  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":272,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin^2 x  dx= \\frac{x}{2} - \\frac{1}{4} \\sin 2 x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":273,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cos^2 x  dx= \\frac{x}{2} + \\frac{1}{4} \\sin 2 x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":274,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{dx}{\\sin x} = \\log \\left | \\tan \\frac{x}{2} \\right | + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":275,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{dx}{\\cos x} = \\log \\left | \\tan \\left ( \\frac{x}{2} + \\frac{\\pi}{4} \\right ) \\right | + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":276,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{dx}{\\sin^2 x} = - \\cot x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":277,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{dx}{\\cos^2 x} = \\tan x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":278,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin x \\cos x dx = - \\frac{1}{4} \\cos 2 x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":279,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin^2 x \\cos x dx = \\frac{1}{3} \\sin^3 x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":280,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin x \\cos^2 x dx = - \\frac{1}{3} \\cos^3 x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":281,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin^2 x \\cos^2 x dx = \\frac{x}{8} - \\frac{1}{32} \\sin 4 x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":282,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\tan x dx = - \\log |\\cos x| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":283,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{\\sin x}{\\cos^2 x} dx = \\frac{1}{\\cos x} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":284,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{\\sin^2 x}{\\cos x} dx = \\log \\left | \\tan \\left ( \\tan \\frac{x}{2} + \\frac{\\pi}{4} \\right ) \\right | - \\sin x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":285,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\tan^2 x dx = \\tan x - x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":286,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cot x dx = \\log|\\sin x| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":287,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{\\cos x}{\\sin^2 x} dx = - \\frac{1}{\\sin x} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":288,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{\\cos^2 x}{\\sin x} dx = \\log \\left | \\tan \\frac{x}{2} \\right | + \\cos x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":289,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cot^2 x dx = - \\cot x - x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":291,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{dx}{\\cos x \\sin x +} = - \\log |\\tan x| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":292,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{dx}{\\cos x \\sin^2 x +} = - \\frac{1}{\\sin x} + \\log \\left | \\tan \\left ( \\frac{x}{2} + \\frac{\\pi}{4} \\right ) \\right | + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":293,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{dx}{\\cos^2 x \\sin x +} = \\log \\left | \\tan \\frac{x}{2} \\right | + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":294,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\frac{dx}{\\cos^2 x \\sin^2 x +} = \\tan x - \\cot x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":295,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin mx \\sin nx dx = - \\frac{\\sin(m + n)x}{2(m + n)} + \\frac{\\sin(m - n)x}{2(m - n)}+ C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":296,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin mx \\cos nx dx = - \\frac{\\cos(m + n)x}{2(m + n)} - \\frac{\\cos(m - n)x}{2(m - n)}+ C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":297,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cos mx \\cos nx dx = \\frac{\\sin(m + n)x}{2(m + n)} + \\frac{\\sin(m - n)x}{2(m - n)}+ C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":298,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sin^{-1} x dx= x \\sin^{- 1} x + \\sqrt{1 - x^2} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":299,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cos^{-1} x dx= x \\cos^{- 1} x - \\sqrt{1 - x^2} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":300,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\tan^{-1} x dx= x \\tan^{- 1} x - \\frac{1}{2} \\log(x^2 + 1) + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":301,
+    "idSubcategory": 46,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cot^{-1} x dx= x \\cot^{- 1} x + \\frac{1}{2} \\log(x^2 + 1) + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":302,
+    "idSubcategory": 47,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sinh x dx= \\cosh x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":303,
+    "idSubcategory": 47,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cosh x dx= \\sinh x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":304,
+    "idSubcategory": 47,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\tanh x dx= \\ln \\cosh x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":305,
+    "idSubcategory": 47,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\coth x dx= \\ln | \\sinh x | + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":306,
+    "idSubcategory": 47,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\sinh^{- 1} x dx= x \\sinh^{- 1} x - \\sqrt{x^2 + 1}  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":307,
+    "idSubcategory": 47,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\cosh^{- 1} x dx= x \\cosh^{- 1} x - \\sqrt{x^2 - 1}  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":308,
+    "idSubcategory": 47,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\tanh^{- 1} x dx= x \\tanh^{- 1} x + \\frac{\\ln(1 - x^2)}{2}  + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":309,
+    "idSubcategory": 47,
+    "idName": "formula.integration_of_trigonometric",
+    "formula": "$$\\int \\coth^{- 1} x dx= x \\coth^{- 1} x + \\frac{\\ln(x^2 - 1)}{2} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":310,
+    "idSubcategory": 48,
+    "idName": "formula.integration_of_exp_and_log",
+    "formula": "$$\\int e^x dx= e^x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":311,
+    "idSubcategory": 48,
+    "idName": "formula.integration_of_exp_and_log",
+    "formula": "$$\\int e^{ax} dx= \\frac{e^{ax}}{a} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":312,
+    "idSubcategory": 48,
+    "idName": "formula.integration_of_exp_and_log",
+    "formula": "$$\\int a^{x} dx= \\frac{a^x}{\\ln a} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":313,
+    "idSubcategory": 48,
+    "idName": "formula.integration_of_exp_and_log",
+    "formula": "$$\\int \\ln x dx= x \\ln x - x + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":314,
+    "idSubcategory": 48,
+    "idName": "formula.integration_of_exp_and_log",
+    "formula": "$$\\int \\frac{dx}{x \\ln x} = \\ln |\\ln x| + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":315,
+    "idSubcategory": 48,
+    "idName": "formula.integration_of_exp_and_log",
+    "formula": "$$\\int x^n \\ln x dx = x^{n + 1} \\left [ \\frac{\\ln x}{n + 1} - \\frac{1}{(n + 1)^2} \\right ] + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":316,
+    "idSubcategory": 48,
+    "idName": "formula.integration_of_exp_and_log",
+    "formula": "$$\\int e^{a x} \\sin b x dx = \\frac{a \\sin b x - b \\cos b x }{a^2 + b^2} e^{a x} + C$$",
+    "idImg": 0
+  },
+  {
+    "idFormula":317,
+    "idSubcategory": 48,
+    "idName": "formula.integration_of_exp_and_log",
+    "formula": "$$\\int e^{a x} \\cos b x dx = \\frac{a \\cos b x + b \\sin b x }{a^2 + b^2} e^{a x} + C$$",
+    "idImg": 0
+  },
+  {
+  "idFormula":318,
+  "idSubcategory": 42,
+  "idName": "formula.hyperbolic_sinh",
+  "formula": "$$(\\sinh x)' = \\cosh x$$",
+  "idImg": 0
+}
 ]

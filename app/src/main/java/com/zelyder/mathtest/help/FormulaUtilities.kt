@@ -24,25 +24,57 @@ class FormulaUtilities {
             7 -> arrayOf("+", "-", "a", "c", "e", "x", "y", "n", "0", "1")
             8 -> arrayOf("+", "-", "a", "b", "c", "h", "p", "r", "R", "m",
                 "\\\\sin","\\\\cos","\\\\alpha", "\\\\beta", "\\\\gamma" ,"A","C","1","2","4")
-            9 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
-            10 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
-            11 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
-            12 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
-            13 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
-            14 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
-            15 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\alpha", "n", "0", "1")
-            16 -> arrayOf("+", "-", "O", "X", "B", "C", "A", "D", "0", "1")
-            17 -> arrayOf("+", "-")
-            18 -> arrayOf("+", "-")
-            19 -> arrayOf("+", "-")
-            20 -> arrayOf("+", "-")
-            21 -> arrayOf("+", "-")
-            22 -> arrayOf("+", "-")
-            23 -> arrayOf("+", "-")
-            24 -> arrayOf("+", "-")
-            25 -> arrayOf("+", "-")
-            26 -> arrayOf("+", "-")
-            27 -> arrayOf("+", "-")
+            9 -> arrayOf("+", "-", "a", "b", "c", "h", "d", "e", "r", "R", "1", "2")
+            10 -> arrayOf("+", "-", "a", "1", "2", "3", "4", "5", "6")
+            11 -> arrayOf("+", "-", "a", "b", "c", "d", "h", "\\\\sin", "\\\\alpha", "\\\\phi",
+                "1", "2")
+            12 -> arrayOf("+", "-", "a", "b", "d", "\\\\sin", "\\\\alpha", "1", "2")
+            13 -> arrayOf("+", "-", "a", "d", "2", "3", "4")
+            14 -> arrayOf("+", "-", "a", "h", "r", "d", "A", "H", "B", "1", "2", "3", "4", "\\\\sin",
+                "\\\\alpha")
+            15 -> arrayOf("+", "-", "a", "b", "h", "d", "O", "X", "Y", "A", "B", "C", "D", "\\\\sin",
+                "\\\\alpha", "\\\\beta","1","2","3","8","9","0")
+            16 -> arrayOf("+", "-", "a", "b", "c", "d", "p", "r", "\\\\sin", "\\\\alpha", "\\\\beta", "\\\\gamma"
+                , "\\\\delta", "1", "2", "3", "6","8", "0")
+            17 -> arrayOf("+", "-", "\\\\pi", "r", "\\\\alpha", "\\\\beta", "1", "2", "3", "6","8", "0")
+            18 -> arrayOf("+", "-", "a", "1", "2", "3", "6","8", "0")
+            19 -> arrayOf("+", "-","a", "b", "h", "1", "2", "3")
+            20 -> arrayOf("+", "-", "R", "h", "\\\\pi", "1", "2", "3")
+            21 -> arrayOf("+", "-", "R", "h", "\\\\ell", "\\pi", "1", "2", "3")
+            22 -> arrayOf("+", "-", "S", "h", "1", "2", "3")
+            23 -> arrayOf("+", "-", "R", "\\\\pi", "1", "2", "3", "4")
+            24 -> arrayOf("+", "-", "S", "h", "P", "1", "2", "3")
+            25 -> arrayOf("+", "-", "a", "b", "c", "\\\\sin", "\\\\cos", "\\\\tan", "\\\\cot",
+                "\\\\alpha")
+            26 -> arrayOf("+", "-", "\\\\sin", "\\\\cos", "\\\\tan", "\\\\cot", "\\\\alpha", "1",
+                "2")
+            27 -> arrayOf("+", "-", "0", "1", "2", "3", "4", "5", "6", "\\\\infty")
+            28 -> arrayOf("+", "-", "\\\\sin", "\\\\cos", "\\\\tan", "\\\\cot", "\\\\alpha",
+                "\\\\beta", "1", "2")
+            29 -> arrayOf("+", "-", "\\\\pm", "\\\\sin", "\\\\cos", "\\\\tan", "\\\\cot", "\\\\alpha",
+                "1", "2", "3", "4")
+            30 -> arrayOf("+", "-","\\\\pi", "\\\\sin", "\\\\cos", "\\\\tan", "\\\\cot", "\\\\alpha",
+                "\\\\beta", "1", "2", "3", "4")
+            31 -> arrayOf("+", "-", "\\\\sin", "\\\\cos", "\\\\tan", "\\\\cot", "\\\\alpha",
+                "\\\\beta", "1", "2", "3")
+            32 -> arrayOf("+", "-", "\\\\sin", "\\\\cos", "\\\\tan", "\\\\cot", "1", "2", "3", "4", "8")
+            33 -> arrayOf("+", "-", "x", "y", "1", "2", "3")
+            34 -> arrayOf("+", "-", "x", "y", "a", "b", "1", "2", "3")
+            35 -> arrayOf("+", "-", "\\\\pm", "x", "y", "a", "b", "c", "e", "1", "2", "3")
+            36 -> arrayOf("+", "-", "\\\\pm", "x", "y", "a", "b", "c", "e", "\\\\pi")
+            37 -> arrayOf("+", "-", "x", "y", "p","1", "2", "3", "4")
+            38 -> arrayOf("+", "-", "x", "n", "e", "0", "1", "2", "3")
+            39 -> arrayOf("+", "-","u", "v", "k", "f", "g", "x", "'", "1", "2", "3")
+            40 -> arrayOf("+", "-", "\\\\sin", "\\\\cos", "\\\\tan", "\\\\cot", "x", "1", "2", "3")
+            41 -> arrayOf("+", "-", "x", "1", "2", "3", "4")
+            42 -> arrayOf("+", "-", "x", "\\\\sinh", "\\\\cosh", "\\\\tanh", "\\\\coth", "1", "2", "3")
+            43 -> arrayOf("+", "-", "x", "1", "2", "3", "4")
+            44 -> arrayOf("+", "-", "a", "x", "C", "f", "g", "F", "d", "u", "v", "'", "1", "2", "3")
+            45 -> arrayOf("+", "-", "a", "b", "c", "d", "x", "C", "n", "\\\\tan", "\\\\tanh", "1", "2", "3")
+            46 -> arrayOf("+", "-", "x", "C", "m", "n", "\\\\pi", "\\\\sin", "\\\\cos", "\\\\tan",
+                "\\\\cot", "1", "2", "3", "4", "6", "8")
+            47 -> arrayOf("+", "-", "x","C", "\\\\sinh", "\\\\cosh", "\\\\tanh", "\\\\coth", "1", "2", "3")
+            48 -> arrayOf("+", "-", "x", "e", "a", "b", "C", "n", "\\\\sin", "\\\\cos", "1", "2", "3")
             else -> arrayOf()
         }
     }
@@ -145,6 +177,10 @@ class FormulaUtilities {
             formula.contains("\\frac") -> "\\frac"
             formula.contains("\\log") -> "\\log"
             formula.contains("\\ln") -> "\\ln"
+            formula.contains("\\lim") -> "\\lim"
+            formula.contains("\\to") -> "\\to"
+            formula.contains("\\left") -> "\\left"
+            formula.contains("\\right") -> "\\right"
             formula.contains("=") -> "="
             formula.contains("base") -> "base"
             formula.contains("side surface") -> "side surface"
@@ -159,7 +195,7 @@ class FormulaUtilities {
             formula.contains("\\tg") -> "\\tg"
             formula.contains("\\tan") -> "\\tan"
             formula.contains("\\ctg") -> "\\ctg"
-            formula.contains("\\cos") -> "\\cos"
+            formula.contains("\\cot") -> "\\cot"
             formula.contains("\\alpha") -> "\\alpha"
             formula.contains("\\beta") -> "\\beta"
             formula.contains("\\gamma") -> "\\gamma"
@@ -170,6 +206,10 @@ class FormulaUtilities {
             formula.contains("\\mp") -> "\\mp"
             formula.contains("\\phi") -> "\\phi"
             formula.contains("\\infty") -> "\\infty"
+            formula.contains("\\sinh") -> "\\sinh"
+            formula.contains("\\cosh") -> "\\cosh"
+            formula.contains("\\tanh") -> "\\tanрh"
+            formula.contains("\\coth") -> "\\coth"
             else -> ""
         }
     }
@@ -371,6 +411,10 @@ class FormulaUtilities {
                         outStr = outStr.replace(indexBackslash, i, "α")
                         i -= i-indexBackslash
                     }
+                    "infty" -> {
+                        outStr = outStr.replace(indexBackslash, i, "∞")
+                        i -= i-indexBackslash
+                    }
                     "beta" -> {
                         outStr = outStr.replace(indexBackslash, i, "β")
                         i -= i-indexBackslash
@@ -391,6 +435,7 @@ class FormulaUtilities {
                         outStr = outStr.replace(indexBackslash, i, "φ")
                         i -= i-indexBackslash
                     }
+
                     else -> insetDelAfter = ' '
 
                 }

@@ -184,6 +184,56 @@
   {
     "idSubcategory":38,
     "idCategory": 6,
-    "idName": "subcategory.parabola"
+    "idName": "subcategory.general_derivative"
+  },
+  {
+    "idSubcategory":39,
+    "idCategory": 6,
+    "idName": "subcategory.properties_derivative"
+  },
+  {
+    "idSubcategory":40,
+    "idCategory": 6,
+    "idName": "subcategory.trigonometric"
+  },
+  {
+    "idSubcategory":41,
+    "idCategory": 6,
+    "idName": "subcategory.inverse_trigonometric"
+  },
+  {
+    "idSubcategory":42,
+    "idCategory": 6,
+    "idName": "subcategory.hyperbolic"
+  },
+  {
+    "idSubcategory":43,
+    "idCategory": 6,
+    "idName": "subcategory.inverse_hyperbolic"
+  },
+  {
+    "idSubcategory":44,
+    "idCategory": 7,
+    "idName": "subcategory.properties_of_integration"
+  },
+  {
+    "idSubcategory":45,
+    "idCategory": 7,
+    "idName": "subcategory.integration_of_rational"
+  },
+  {
+    "idSubcategory":46,
+    "idCategory": 7,
+    "idName": "subcategory.integration_of_trigonometric"
+  },
+  {
+    "idSubcategory":47,
+    "idCategory": 7,
+    "idName": "subcategory.integration_of_hyperbolic"
+  },
+  {
+    "idSubcategory":48,
+    "idCategory": 7,
+    "idName": "subcategory.integration_of_exp_and_log"
   }
 ]

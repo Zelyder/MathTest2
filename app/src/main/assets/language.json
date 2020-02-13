@@ -181,7 +181,7 @@
     "rusName": "Половинный/Двойной/Множественный угол"
   },
   {
-    "idName": "subcategory.half_angle",
+    "idName": "subcategory.sum_of_functions",
     "engName": "Sum of functions",
     "rusName": "Сумма функций"
   },
@@ -215,6 +215,62 @@
     "engName": "Parabola",
     "rusName": "Парабола"
   },
+  {
+    "idName": "subcategory.general_derivative",
+    "engName": "General derivative formulas",
+    "rusName": "Основные формулы производных"
+  },
+  {
+    "idName": "subcategory.properties_derivative",
+    "engName": "Properties of derivative",
+    "rusName": "Свойства производной"
+  },
+  {
+    "idName": "subcategory.trigonometric",
+    "engName": "Trigonometric formulas",
+    "rusName": "Тригонометрические формулы"
+  },
+  {
+    "idName": "subcategory.inverse_trigonometric",
+    "engName": "Inverse trigonometric formulas",
+    "rusName": "Обратные тригонометрические формулы"
+  },
+  {
+    "idName": "subcategory.hyperbolic",
+    "engName": "Hyperbolic formulas",
+    "rusName": "Гиперболические формулы"
+  },
+  {
+    "idName": "subcategory.inverse_hyperbolic",
+    "engName": "Inverse hyperbolic formulas",
+    "rusName": "Обратные гиперболические формулы"
+  },
+  {
+    "idName": "subcategory.properties_of_integration",
+    "engName": "Properties of integration",
+    "rusName": "Свойства интегралов"
+  },
+  {
+    "idName": "subcategory.integration_of_rational",
+    "engName": "Integration of rational functions",
+    "rusName": "Интегрирование рациональных функций"
+  },
+  {
+    "idName": "subcategory.integration_of_trigonometric",
+    "engName": "Integration of trigonometric functions",
+    "rusName": "Интегрирование тригонометрических функций"
+  },
+  {
+    "idName": "subcategory.integration_of_hyperbolic",
+    "engName": "Integration of hyperbolic functions",
+    "rusName": "Интегрирование гиперболических функций"
+  },
+  {
+    "idName": "subcategory.integration_of_exp_and_log",
+    "engName": "Integration of exponential and log functions",
+    "rusName": "Интегрирование экспоненциальных и log-функций"
+  },
+
 
 
   {
@@ -1308,6 +1364,176 @@
     "idName": "formula.parabola_equation",
     "engName": "Equation of parabola",
     "rusName": "Уравнение параболы"
+  },
+  {
+    "idName": "formula.general_derivative_const",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.general_derivative_x",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.general_derivative_x_n",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.general_derivative_sqrt_x",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.general_derivative_ln_x",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.general_derivative_e_x",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.properties_derivative_u_m_v",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.properties_derivative_u_p_v",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.properties_derivative_k_u",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.properties_derivative_u_p_v",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.properties_derivative_u_d_v",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.properties_derivative_1_d_y",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.properties_derivative_chain_rule",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.trigonometric_sin",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.trigonometric_cos",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.trigonometric_tan",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.trigonometric_cot",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.inverse_trigonometric_sin",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.inverse_trigonometric_cos",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.inverse_trigonometric_tan",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.inverse_trigonometric_cot",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.hyperbolic_sinh",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.hyperbolic_cosh",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.hyperbolic_tanh",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.hyperbolic_coth",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.inverse_hyperbolic_sinh",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.inverse_hyperbolic_cosh",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.inverse_hyperbolic_tanh",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.inverse_hyperbolic_coth",
+    "engName": "Derivative of the form",
+    "rusName": "Производная вида"
+  },
+  {
+    "idName": "formula.properties_of_integration",
+    "engName": "Integral of the form",
+    "rusName": "Интеграл вида"
+  },
+  {
+    "idName": "formula.integration_of_rational",
+    "engName": "Integral of the form",
+    "rusName": "Интеграл вида"
+  },
+  {
+    "idName": "formula.integration_of_trigonometric",
+    "engName": "Integral of the form",
+    "rusName": "Интеграл вида"
+  },
+  {
+    "idName": "formula.integration_of_hyperbolic",
+    "engName": "Integral of the form",
+    "rusName": "Интеграл вида"
+  },
+  {
+    "idName": "formula.integration_of_exp_and_log",
+    "engName": "Integral of the form",
+    "rusName": "Интеграл вида"
   }
 
 ]
