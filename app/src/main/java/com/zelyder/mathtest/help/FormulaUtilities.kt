@@ -364,7 +364,8 @@ class FormulaUtilities {
                 val functionStr = StringBuilder()
                 indexBackslash = i
                 var j = i + 1
-                while (j < outStr.length && outStr[j] != ' ' && outStr[j] != '[' && outStr[j] != '{') {
+                while (j < outStr.length && outStr[j] != ' ' && outStr[j] != '[' && outStr[j] != '{'
+                    && outStr[j] != '(') {
                     functionStr.append(outStr[j])
                     i = j + 1
                     j++
@@ -407,6 +408,34 @@ class FormulaUtilities {
                         outStr = outStr.replace(indexBackslash, i, "Š/")
                         i -= i-indexBackslash
                     }
+                    "cos" -> {
+                        outStr = outStr.replace(indexBackslash, i, "€/")
+                        i -= i-indexBackslash
+                    }
+                    "tan" -> {
+                        outStr = outStr.replace(indexBackslash, i, "†/")
+                        i -= i-indexBackslash
+                    }
+                    "cot" -> {
+                        outStr = outStr.replace(indexBackslash, i, "‡/")
+                        i -= i-indexBackslash
+                    }
+                    "sinh" -> {
+                        outStr = outStr.replace(indexBackslash, i, "œ/")
+                        i -= i-indexBackslash
+                    }
+                    "cosh" -> {
+                        outStr = outStr.replace(indexBackslash, i, "ќ/")
+                        i -= i-indexBackslash
+                    }
+                    "tanh" -> {
+                        outStr = outStr.replace(indexBackslash, i, "ž/")
+                        i -= i-indexBackslash
+                    }
+                    "coth" -> {
+                        outStr = outStr.replace(indexBackslash, i, "Ÿ/")
+                        i -= i-indexBackslash
+                    }
                     "alpha" -> {
                         outStr = outStr.replace(indexBackslash, i, "α")
                         i -= i-indexBackslash
@@ -427,6 +456,10 @@ class FormulaUtilities {
                         outStr = outStr.replace(indexBackslash, i, "δ")
                         i -= i-indexBackslash
                     }
+                    "pi" -> {
+                        outStr = outStr.replace(indexBackslash, i, "π")
+                        i -= i-indexBackslash
+                    }
                     "ell" -> {
                         outStr = outStr.replace(indexBackslash, i, "ℓ")
                         i -= i-indexBackslash
@@ -438,6 +471,36 @@ class FormulaUtilities {
 
                     else -> insetDelAfter = ' '
 
+                }
+            }
+            if (isNum(outStr[i])){
+                val functionStr = StringBuilder()
+                functionStr.append(outStr[i])
+                indexBackslash = i
+                var j = i + 1
+                while (j < outStr.length && isNum(outStr[j])){
+                    functionStr.append(outStr[j])
+                    i = j + 1
+                    j++
+                }
+                when (functionStr.toString()) {
+                    "180" -> {
+                        outStr = outStr.replace(indexBackslash, i, "Ґ")
+                        i -= i-indexBackslash
+                    }
+                    "360" -> {
+                        outStr = outStr.replace(indexBackslash, i, "¦")
+                        i -= i-indexBackslash
+                    }
+                    "90" -> {
+                        outStr = outStr.replace(indexBackslash, i, "љ")
+                        i -= i-indexBackslash
+                    }
+                    "32" -> {
+                        outStr = outStr.replace(indexBackslash, i, "™")
+                        i -= i-indexBackslash
+                    }
+                    else -> insetDelAfter = ' '
                 }
             }
             if (insetDelAfter != ' ' && insetDelAfter == outStr[i]) {
@@ -467,8 +530,9 @@ class FormulaUtilities {
         var i = 0
         while (i < correctTemp.length) {
             if (correctTemp[i] != '/' && correctTemp[i] != '+' && correctTemp[i] != '-'
-                && correctTemp[i] != '^' && correctTemp[i] != '(' && correctTemp[i] != ')') {
-                map[correctTemp[i].toString()] = i + 1
+                && correctTemp[i] != '^' && correctTemp[i] != '(' && correctTemp[i] != ')' ) {
+
+                    map[correctTemp[i].toString()] = i + 1
             }
             i++
         }
@@ -517,6 +581,24 @@ class FormulaUtilities {
             i++
         }
         return ppn.eval(outputStr.toString())
+    }
+
+    fun isNum(ch: Char): Boolean{
+        return when(ch){
+            '0' -> true
+            '1' -> true
+            '2' -> true
+            '3' -> true
+            '4' -> true
+            '5' -> true
+            '6' -> true
+            '7' -> true
+            '8' -> true
+            '9' -> true
+
+            else -> false
+        }
+
     }
 
     fun replaceBraces(string: String):String{

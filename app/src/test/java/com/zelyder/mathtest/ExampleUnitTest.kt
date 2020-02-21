@@ -29,9 +29,9 @@ class ExampleUnitTest {
     @Test
     fun equals_isCorrect(){
         val util = FormulaUtilities()
-        val result = util.equals("\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = \\sqrt[n \\cdot m]{b^n a^m}",
-            "\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = \\sqrt[n \\cdot m]{a^m b^n}")
-        val expected = true
+        val result = util.equals("\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = 810 x ",
+            "\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = 180 y")
+        val expected = false
         assertEquals(expected, result)
     }
 }
