@@ -150,6 +150,12 @@ public class Keyboard extends LinearLayout {
     private String subsSpecialSymbols(String title){
         String output = title;
         switch (title){
+            case "&#43":
+                output = "+";
+                break;
+            case "&#45":
+                output = "-";
+                break;
             case "\\\\alpha":
                 output = "α";
             break;

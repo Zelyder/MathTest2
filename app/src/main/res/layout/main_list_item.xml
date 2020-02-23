@@ -8,6 +8,7 @@
         app:cardBackgroundColor="?attr/cardBackground"
         app:contentPadding="16dp">
 
+
     <TextView
             android:id="@+id/sectionName"
             android:layout_width="match_parent"
@@ -15,6 +16,6 @@
             android:layout_gravity="center"
             android:drawableStart="@drawable/ic_check"
             android:drawablePadding="8dp"
-            android:textSize="18sp"
+            android:textSize="@dimen/text_18sp"
             tools:text="TextView" />
 </androidx.cardview.widget.CardView>
