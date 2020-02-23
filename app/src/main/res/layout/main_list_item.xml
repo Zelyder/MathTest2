@@ -17,5 +17,6 @@
             android:drawableStart="@drawable/ic_check"
             android:drawablePadding="8dp"
             android:textSize="@dimen/text_18sp"
+            android:textColor="@color/colorTextDay"
             tools:text="TextView" />
 </androidx.cardview.widget.CardView>

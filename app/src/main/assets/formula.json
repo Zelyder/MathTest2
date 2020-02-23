@@ -397,7 +397,7 @@
     "idFormula":56,
     "idSubcategory": 8,
     "idName": "formula.triangle_law_cosines",
-    "formula": "$$a^2 = b^2 + c^2 - 2 b c \\cos \\alpha$$",
+    "formula": "$$c^2 = a^2 + b^2 - 2 a b \\cos \\alpha$$",
     "idImg": 2131230851
   },
   {
