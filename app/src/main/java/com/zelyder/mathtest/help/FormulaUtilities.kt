@@ -475,7 +475,7 @@ class FormulaUtilities {
 
                 }
             }
-            if (isNum(outStr[i])){
+            if (i + 1 < outStr.length && isNum(outStr[i]) ){
                 val functionStr = StringBuilder()
                 functionStr.append(outStr[i])
                 indexBackslash = i

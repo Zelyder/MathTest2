@@ -14,9 +14,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:drawableStart="@drawable/ic_check"
+            android:drawableStart="@drawable/ic_nav_trigonometry"
             android:drawablePadding="8dp"
-            android:textSize="@dimen/text_18sp"
+            android:textSize="18sp"
             android:textColor="@color/colorTextDay"
             tools:text="TextView" />
 </androidx.cardview.widget.CardView>
