@@ -3,6 +3,8 @@
     <string name="tab_text_1">Test</string>
     <string name="tab_text_2">Formulas</string>
     <string name="action_settings">Settings</string>
+    <string name="correct_formula_toast_title">Correct</string>
+    <string name="wrong_formula_toast_title">Wrong attempts left:</string>
     <string name="correct_formula_dialog_title">Correct formula</string>
     <string name="correct_formula_dialog_ok_btn">OK</string>
     <string name="final_dialog_correct">Correct</string>

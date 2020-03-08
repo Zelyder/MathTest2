@@ -24,9 +24,9 @@ public class Keyboard extends LinearLayout {
 
     public void setUpKeyboard(final KeyboardOutput keyboardOutput, String[] titleBtn) {
 
-        if(titleBtn.length >= 19){
+        if(titleBtn.length >= 15){
             scale *= 0.7;
-            textSize *= 0.7;
+            textSize *= 0.9;
         }
 
         LayoutParams viewParams = new LayoutParams(LayoutParams.WRAP_CONTENT,
@@ -132,6 +132,8 @@ public class Keyboard extends LinearLayout {
                 final Button btn = new Button(getContext());
                 final String title = titleBtn[titleBtn.length - residual + i];
                 btn.setText(subsSpecialSymbols(title));
+                btn.setTextSize(textSize);
+                btn.setAllCaps(false);
                 btn.setLayoutParams(buttonLastLineParams);
                 btn.setBackground(this.getResources().getDrawable(R.drawable.button_test));
                 btn.setOnClickListener(new OnClickListener() {

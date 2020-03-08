@@ -1,5 +1,6 @@
 package com.zelyder.mathtest.data.viewmodels
 
+import android.app.Activity
 import android.app.AlertDialog
 import android.app.Application
 import android.content.Context
@@ -88,7 +89,9 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
             if (FormulaUtilities().equals(formulaText.value.toString(),
                     _formulasList.value?.get(formulaId)?.formula.toString()
                 )) {
-                Toast.makeText(getApplication(), "Правильно", Toast.LENGTH_SHORT).show()
+                Toast.makeText(getApplication(),
+                    getApplication<Application>().resources.getString(R.string.correct_formula_toast_title),
+                    Toast.LENGTH_SHORT).show()
                 if (countTry > 0) {
                     correctAnswers++
                 }
@@ -98,7 +101,7 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
                 if (countTry > 0) {
                     Toast.makeText(
                         getApplication(),
-                        "Неправильно осталось попыток: $countTry",
+                        getApplication<Application>().resources.getString(R.string.wrong_formula_toast_title) + " $countTry",
                         Toast.LENGTH_SHORT
                     ).show()
                 } else {

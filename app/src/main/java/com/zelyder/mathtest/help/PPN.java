@@ -25,12 +25,12 @@ public class PPN {
         }
     }
     private static void processOperator(LinkedList<Float> st, char op) {
-        float r;
+        float r = 1;
         float l = 1;
         if(op == 'Δ'  && st.isEmpty()){
             r = 0;
             l = 0;
-        }else {
+        }else if(!st.isEmpty()){
             r = st.removeLast();
         }
 
