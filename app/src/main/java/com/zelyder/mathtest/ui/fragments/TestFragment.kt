@@ -68,7 +68,7 @@ class TestFragment : Fragment(), DialogControl {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        activity?.findViewById<Button>(R.id.button)?.visibility = View.GONE
+        activity?.findViewById<View>(R.id.adView)?.visibility = View.GONE
 
 
 

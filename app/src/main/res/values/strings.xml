@@ -31,5 +31,6 @@
         <item>ru</item>
     </string-array>
     <string name="btn_text">Advertising</string>
+    <string name="banner_ad_yandex_id" translatable="false">R-M-527828-1</string>
 
 </resources>

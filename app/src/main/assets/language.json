@@ -453,6 +453,11 @@
     "engName": "Logarithm 10",
     "rusName": "Логарифм 10"
   },
+  {
+    "idName": "formula.logarithm_11",
+    "engName": "Logarithm 11",
+    "rusName": "Логарифм 11"
+  },
 
   {
     "idName": "formula.useful_quadratic_equation",
@@ -1224,6 +1229,11 @@
     "idName": "formula.sum_of_functions_cos_p_sin",
     "engName": "Sum of cosine and tangent",
     "rusName": "Сумма косинуса и тангенса"
+  },
+  {
+    "idName": "formula.sum_of_functions_cos_m_sin",
+    "engName": "Difference of cosine and tangent",
+    "rusName": "Разность косинуса и тангенса"
   },
   {
     "idName": "formula.product_of_functions_sin",

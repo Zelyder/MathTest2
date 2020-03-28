@@ -101,7 +101,7 @@
     "idFormula":15,
     "idSubcategory": 2,
     "idName": "formula.root_9",
-    "formula": "$$\\frac{1}{\\sqrt[n]{a}} = \\frac{\\sqrt[n]{n-1}}{a}$$",
+    "formula": "$$\\frac{1}{\\sqrt[n]{a}} = \\frac{\\sqrt[n]{a^{n-1}}}{a}$$",
     "idImg": 0
   },
   {
@@ -200,7 +200,7 @@
     "idFormula":28,
     "idSubcategory": 4,
     "idName": "formula.logarithm_3",
-    "formula": "$$\\log_{a} \\frac{x}{y} =  \\log_{a} x + \\log_{a} y$$",
+    "formula": "$$\\log_{a} \\frac{x}{y} =  \\log_{a} x - \\log_{a} y$$",
     "idImg": 0
   },
   {
@@ -270,7 +270,7 @@
     "idFormula":38,
     "idSubcategory": 6,
     "idName": "formula.complex_imaginary_unit_square",
-    "formula": "$$i^2 = \\sqrt{-1}$$",
+    "formula": "$$i^2 = -1$$",
     "idImg": 0
   },
   {
@@ -334,7 +334,7 @@
     "idFormula":47,
     "idSubcategory": 8,
     "idName": "formula.triangle_semiperimeter",
-    "formula": "$$S = \\sqrt{p (p - a) (p - b) (p - c)}$$",
+    "formula": "$$p = \\frac{a + b + c}{2}$$",
     "idImg": 2131230851
   },
   {
@@ -481,14 +481,14 @@
     "idFormula":68,
     "idSubcategory": 10,
     "idName": "formula.equilateral_triangle_radius_in",
-    "formula": "$$h = \\frac{\\sqrt{3} a}{6}$$",
+    "formula": "$$r = \\frac{\\sqrt{3} a}{6}$$",
     "idImg": 2131230851
   },
   {
     "idFormula":69,
     "idSubcategory": 10,
     "idName": "formula.equilateral_triangle_radius_out",
-    "formula": "$$h = \\frac{\\sqrt{3} a}{3}$$",
+    "formula": "$$R = \\frac{\\sqrt{3} a}{3}$$",
     "idImg": 2131230851
   },
   {
@@ -1024,7 +1024,7 @@
     "idImg": 0
   },
   {
-    "idFormula":146,
+    "idFormula":319,
     "idSubcategory": 27,
     "idName": "formula.table_of_angle_cos60",
     "formula": "$$\\cos \\frac{\\pi}{3} = \\frac{1}{2}$$",
@@ -1307,7 +1307,7 @@
     "idFormula":185,
     "idSubcategory": 30,
     "idName": "formula.sum_of_functions_cot_p",
-    "formula": "$$\\tan \\alpha + \\tan \\beta = \\frac{\\sin(\\beta + \\alpha)}{\\sin \\alpha \\cdot \\sin \\beta}$$",
+    "formula": "$$\\cot \\alpha + \\cot \\beta = \\frac{\\sin(\\alpha + \\beta)}{\\sin \\alpha \\cdot \\sin \\beta}$$",
     "idImg": 0
   },
   {
@@ -1601,7 +1601,7 @@
     "idFormula":226,
     "idSubcategory": 39,
     "idName": "formula.properties_derivative_1_d_y",
-    "formula": "$$(\\frac{1}{y})' = \\frac{y'}{y^2}$$",
+    "formula": "$$(\\frac{1}{y})' = - \\frac{y'}{y^2}$$",
     "idImg": 0
   },
   {
@@ -1888,7 +1888,7 @@
     "idFormula":267,
     "idSubcategory": 45,
     "idName": "formula.integration_of_rational",
-    "formula": "$$\\int \\frac{xdx}{a + bx^2} = \\frac{1}{2 b} \\log \\left | x^2 \\frac{a}{b} \\right |  + C$$",
+    "formula": "$$\\int \\frac{xdx}{a + bx^2} = \\frac{1}{2 b} \\log \\left | x^2 + \\frac{a}{b} \\right |  + C$$",
     "idImg": 0
   },
   {
@@ -1902,7 +1902,7 @@
     "idFormula":269,
     "idSubcategory": 45,
     "idName": "formula.integration_of_rational",
-    "formula": "$$\\int \\frac{dx}{a^2 - bx^2} = \\frac{1}{2 a b} \\log \\left |\\frac{a + b x}{a - b x} \\right |  + C$$",
+    "formula": "$$\\int \\frac{dx}{a^2 - b^2 x^2} = \\frac{1}{2 a b} \\log \\left |\\frac{a + b x}{a - b x} \\right |  + C$$",
     "idImg": 0
   },
   {
@@ -2049,28 +2049,28 @@
     "idFormula":291,
     "idSubcategory": 46,
     "idName": "formula.integration_of_trigonometric",
-    "formula": "$$\\int \\frac{dx}{\\cos x \\sin x +} = - \\log |\\tan x| + C$$",
+    "formula": "$$\\int \\frac{dx}{\\cos x \\sin x} = \\log |\\tan x| + C$$",
     "idImg": 0
   },
   {
     "idFormula":292,
     "idSubcategory": 46,
     "idName": "formula.integration_of_trigonometric",
-    "formula": "$$\\int \\frac{dx}{\\cos x \\sin^2 x +} = - \\frac{1}{\\sin x} + \\log \\left | \\tan \\left ( \\frac{x}{2} + \\frac{\\pi}{4} \\right ) \\right | + C$$",
+    "formula": "$$\\int \\frac{dx}{\\cos x \\sin^2 x} = - \\frac{1}{\\sin x} + \\log \\left | \\tan \\left ( \\frac{x}{2} + \\frac{\\pi}{4} \\right ) \\right | + C$$",
     "idImg": 0
   },
   {
     "idFormula":293,
     "idSubcategory": 46,
     "idName": "formula.integration_of_trigonometric",
-    "formula": "$$\\int \\frac{dx}{\\cos^2 x \\sin x +} = \\log \\left | \\tan \\frac{x}{2} \\right | + C$$",
+    "formula": "$$\\int \\frac{dx}{\\cos^2 x \\sin x} = \\frac{1}{\\cos x} + \\log \\left | \\tan \\frac{x}{2} \\right | + C$$",
     "idImg": 0
   },
   {
     "idFormula":294,
     "idSubcategory": 46,
     "idName": "formula.integration_of_trigonometric",
-    "formula": "$$\\int \\frac{dx}{\\cos^2 x \\sin^2 x +} = \\tan x - \\cot x + C$$",
+    "formula": "$$\\int \\frac{dx}{\\cos^2 x \\sin^2 x} = \\tan x - \\cot x + C$$",
     "idImg": 0
   },
   {
@@ -2240,5 +2240,19 @@
   "idName": "formula.hyperbolic_sinh",
   "formula": "$$(\\sinh x)' = \\cosh x$$",
   "idImg": 0
-}
+},
+  {
+    "idFormula":320,
+    "idSubcategory": 4,
+    "idName": "formula.logarithm_11",
+    "formula": "$$\\log_{a} x y =  \\log_{a} x + \\log_{a} y$$",
+    "idImg": 0
+  },
+  {
+    "idFormula": 321,
+    "idSubcategory": 30,
+    "idName": "formula.sum_of_functions_cos_m_sin",
+    "formula": "$$\\cos \\alpha - \\sin \\alpha = \\sqrt{2} \\sin(\\frac{\\pi}{4} - \\alpha)$$",
+    "idImg": 0
+  }
 ]

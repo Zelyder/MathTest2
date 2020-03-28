@@ -24,7 +24,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.pref)
-        activity?.findViewById<Button>(R.id.button)?.visibility = View.GONE
+        activity?.findViewById<View>(R.id.adView)?.visibility = View.GONE
 
         val listLang: Preference? =  findPreference("pref_lang")
         val cbStyle: Preference? =  findPreference("cb_pref_dark_style")
