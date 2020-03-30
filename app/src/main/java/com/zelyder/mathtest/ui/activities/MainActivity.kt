@@ -3,9 +3,11 @@ package com.zelyder.mathtest.ui.activities
 import android.os.Bundle
 import android.os.Handler
 import android.preference.PreferenceManager
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
@@ -37,7 +39,30 @@ class MainActivity : AppCompatActivity() {
 
         val preferences = PreferenceManager.getDefaultSharedPreferences(this.applicationContext)
 
-        setAppLocale(preferences.getString("pref_lang", "en") ?: "en")
+        if (preferences.getBoolean("firstStart", true)){
+            Toast.makeText(this, "первый раз", Toast.LENGTH_LONG).show()
+
+            if(Locale.getDefault().language == "ru" || preferences.getString("pref_lang", "en") == "ru"){
+                preferences.edit()
+                    .putString("pref_lang", "ru")
+                    .apply()
+            }else{
+                preferences.edit()
+                    .putString("pref_lang", "en")
+                    .apply()
+            }
+
+
+            preferences.edit()
+                .putBoolean("firstStart", false)
+                .apply()
+
+        } else {
+            Toast.makeText(this, "не первый раз", Toast.LENGTH_LONG).show()
+            setAppLocale(preferences.getString("pref_lang", "en") ?: "en")
+        }
+
+
         if (preferences.getBoolean("cb_pref_dark_style", false)) {
             setTheme(R.style.darkTheme_NoActionBar)
         } else {
