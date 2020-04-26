@@ -1,13 +1,13 @@
 package com.zelyder.mathtest.ui.activities
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.preference.PreferenceManager
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         val preferences = PreferenceManager.getDefaultSharedPreferences(this.applicationContext)
 
         if (preferences.getBoolean("firstStart", true)){
-            Toast.makeText(this, "первый раз", Toast.LENGTH_LONG).show()
 
             if(Locale.getDefault().language == "ru" || preferences.getString("pref_lang", "en") == "ru"){
                 preferences.edit()
@@ -58,7 +57,6 @@ class MainActivity : AppCompatActivity() {
                 .apply()
 
         } else {
-            Toast.makeText(this, "не первый раз", Toast.LENGTH_LONG).show()
             setAppLocale(preferences.getString("pref_lang", "en") ?: "en")
         }
 
@@ -112,6 +110,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.to_settings_privacy_policy){
+            startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://math-test-formulas.flycricket.io/privacy.html")
+                )
+            )
+        }
+
         return item.onNavDestinationSelected(navController)
                 || super.onOptionsItemSelected(item)
     }
@@ -130,7 +137,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initBannerView() {
-        adView.blockId = resources.getString(R.string.banner_ad_yandex_id)
+        adView.blockId = resources.getString(R.string.banner_ad_yandex_meditation_id)
         adView.adSize = AdSize.BANNER_320x50
         mAdRequest = AdRequest.builder().build()
         adView.adEventListener = mBannerAdEventListener

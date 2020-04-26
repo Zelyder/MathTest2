@@ -3,6 +3,7 @@
     <string name="tab_text_1">Test</string>
     <string name="tab_text_2">Formulas</string>
     <string name="action_settings">Settings</string>
+    <string name="action_privacy_policy">Privacy Policy</string>
     <string name="correct_formula_toast_title">Correct</string>
     <string name="wrong_formula_toast_title">Wrong attempts left:</string>
     <string name="correct_formula_dialog_title">Correct formula</string>
@@ -32,5 +33,7 @@
     </string-array>
     <string name="btn_text">Advertising</string>
     <string name="banner_ad_yandex_id" translatable="false">R-M-527828-1</string>
+    <string name="banner_ad_yandex_meditation_id" translatable="false">adf-338318/1077608</string>
+    <string name="interstitial_ad_yandex_meditation_id" translatable="false">adf-338318/1090603</string>
 
 </resources>

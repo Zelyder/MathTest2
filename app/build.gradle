@@ -14,8 +14,8 @@ android {
         applicationId "com.zelyder.mathtest"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 4
-        versionName "0.4"
+        versionCode 6
+        versionName "0.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -90,8 +90,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //Ads
-    implementation 'com.yandex.android:mobileads:2.113'
-    implementation 'com.yandex.android:mobmetricalib:3.8.0'
+    implementation 'com.yandex.android:mobileads:2.142'
+    implementation 'com.yandex.android:mobmetricalib:3.13.1'
+    implementation 'com.yandex.ads.mediation:mobileads-admob:1.8.0'
+    implementation 'com.google.android.gms:play-services-ads:19.0.1'
 
     //To solve methods limit
     implementation 'com.android.support:multidex:1.0.3'
