@@ -35,7 +35,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         }
         cbStyle?.isEnabled = false
 
-        // Todo: Исправить баг с сменой цвета формул и внедрить обратно темную тему
+        // Todo: Исправить баг со сменой цвета формул и внедрить обратно темную тему
 //        cbStyle?.setOnPreferenceChangeListener {_,_ ->
 //            restartApp()
 //            true

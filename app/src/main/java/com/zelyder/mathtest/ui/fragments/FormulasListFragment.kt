@@ -34,7 +34,7 @@ class FormulasListFragment : Fragment() {
         formulasList.adapter = listAdapter
 
         formulasViewModel.getFormulas(arguments?.getInt(ARG_SUBCATEGORY_ID) ?: 1)
-            .observe(this, Observer {
+            .observe(viewLifecycleOwner, Observer {
             it?.let {
                 listAdapter.refresh(it)
             }

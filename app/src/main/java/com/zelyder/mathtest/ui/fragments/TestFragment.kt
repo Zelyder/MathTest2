@@ -23,9 +23,7 @@ import com.github.mikephil.charting.formatter.IValueFormatter
 import com.zelyder.mathtest.R
 import com.zelyder.mathtest.data.viewmodels.TestAViewModel
 import com.zelyder.mathtest.databinding.FragmentTestBinding
-import com.zelyder.mathtest.help.ARG_SUBCATEGORY_ID
-import com.zelyder.mathtest.help.FormulaUtilities
-import com.zelyder.mathtest.help.setupMathView
+import com.zelyder.mathtest.help.*
 import com.zelyder.mathtest.interfaces.DialogControl
 import kotlinx.android.synthetic.main.dialog_correct_formula.view.*
 import kotlinx.android.synthetic.main.dialog_final.view.*
@@ -160,7 +158,11 @@ class TestFragment : Fragment(), DialogControl {
         builder.setTitle(resources.getString(R.string.final_dialog_success))
             .setView(view)
             .setPositiveButton(resources.getString(R.string.final_dialog_exit)) { _, _ ->
+                /*val bundle = Bundle()
+                bundle.putInt(ARG_SUBCATEGORY_ID, arguments?.getInt(ARG_SUBCATEGORY_ID) ?: 1)
+                bundle.putInt(ARG_INDEX_BACK, 1)*/
                 findNavController().popBackStack()
+
             }
             .create()
             .show()

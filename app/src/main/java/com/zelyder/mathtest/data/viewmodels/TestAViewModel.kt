@@ -85,7 +85,7 @@ class TestAViewModel(app: Application) : AndroidViewModel(app), KeyboardOutput {
 
 
     override fun checkFormula() {
-        if(_formulaText.value?.isNotEmpty()!!) {
+        if(_formulaText.value?.isNotEmpty()!! && _formulasList.value?.size!! > 0) {
             if (FormulaUtilities().equals(formulaText.value.toString(),
                     _formulasList.value?.get(formulaId)?.formula.toString()
                 )) {

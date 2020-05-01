@@ -41,10 +41,10 @@ class PlaceholderFragment : Fragment() {
         val listAdapter = MainListAdapter()
         mainList.layoutManager = LinearLayoutManager(context)
         mainList.adapter = listAdapter
-        pageViewModel.index.observe(this, Observer<Int> {
+        pageViewModel.index.observe(viewLifecycleOwner, Observer<Int> {
           listAdapter.section = it
         })
-        mainViewModel.categories.observe(this, Observer {
+        mainViewModel.categories.observe(viewLifecycleOwner, Observer {
             it?.let {
                 listAdapter.refreshSections(it)
             }
