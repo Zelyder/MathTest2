@@ -33,7 +33,9 @@ class FormulasListFragment : Fragment() {
         formulasList.layoutManager = LinearLayoutManager(context)
         formulasList.adapter = listAdapter
 
-        formulasViewModel.getFormulas(arguments?.getInt(ARG_SUBCATEGORY_ID) ?: 1)
+        val args = arguments?.let { FormulasListFragmentArgs.fromBundle(it) }
+
+        formulasViewModel.getFormulas(args!!.subcategoryId)
             .observe(viewLifecycleOwner, Observer {
             it?.let {
                 listAdapter.refresh(it)

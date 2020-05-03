@@ -11,6 +11,7 @@ import com.zelyder.mathtest.R
 import com.zelyder.mathtest.domain.models.CategoryModel
 import com.zelyder.mathtest.help.ARG_CATEGORY_ID
 import com.zelyder.mathtest.help.ARG_SECTION_ID
+import com.zelyder.mathtest.ui.fragments.TabsFragmentDirections
 import kotlinx.android.synthetic.main.main_list_item.view.*
 
 class MainListAdapter: RecyclerView.Adapter<MainListHolder>() {
@@ -43,10 +44,8 @@ class MainListHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         sectionName.text = category.name
         sectionName.setCompoundDrawablesRelativeWithIntrinsicBounds(category.img ,0,0,0)
         setOnClickListener {
-            val bundle = Bundle()
-            bundle.putInt(ARG_CATEGORY_ID, category.id)
-            bundle.putInt(ARG_SECTION_ID, section)
-            findNavController().navigate(R.id.to_test_action, bundle)
+            findNavController().navigate(TabsFragmentDirections
+                .actionTabsDestToSubcategoriesDest(sectionId = section,categoryId = category.id))
         }
     }
 }

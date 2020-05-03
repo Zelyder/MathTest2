@@ -38,7 +38,7 @@ class TestFragment : Fragment(), DialogControl {
     }
 
     private var scale = 0f
-    private  var isImgBig = false
+    private var isImgBig = false
     private val state1 = ConstraintSet()
     private val state2 = ConstraintSet()
 
@@ -66,10 +66,9 @@ class TestFragment : Fragment(), DialogControl {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val args = arguments?.let { TestFragmentArgs.fromBundle(it) }
+
         activity?.findViewById<View>(R.id.adView)?.visibility = View.GONE
-
-
-
         activity?.findViewById<ImageView>(R.id.imgTest)?.setOnClickListener {
             TransitionManager.beginDelayedTransition(consLayoutTest)
             val constraint = if (isImgBig) state1 else state2
@@ -79,14 +78,14 @@ class TestFragment : Fragment(), DialogControl {
 
         testViewModel.setKeys(
             FormulaUtilities().getKeys(
-                arguments?.getInt(ARG_SUBCATEGORY_ID) ?: 1
+                args!!.subcategoryId
             )
         )
         testViewModel.dialogControl = this
 
         math_view_item.setupMathView()
 
-        testViewModel.setFormulas(arguments?.getInt(ARG_SUBCATEGORY_ID) ?: 1, this)
+        testViewModel.setFormulas(args.subcategoryId, this)
 
     }
 
@@ -158,10 +157,15 @@ class TestFragment : Fragment(), DialogControl {
         builder.setTitle(resources.getString(R.string.final_dialog_success))
             .setView(view)
             .setPositiveButton(resources.getString(R.string.final_dialog_exit)) { _, _ ->
-                /*val bundle = Bundle()
-                bundle.putInt(ARG_SUBCATEGORY_ID, arguments?.getInt(ARG_SUBCATEGORY_ID) ?: 1)
-                bundle.putInt(ARG_INDEX_BACK, 1)*/
-                findNavController().popBackStack()
+                val args = arguments?.let { TestFragmentArgs.fromBundle(it) }
+                findNavController().navigate(
+                    TestFragmentDirections
+                        .actionTestDestToSubcategoriesDest(
+                            categoryId = fromSubcategoryIdToCategoryId(args!!.subcategoryId),
+                            sectionId = 1,
+                            indexBack = 1
+                        )
+                )
 
             }
             .create()

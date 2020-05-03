@@ -11,6 +11,7 @@ import com.zelyder.mathtest.R
 import com.zelyder.mathtest.domain.models.SubcategoryModel
 import com.zelyder.mathtest.help.ARG_INDEX_BACK
 import com.zelyder.mathtest.help.ARG_SUBCATEGORY_ID
+import com.zelyder.mathtest.ui.fragments.SubcategoriesFragmentDirections
 import kotlinx.android.synthetic.main.subcategory_list_item.view.*
 
 class SubcategoriesListAdapter(private val section: Int): RecyclerView.Adapter<SubcategoriesListHolder>(){
@@ -41,12 +42,9 @@ class SubcategoriesListHolder(itemView: View): RecyclerView.ViewHolder(itemView)
     fun bind(subcategory: SubcategoryModel, section: Int) = with(itemView) {
         subcategoryName.text = subcategory.name
         setOnClickListener {
-            val bundle = Bundle()
-            bundle.putInt(ARG_SUBCATEGORY_ID, subcategory.id)
-            //bundle.putInt(ARG_INDEX_BACK, 0)
             when (section){
-                1 -> findNavController().navigate(R.id.to_test_action, bundle)
-                2 -> findNavController().navigate(R.id.to_list_action, bundle)
+                1 -> findNavController().navigate(SubcategoriesFragmentDirections.toTestAction(subcategory.id))
+                2 -> findNavController().navigate(SubcategoriesFragmentDirections.toListAction(subcategory.id))
             }
 
         }
