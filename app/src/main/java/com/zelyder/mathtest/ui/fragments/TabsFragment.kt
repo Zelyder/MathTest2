@@ -1,6 +1,8 @@
 package com.zelyder.mathtest.ui.fragments
 
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.*
@@ -23,6 +25,9 @@ class TabsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
+        setHasOptionsMenu(true)
+
         return inflater.inflate(R.layout.fragment_tabs, container, false)
     }
 
@@ -37,14 +42,23 @@ class TabsFragment : Fragment() {
 
     }
 
-//    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-//
-//        inflater.inflate(R.menu.main_menu, menu)
-//    }
-//
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        return item.onNavDestinationSelected(findNavController())
-//                || super.onOptionsItemSelected(item)
-//    }
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.main_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.to_settings_privacy_policy){
+            startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://math-test-formulas.flycricket.io/privacy.html")
+                )
+            )
+        }
+
+        return item.onNavDestinationSelected(findNavController())
+                || super.onOptionsItemSelected(item)
+    }
 
 }
