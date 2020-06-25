@@ -15,6 +15,7 @@ import com.x5.template.Theme;
 import com.x5.template.providers.AndroidTemplates;
 import com.zelyder.mathtest.R;
 
+
 import io.github.kexanie.library.MathView;
 
 public class MyMathView extends WebView {

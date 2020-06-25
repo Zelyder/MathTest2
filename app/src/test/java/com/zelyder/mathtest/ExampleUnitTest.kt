@@ -1,6 +1,7 @@
 package com.zelyder.mathtest
 
 import com.zelyder.mathtest.help.FormulaUtilities
+import com.zelyder.mathtest.help.PPN
 import com.zelyder.mathtest.help.Utilities
 import org.junit.Test
 
@@ -17,6 +18,13 @@ class ExampleUnitTest {
         val util = FormulaUtilities()
         val result: String = util.parseFunc("\\sqrt[n]{a} \\cdot \\sqrt[m]{b} = \\sqrt[n \\cdot m]{a^m b^n}")
         val expected = "[n]/{a} * [m]/{b} = [n * m]/{a^m b^n}"
+        assertEquals(expected, result)
+    }
+    @Test
+    fun parseFunc_isCorrect2() {
+        val util = FormulaUtilities()
+        val result: String = util.parseFunc("\\sqrt[2]{a} \\cdot \\sqrt[m]{b} = \\sqrt[n \\cdot m]{a^m b^n}")
+        val expected = "[2]/{a} * [m]/{b} = [n * m]/{a^m b^n}"
         assertEquals(expected, result)
     }
     @Test

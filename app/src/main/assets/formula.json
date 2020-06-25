@@ -108,7 +108,7 @@
     "idFormula":16,
     "idSubcategory": 2,
     "idName": "formula.root_10",
-    "formula": "$$\\sqrt{a+\\sqrt{b}} = \\sqrt{\\frac{a+\\sqrt{a^{2}-b}}{2}} + \\sqrt{\\frac{a-\\sqrt{a^{2}-b}}{2}}$$",
+    "formula": "$$\\sqrt{a + \\sqrt{b}} = \\sqrt{\\frac{a + \\sqrt{a^{2}-b}}{2}} + \\sqrt{\\frac{a - \\sqrt{a^{2} - b}}{2}}$$",
     "idImg": 0
   },
   {

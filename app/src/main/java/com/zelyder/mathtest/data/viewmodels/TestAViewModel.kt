@@ -23,7 +23,6 @@ import com.zelyder.mathtest.data.room.AppDatabase
 import com.zelyder.mathtest.domain.models.FormulaModel
 import com.zelyder.mathtest.domain.repository.FormulaRepository
 import com.zelyder.mathtest.help.FormulaUtilities
-import com.zelyder.mathtest.help.Utilities
 import com.zelyder.mathtest.interfaces.DialogControl
 import com.zelyder.mathtest.interfaces.KeyboardOutput
 import kotlinx.android.synthetic.main.fragment_test.view.*

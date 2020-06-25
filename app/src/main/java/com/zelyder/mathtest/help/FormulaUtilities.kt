@@ -5,6 +5,9 @@ import android.util.SparseArray
 import androidx.core.util.forEach
 import java.util.HashMap
 import java.util.regex.Pattern
+import com.zelyder.mathtest.help.PPN
+import com.zelyder.mathtest.help.MyMathView
+
 
 class FormulaUtilities {
 
@@ -502,7 +505,6 @@ class FormulaUtilities {
                         outStr = outStr.replace(indexBackslash, i, "™")
                         i -= i-indexBackslash
                     }
-                    else -> insetDelAfter = ' '
                 }
             }
             if (insetDelAfter != ' ' && insetDelAfter == outStr[i]) {
@@ -523,9 +525,11 @@ class FormulaUtilities {
 
         val map = HashMap<String, Int>()
 
+        checkableTemp = replacePlusSym(checkableTemp)
         checkableTemp = parseFunc(checkableTemp)
         checkableTemp = replaceBraces(checkableTemp)
 
+        correctTemp = replacePlusSym(correctTemp)
         correctTemp = parseFunc(correctTemp)
         correctTemp = replaceBraces(correctTemp)
 
@@ -559,7 +563,13 @@ class FormulaUtilities {
                 '/' -> outputStr.append('/')
                 else -> {
                     if (map.containsKey(string[i].toString())){
-                        outputStr.append(map[string[i].toString()])
+                        var item = map[string[i].toString()]
+                        if (item != null) {
+                            if(item > 10){
+                                item /= 10
+                            }
+                                outputStr.append(item)
+                        }
                     }else{
                         return 0f
                     }
@@ -610,12 +620,20 @@ class FormulaUtilities {
         outStr = outStr.replace("]",")")
         outStr = outStr.replace("{","(")
         outStr = outStr.replace("}",")")
+
+        return outStr
+
+    }
+
+    fun replacePlusSym(string: String):String{
+        var outStr = string
         outStr = outStr.replace("&#43","+")
         outStr = outStr.replace("&#45","-")
         outStr = outStr.replace(" ","")
         return outStr
 
     }
+
 
 
 }
